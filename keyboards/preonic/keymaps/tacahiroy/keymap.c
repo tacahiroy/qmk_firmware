@@ -51,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TAB,     KC_Q, KC_W,    KC_F,    KC_P,  KC_G,   KC_J,   KC_L,  KC_U,    KC_Y,    KC_SCLN, KC_BSLS, \
   CTL_X(ESC), KC_A, KC_R,    KC_S,    KC_T,  KC_D,   KC_H,   KC_N,  KC_E,    KC_I,    KC_O,    KC_ENT,  \
   KC_LSFT,    KC_Z, KC_X,    KC_C,    KC_V,  KC_B,   KC_K,   KC_M,  KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT, \
-  MEH(KC_0),  MOUS, KC_LGUI, KC_LALT, LOWER, KC_SPC, KC_SPC, RAISE, KC_BSPC, KC_QUOT, KC_RCTL, KC_MEH   \
+  KC_MPLY,    MOUS, KC_LGUI, KC_LALT, LOWER, KC_SPC, KC_SPC, RAISE, KC_BSPC, KC_QUOT, KC_RCTL, KC_MEH   \
 ),
 
 [_QWERTY] = LAYOUT_preonic_grid( \
@@ -87,9 +87,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
 [_ADJUST] = LAYOUT_preonic_grid( \
-  RESET,   _______, EPRM,    _______, _______, _______, _______, _______, _______,  _______, _______, KC_MPLY, \
-  _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______, _______, KC_VOLU, \
-  _______, W_CADEL, _______, _______, _______, DEBUG,   _______, _______, _______,  _______, _______, KC_VOLD, \
+  RESET,   _______, EPRM,    _______, _______, _______, _______, _______, _______,  _______, KC_MSTP, KC_MPLY, \
+  _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______, KC_VOLD, KC_VOLU, \
+  _______, W_CADEL, _______, _______, _______, DEBUG,   _______, _______, _______,  _______, KC_MPRV, KC_MNXT, \
   _______, _______, _______, _______, VERSION, _______, _______, QWERTY,  COLEMAK,  _______, _______, _______, \
   _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______, _______, _______  \
 )
@@ -189,35 +189,18 @@ uint16_t muse_tempo = 50;
 #ifdef ENCODER_ENABLE
 void encoder_update_user(uint8_t index, bool clockwise) {
     uint16_t held_keycode_timer = timer_read();
-    if (IS_LAYER_ON(_RAISE)) {
-        if (clockwise) {
-            register_code(KC_VOLU);
-            while (timer_elapsed(held_keycode_timer) < MEDIA_KEY_DELAY) {
-                // no-op
-            }
-            unregister_code(KC_VOLU);
-        } else {
-            register_code(KC_VOLD);
-            while (timer_elapsed(held_keycode_timer) < MEDIA_KEY_DELAY) {
-                // no-op
-            }
-            unregister_code(KC_VOLD);
+    if (clockwise) {
+        register_code(KC_VOLU);
+        while (timer_elapsed(held_keycode_timer) < MEDIA_KEY_DELAY) {
+            // no-op
         }
+        unregister_code(KC_VOLU);
     } else {
-        if (clockwise) {
-            register_code(KC_WH_R);
-            while (timer_elapsed(held_keycode_timer) < MEDIA_KEY_DELAY) {
-                // no-op
-            }
-            unregister_code(KC_WH_R);
-        } else {
-            register_code(KC_WH_L);
-            while (timer_elapsed(held_keycode_timer) < MEDIA_KEY_DELAY) {
-                // no-op
-            }
-            unregister_code(KC_WH_L);
+        register_code(KC_VOLD);
+        while (timer_elapsed(held_keycode_timer) < MEDIA_KEY_DELAY) {
+            // no-op
         }
-
+        unregister_code(KC_VOLD);
     }
 }
 #endif

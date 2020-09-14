@@ -42,7 +42,7 @@
 #define DEBOUNCE 5 // the delay when reading the value of the pin (5 is default)
 
 #define TAPPING_TERM 150
-#define MEDIA_KEY_DELAY 10
+#define MEDIA_KEY_DELAY 20
 
 #undef MOUSEKEY_INTERVAL
 #undef MOUSEKEY_DELAY
