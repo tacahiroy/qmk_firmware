@@ -52,11 +52,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  ),
 
  [_COLEMAK2] = LAYOUT_ortho_hhkb(
-  KC_GRV,   KC_1,    KC_2,     KC_3,     KC_4,   KC_5,  KC_DEL,   KC_EQL,   KC_6,  KC_7,      KC_8,     KC_9,    KC_0,     KC_MINS, \
-  KC_TAB,   KC_Q,    KC_W,     KC_F,     KC_P,   KC_G,  KC_LBRC,  KC_RBRC,  KC_J,  KC_L,      KC_U,     KC_Y,    KC_SCLN,  KC_BSLS, \
-  KC_LCTL,  KC_A,    KC_R,     KC_S,     KC_T,   KC_D,  KC_MEH,   KC_QUOT,  KC_H,  KC_N,      KC_E,     KC_I,    KC_O,     KC_QUOT,  \
-  KC_LSFT,  KC_Z,    KC_X,     KC_C,     KC_V,   KC_B,  KC_DEL,   KC_BSPC,  KC_K,  KC_M,      KC_COMM,  KC_DOT,  KC_SLSH,  KC_RSFT, \
-            RGB_TOG, KC_LGUI,  KC_LALT,  LOWER,     KC_ESC,            KC_ENT,     RS_X(SPC), RAISE,    KC_QUOT, KC_RCTL            \
+  KC_GRV,   KC_1,    KC_2,     KC_3,     KC_4,   KC_5,  VMW_REL,  KC_EQL,   KC_6,  KC_7,   KC_8,     KC_9,    KC_0,     KC_MINS, \
+  KC_TAB,   KC_Q,    KC_W,     KC_F,     KC_P,   KC_G,  KC_LBRC,  KC_RBRC,  KC_J,  KC_L,   KC_U,     KC_Y,    KC_SCLN,  KC_QUOT, \
+  KC_LCTL,  KC_A,    KC_R,     KC_S,     KC_T,   KC_D,  KC_MEH,   KC_QUOT,  KC_H,  KC_N,   KC_E,     KC_I,    KC_O,     KC_ENT,  \
+  KC_LSFT,  KC_Z,    KC_X,     KC_C,     KC_V,   KC_B,  KC_DEL,   KC_BSPC,  KC_K,  KC_M,   KC_COMM,  KC_DOT,  KC_SLSH,  KC_RSFT, \
+            RGB_TOG, KC_LGUI,  KC_LALT,  LOWER,     KC_ESC,            KC_SPC,     RAISE,  KC_BSPC,  KC_MEH,  KC_RCTL            \
  ),
 
 
@@ -69,18 +69,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  ),
 
  [_LOWER] = LAYOUT_ortho_hhkb(
-  MC_EXPS, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F11,  KC_F12,  KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  _______, \
+  MC_EXPS, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F11,  KC_F12,  KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_PIPE, \
   _______, _______, _______, _______, _______, KC_MUTE, KC_VOLD, KC_VOLU, V_ALTB,  TM_PREV, TM_PWIN, TM_NEXT, _______, TOP,     \
   _______, _______, _______, W_SSHOT, MOUS,    _______, KC_MPRV, KC_MNXT, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  BOTTOM,  \
   _______, _______, _______, _______, _______, _______, KC_MSTP, KC_MPLY, W_IME,   KC_HOME, KC_END,  _______, _______, _______, \
-           _______, _______, _______, _______,    _______,           KC_SPC,      _______, _______, _______, _______           \
+           _______, _______, _______, _______,    _______,           KC_SPC,      _______, _______, _______, _______            \
  ),
 
  [_RAISE] = LAYOUT_ortho_hhkb(
   W_S_WIN,  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, W_QUIT,  \
   _______,  KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, _______, _______, KC_CIRC, KC_AMPR, KC_ASTR, FX_NEXT, _______, VMW_REL, \
-  _______,  _______, KC_EQL,  KC_PLUS, KC_LPRN, KC_LBRC, _______, _______, KC_RBRC, KC_RPRN, KC_DEL,  KC_BSLS, _______, _______, \
-  _______,  _______, CUT,     COPY2,   PASTE2,  KC_LCBR, _______, _______, KC_RCBR, KC_PGUP, KC_PGDN, _______, _______, _______, \
+  _______,  KC_MINS, KC_EQL,  KC_PLUS, KC_LPRN, KC_LBRC, _______, _______, KC_RBRC, KC_RPRN, KC_DEL,  KC_BSLS, _______, _______, \
+  _______,  KC_UNDS, CUT,     COPY2,   PASTE2,  KC_LCBR, _______, _______, KC_RCBR, KC_PGUP, KC_PGDN, _______, _______, _______, \
             _______, _______, _______, _______,    _______,          _______,       _______, _______, _______, _______           \
  ),
 
