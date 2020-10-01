@@ -68,8 +68,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  [_RAISE] = LAYOUT_2u_arrow(
     W_S_WIN, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, W_QUIT,
     _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, FX_NEXT, _______, _______, _______, VMW_REL,
-    _______, KC_MINS, KC_EQL,  KC_PLUS, KC_LPRN, KC_LBRC, KC_RBRC, KC_RPRN, _______, KC_BSLS, _______, _______, _______, _______,
-    _______, KC_UNDS, CUT,     COPY2,   PASTE2,  KC_LCBR, KC_RCBR, _______, KC_DEL,  _______, _______, _______, _______, _______,
+    _______, KC_MINS, KC_EQL,  KC_PLUS, KC_LPRN, KC_LBRC, KC_RBRC, KC_RPRN, KC_DEL,  KC_BSLS, _______, _______, _______, _______,
+    _______, KC_UNDS, CUT,     COPY2,   PASTE2,  KC_LCBR, KC_RCBR, _______, _______, _______, _______, _______, _______, _______,
     _______, _______, _______, _______,          _______, _______,          _______, _______, _______, _______, _______, _______
  ),
 
