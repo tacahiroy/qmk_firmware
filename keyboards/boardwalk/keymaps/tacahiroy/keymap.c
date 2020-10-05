@@ -21,7 +21,6 @@
 // Layer shorthand
 enum layer {
   _COLEMAK,
-  _COLEMAK2,
   _QWERTY,
   _LOWER,
   _RAISE,
@@ -31,7 +30,6 @@ enum layer {
 
 enum boardwald_keycodes {
   COLEMAK = SAFE_RANGE,
-  COLEMAK2,
   QWERTY,
   LOWER,
   RAISE,
@@ -44,21 +42,12 @@ enum boardwald_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
  [_COLEMAK] = LAYOUT_ortho_hhkb(
-  KC_GRV,   KC_1,  KC_2,     KC_3,     KC_4,   KC_5,  KC_DEL,   KC_EQL,   KC_6,  KC_7,   KC_8,     KC_9,    KC_0,     KC_MINS, \
-  KC_TAB,   KC_Q,  KC_W,     KC_F,     KC_P,   KC_G,  KC_LBRC,  KC_RBRC,  KC_J,  KC_L,   KC_U,     KC_Y,    KC_SCLN,  KC_BSLS, \
-  KC_LCTL,  KC_A,  KC_R,     KC_S,     KC_T,   KC_D,  KC_MEH,   KC_QUOT,  KC_H,  KC_N,   KC_E,     KC_I,    KC_O,     KC_ENT,  \
-  KC_LSFT,  KC_Z,  KC_X,     KC_C,     KC_V,   KC_B,  KC_DEL,   KC_BSPC,  KC_K,  KC_M,   KC_COMM,  KC_DOT,  KC_SLSH,  KC_RSFT, \
-            MOUS,  KC_LGUI,  KC_LALT,  LOWER,     KC_ESC,            KC_SPC,     RAISE,  KC_BSPC,  KC_QUOT, KC_RCTL            \
+  KC_GRV,   KC_1,  KC_2,     KC_3,     KC_4,   KC_5,  KC_5,     KC_6,     KC_6,  KC_7,   KC_8,     KC_9,        KC_0,     KC_MINS, \
+  KC_TAB,   KC_Q,  KC_W,     KC_F,     KC_P,   KC_G,  KC_HOME,  KC_END,   KC_J,  KC_L,   KC_U,     KC_Y,        KC_SCLN,  KC_QUOT, \
+  KC_LCTL,  KC_A,  KC_R,     KC_S,     KC_T,   KC_D,  KC_PGDN,  KC_PGUP,  KC_H,  KC_N,   KC_E,     KC_I,        KC_O,     KC_ENT,  \
+  KC_LSFT,  KC_Z,  KC_X,     KC_C,     KC_V,   KC_B,  KC_DEL,   KC_BSPC,  KC_K,  KC_M,   KC_COMM,  KC_DOT,      KC_SLSH,  KC_RSFT, \
+            MOUS,  KC_LGUI,  KC_LALT,  LOWER,     KC_ESC,            KC_SPC,     RAISE,  KC_BSPC,  MEH_X(BSLS), KC_RCTL            \
  ),
-
- [_COLEMAK2] = LAYOUT_ortho_hhkb(
-  KC_GRV,   KC_1,    KC_2,     KC_3,     KC_4,   KC_5,  VMW_REL,  KC_EQL,   KC_6,  KC_7,   KC_8,     KC_9,    KC_0,     KC_MINS, \
-  KC_TAB,   KC_Q,    KC_W,     KC_F,     KC_P,   KC_G,  KC_LBRC,  KC_RBRC,  KC_J,  KC_L,   KC_U,     KC_Y,    KC_SCLN,  KC_QUOT, \
-  KC_LCTL,  KC_A,    KC_R,     KC_S,     KC_T,   KC_D,  KC_MEH,   KC_QUOT,  KC_H,  KC_N,   KC_E,     KC_I,    KC_O,     KC_ENT,  \
-  KC_LSFT,  KC_Z,    KC_X,     KC_C,     KC_V,   KC_B,  KC_DEL,   KC_BSPC,  KC_K,  KC_M,   KC_COMM,  KC_DOT,  KC_SLSH,  KC_RSFT, \
-            RGB_TOG, KC_LGUI,  KC_LALT,  LOWER,     KC_ESC,            KC_SPC,     RAISE,  KC_BSPC,  KC_MEH,  KC_RCTL            \
- ),
-
 
  [_QWERTY] = LAYOUT_ortho_hhkb(
   _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
@@ -70,9 +59,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
  [_LOWER] = LAYOUT_ortho_hhkb(
   MC_EXPS, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F11,  KC_F12,  KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_PIPE, \
-  _______, _______, _______, _______, _______, KC_MUTE, KC_VOLD, KC_VOLU, V_ALTB,  TM_PREV, TM_PWIN, TM_NEXT, _______, TOP,     \
-  _______, _______, _______, W_SSHOT, MOUS,    _______, KC_MPRV, KC_MNXT, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  BOTTOM,  \
-  _______, _______, _______, _______, _______, _______, KC_MSTP, KC_MPLY, W_IME,   KC_HOME, KC_END,  _______, _______, _______, \
+  _______, _______, _______, _______, _______, _______, _______, _______, V_ALTB,  TM_PREV, TM_PWIN, TM_NEXT, _______, TOP,     \
+  _______, _______, _______, W_SSHOT, MOUS,    _______, _______, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  BOTTOM,  \
+  _______, _______, _______, _______, _______, _______, _______, _______, W_IME,   KC_HOME, KC_END,  _______, _______, _______, \
            _______, _______, _______, _______,    _______,           KC_SPC,      _______, _______, _______, _______            \
  ),
 
@@ -85,19 +74,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  ),
 
  [_MOUS] = LAYOUT_ortho_hhkb(
-  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
-  _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_WH_U, _______, KC_WH_D, _______, _______, \
-  _______, _______, _______, _______, _______, _______, _______, _______, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, _______, _______, \
+  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_MUTE, KC_MSTP, KC_MPLY, \
+  _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_WH_U, _______, KC_WH_D, KC_VOLD, KC_VOLU, \
+  _______, _______, _______, _______, _______, _______, _______, _______, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, KC_MPRV, KC_MNXT, \
   _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_BTN1, _______, KC_BTN2, _______, _______, \
            _______, _______, _______, _______,    _______,          _______,       _______, _______, _______, _______           \
  ),
 
  [_ADJUST] = LAYOUT_ortho_hhkb(
-  RESET,   _______, EPRM,    _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______,  _______, \
-  _______, _______, _______, _______, _______, _______, _______, _______, _______, RGB_VAI, RGB_SAI, RGB_HUI,  RGB_MOD,  _______, \
-  _______, W_CADEL, _______, _______, _______, _______, _______, _______, _______, RGB_VAD, RGB_SAD, RGB_HUD,  RGB_RMOD, _______, \
-  _______, _______, _______, _______, VERSION, _______, _______, _______, _______, QWERTY,  COLEMAK, COLEMAK2, RGB_TOG,  _______, \
-           _______, _______, _______, _______,    _______,          _______,       _______, _______, _______,  _______            \
+  RESET,   _______, EPRM,    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______, \
+  _______, _______, _______, _______, _______, _______, _______, _______, _______, RGB_VAI, RGB_SAI, RGB_HUI, RGB_MOD,  _______, \
+  _______, W_CADEL, _______, _______, _______, _______, _______, _______, _______, RGB_VAD, RGB_SAD, RGB_HUD, RGB_RMOD, _______, \
+  _______, _______, _______, _______, VERSION, _______, _______, _______, _______, QWERTY,  COLEMAK, _______, RGB_TOG,  _______, \
+           _______, _______, _______, _______,    _______,          _______,       _______, _______, _______, _______            \
  ),
 };
 
@@ -110,14 +99,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       if (record->event.pressed) {
         print("mode just switched to Colemak and this is a huge string\n");
         set_single_persistent_default_layer(_COLEMAK);
-      }
-      return false;
-      break;
-
-    case COLEMAK2:
-      if (record->event.pressed) {
-        print("mode just switched to Colemak and this is a huge string\n");
-        set_single_persistent_default_layer(_COLEMAK2);
       }
       return false;
       break;

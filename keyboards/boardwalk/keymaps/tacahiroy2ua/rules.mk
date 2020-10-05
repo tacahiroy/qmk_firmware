@@ -8,7 +8,7 @@ DEBUG_ENABLE     = no
 EXTRAKEY_ENABLE  = yes # Audio control and System control(+450)
 MIDI_ENABLE      = no  # MIDI controls
 NKRO_ENABLE      = yes # Nkey Rollover - if this doesn't work, see here: https://github.com/tmk/tmk_keyboard/wiki/FAQ # nkro-doesnt-work
-RGBLIGHT_ENABLE  = yes  # Enable WS2812 RGB underlight.  Do not enable this with audio at the same time.
+RGBLIGHT_ENABLE  = no  # Enable WS2812 RGB underlight.  Do not enable this with audio at the same time.
 TAP_DANCE_ENABLE = no
 UNICODE_ENABLE   = no  # Unicode
 
