@@ -11,8 +11,13 @@ appdirs = "*"
 argcomplete = "*"
 colorama = "*"
 hjson = "*"
+pygments = "*"
 
 [tool.poetry.dev-dependencies]
+nose2 = "*"
+flake8 = "*"
+pep8-naming = "*"
+yapf = "*"
 
 [build-system]
 requires = ["poetry>=0.12"]
