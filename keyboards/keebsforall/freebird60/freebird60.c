@@ -1,8 +1,4 @@
-<<<<<<< HEAD:keyboards/littlealby/mute/mute.c
-/* Copyright 2019 albybatber
-=======
 /* Copyright 2020 KnoblesseOblige
->>>>>>> qmk/master:keyboards/keebsforall/freebird60/freebird60.c
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,9 +13,5 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-<<<<<<< HEAD:keyboards/littlealby/mute/mute.c
-#include "mute.h"
-=======
 
 #include "freebird60.h"
->>>>>>> qmk/master:keyboards/keebsforall/freebird60/freebird60.c

@@ -1,8 +1,4 @@
-<<<<<<< HEAD:keyboards/genone/eclipse_65/eclipse_65.c
-/* Copyright 2020 GEN ONE LLC 
-=======
 /* Copyright 2019 Ryota Goto
->>>>>>> qmk/master:keyboards/noxary/vulcan/vulcan.c
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,10 +13,5 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-<<<<<<< HEAD:keyboards/genone/eclipse_65/eclipse_65.c
- 
- #include "eclipse_65.h"
-=======
 #include "vulcan.h"
 
->>>>>>> qmk/master:keyboards/noxary/vulcan/vulcan.c

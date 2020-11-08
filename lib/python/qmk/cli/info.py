@@ -39,11 +39,7 @@ def show_keymap(kb_info_json, title_caps=True):
             else:
                 cli.echo('{fg_cyan}layer_%s{fg_reset}:', layer_num)
 
-<<<<<<< HEAD
-            print(render_layout(kb_info_json['layouts'][layout_name]['layout'], layer))
-=======
             print(render_layout(kb_info_json['layouts'][layout_name]['layout'], cli.config.info.ascii, layer))
->>>>>>> qmk/master
 
 
 def show_layouts(kb_info_json, title_caps=True):
@@ -76,11 +72,7 @@ def show_matrix(kb_info_json, title_caps=True):
         else:
             cli.echo('{fg_blue}matrix_%s{fg_reset}:', layout_name)
 
-<<<<<<< HEAD
-        print(render_layout(kb_info_json['layouts'][layout_name]['layout'], labels))
-=======
         print(render_layout(kb_info_json['layouts'][layout_name]['layout'], cli.config.info.ascii, labels))
->>>>>>> qmk/master
 
 
 def print_friendly_output(kb_info_json):

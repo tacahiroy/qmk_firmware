@@ -38,11 +38,7 @@ def info_json(keyboard):
         info_data['keymaps'][keymap.name] = {'url': f'https://raw.githubusercontent.com/qmk/qmk_firmware/master/{keymap}/keymap.json'}
 
     # Populate layout data
-<<<<<<< HEAD
-    for layout_name, layout_json in _find_all_layouts(keyboard, rules).items():
-=======
     for layout_name, layout_json in _find_all_layouts(info_data, keyboard, rules).items():
->>>>>>> qmk/master
         if not layout_name.startswith('LAYOUT_kc'):
             info_data['layouts'][layout_name] = layout_json
 

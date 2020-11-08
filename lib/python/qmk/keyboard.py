@@ -9,8 +9,6 @@ from glob import glob
 from qmk.c_parse import parse_config_h_file
 from qmk.makefile import parse_rules_mk_file
 
-<<<<<<< HEAD
-=======
 BOX_DRAWING_CHARACTERS = {
     "unicode": {
         "tl": "┌",
@@ -30,7 +28,6 @@ BOX_DRAWING_CHARACTERS = {
     },
 }
 
->>>>>>> qmk/master
 base_path = os.path.join(os.getcwd(), "keyboards") + os.path.sep
 
 
