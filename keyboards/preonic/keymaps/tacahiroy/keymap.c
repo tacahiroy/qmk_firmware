@@ -13,7 +13,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * Copyright 2019 Takahiro Yoshihara <tacahiroy@gmail.com>
+ * Copyright 2019-2020 Takahiro Yoshihara <tacahiroy@gmail.com>
  * Created my own version of this file based on preonic/default.
  */
 
@@ -64,9 +64,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_LOWER] = LAYOUT_preonic_grid( \
   MC_EXPS, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_BSPC, \
-  KC_GRV,  KC_F11,  KC_F12,  _______, _______, _______, V_ALTB,  TM_PREV, TM_PWIN, TM_NEXT, _______, KC_PIPE, \
+  KC_GRV,  KC_F11,  KC_F12,  _______, _______, _______, V_ALTB,  TM_PREV, KC_DEL,  TM_NEXT, _______, KC_PIPE, \
   _______, _______, _______, W_SSHOT, MOUS,    _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  TOP,     \
-  _______, _______, _______, _______, _______, _______, W_IME,   KC_HOME, KC_END,  _______, _______, BOTTOM,  \
+  _______, _______, _______, _______, _______, _______, _______, KC_HOME, KC_END,  W_IME,   _______, BOTTOM,  \
   _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______  \
 ),
 
