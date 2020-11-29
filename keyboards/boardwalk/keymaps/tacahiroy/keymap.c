@@ -70,8 +70,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  [_LOWER] = LAYOUT_ortho_hhkb(
   MC_EXPS, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F11,  KC_F12,  KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_EQL,  \
   _______, _______, _______, _______, _______, _______, _______, _______, V_ALTB,  TM_PREV, W_IME,   TM_NEXT, _______, KC_PIPE, \
-  _______, _______, _______, W_SSHOT, MOUS,    _______, _______, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______, \
-  _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_HOME, KC_END,  KC_BSPC, _______, _______, \
+  _______, _______, _______, W_SSHOT, MOUS,    _______, _______, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  TOP,     \
+  _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_HOME, KC_END,  KC_BSPC, _______, BOTTOM,  \
            _______, _______, _______, _______,    _______,           _______,      _______, _______, _______, _______           \
  ),
 
