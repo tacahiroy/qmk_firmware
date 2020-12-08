@@ -12,6 +12,7 @@ argcomplete = "*"
 colorama = "*"
 hjson = "*"
 pygments = "*"
+milc = "*"
 
 [tool.poetry.dev-dependencies]
 nose2 = "*"
