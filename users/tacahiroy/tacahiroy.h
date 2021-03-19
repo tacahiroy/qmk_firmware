@@ -49,6 +49,8 @@ void toggle_ime(bool is_on);
 #define TM_SSH   LALT(KC_O)
 #define TM_NEW   LALT(KC_N)
 #define TM_PWIN  LALT(KC_G)
+// last session
+#define TM_LSTS  LALT(KC_J)
 
  // Firefox and other web browsers
 #define FX_NEXT  LCTL(KC_TAB)
