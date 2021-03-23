@@ -67,7 +67,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_LOWER] = { /* Lower */
   {KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_PIPE},
   {_______, _______, _______, _______, MOUS,    _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______},
-  {_______, _______, _______, _______, _______, _______, _______, KC_HOME, KC_END,  W_IME,   _______, _______},
+  {_______, _______, _______, _______, _______, _______, _______, KC_HOME, KC_END,  W_IME,   TM_LSTS, _______},
   {_______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______}
 },
 
@@ -86,7 +86,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 },
 
 [_MOUS] = { /* Mouse */
-  {_______,  _______, _______, _______,  _______, _______, _______, _______, _______, KC_MUTE, KC_MSTP, KC_MPLY},
+  {RESET,    _______, _______, _______,  _______, _______, _______, _______, _______, KC_MUTE, KC_MSTP, KC_MPLY},
   {_______,  RGB_TOG, RGB_MOD, RGB_RMOD, RGB_M_B, RGB_M_K, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, KC_VOLD, KC_VOLU},
   {_______,  RGB_HUI, RGB_SAI, RGB_VAI,  RGB_M_R, RGB_M_X, _______, KC_BTN1, _______, KC_BTN2, KC_MPRV, KC_MNXT},
   {_______,  _______, _______, _______,  _______, _______, _______, _______, _______, _______, _______, _______}

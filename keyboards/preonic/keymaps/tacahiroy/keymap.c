@@ -66,7 +66,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   MC_EXPS, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_EQL,  \
   KC_GRV,  KC_F11,  KC_F12,  _______, _______, _______, V_ALTB,  TM_PREV, KC_BSPC, TM_NEXT, _______, KC_PIPE, \
   _______, _______, _______, W_SSHOT, MOUS,    W_QUIT,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  TOP,     \
-  _______, _______, _______, _______, _______, _______, _______, KC_HOME, KC_END,  W_IME,   _______, BOTTOM,  \
+  _______, _______, _______, _______, _______, _______, _______, KC_HOME, KC_END,  W_IME,   TM_LSTS, BOTTOM,  \
   _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______  \
 ),
 
@@ -79,7 +79,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
 [_MOUS] = LAYOUT_preonic_grid( \
-  _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_MUTE, KC_MSTP, KC_MPLY, \
+  RESET,   _______, _______, _______, _______, _______, _______, _______, _______, KC_MUTE, KC_MSTP, KC_MPLY, \
   _______, _______, _______, _______, _______, _______, _______, KC_WH_U, _______, KC_WH_D, KC_VOLD, KC_VOLU, \
   _______, _______, _______, _______, _______, _______, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, KC_MPRV, KC_MNXT, \
   _______, _______, _______, _______, _______, _______, _______, KC_BTN1, _______, KC_BTN2, _______, _______, \
