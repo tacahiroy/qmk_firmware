@@ -15,20 +15,8 @@
 
 #include QMK_KEYBOARD_H
 #include "tacahiroy.h"
-#include "action_layer.h"
-#include "version.h"
 
-// Layer shorthand
-enum layer {
-  _COLEMAK,
-  _QWERTY,
-  _LOWER,
-  _RAISE,
-  _MOUS,
-  _ADJUST,
-};
-
-enum boardwald_keycodes {
+enum boardwalk_keycodes {
   COLEMAK = SAFE_RANGE,
   QWERTY,
   LOWER,
@@ -59,9 +47,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
  [_LOWER] = LAYOUT_2u_arrow(
     MC_EXPS, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  _______,
-    _______, _______, _______, _______, _______, _______, _______, TM_PREV, KC_BSPC, TM_NEXT, _______, _______, _______, KC_PIPE,
-    _______, _______, _______, W_SSHOT, MOUS,    _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  TOP,     _______, _______,
-    _______, _______, _______, _______, _______, _______, _______, KC_HOME, KC_END,  W_IME,   TM_LSTS, BOTTOM,  _______, _______,
+    _______, _______, KC_LEAD, _______, _______, _______, _______, TM_PREV, KC_BSPC, TM_NEXT, _______, _______, _______, KC_PIPE,
+    _______, _______, _______, W_SSHOT, MOUS,    W_IME,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  TOP,     _______, _______,
+    _______, _______, _______, _______, _______, _______, _______, KC_HOME, KC_END,  _______, TM_LSTS, BOTTOM,  _______, _______,
     _______, _______, _______, _______,          _______, _______,          _______, _______, _______, _______, _______, _______
   ),
 
@@ -89,99 +77,3 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, _______, _______,          _______, _______,          _______, _______, _______,   _______, _______, _______
  ),
 };
-
-static bool lower_pressed = false;
-static bool raise_pressed = false;
-
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-  switch (keycode) {
-    case COLEMAK:
-      if (record->event.pressed) {
-        print("mode just switched to Colemak and this is a huge string\n");
-        set_single_persistent_default_layer(_COLEMAK);
-      }
-      return false;
-      break;
-
-    case QWERTY:
-      if (record->event.pressed) {
-        print("mode just switched to qwerty and this is a huge string\n");
-        set_single_persistent_default_layer(_QWERTY);
-      }
-      return false;
-      break;
-
-    case LOWER:
-      if (record->event.pressed) {
-        lower_pressed = true;
-        layer_on(_LOWER);
-        update_tri_layer(_LOWER, _RAISE, _ADJUST);
-      } else {
-        layer_off(_LOWER);
-        update_tri_layer(_LOWER, _RAISE, _ADJUST);
-        if (lower_pressed) {
-            toggle_ime(false);
-        }
-        lower_pressed = false;
-      }
-      return false;
-      break;
-
-    case RAISE:
-      if (record->event.pressed) {
-        raise_pressed = true;
-        layer_on(_RAISE);
-        update_tri_layer(_LOWER, _RAISE, _ADJUST);
-      } else {
-        layer_off(_RAISE);
-        update_tri_layer(_LOWER, _RAISE, _ADJUST);
-        if (raise_pressed) {
-            toggle_ime(true);
-        }
-        raise_pressed = false;
-      }
-      return false;
-      break;
-
-    case MOUS:
-      if (record->event.pressed) {
-        layer_on(_MOUS);
-      } else {
-        layer_off(_MOUS);
-      }
-      return false;
-      break;
-
-    case ADJUST:
-      if (record->event.pressed) {
-        layer_on(_ADJUST);
-      } else {
-        layer_off(_ADJUST);
-      }
-      return false;
-      break;
-
-    case EPRM:
-      if (record->event.pressed) {
-          eeconfig_init();
-      }
-      return false;
-      break;
-
-    case VERSION:
-      if (record->event.pressed) {
-          SEND_STRING(QMK_KEYBOARD "/" QMK_KEYMAP " @ " QMK_VERSION);
-      }
-      return false;
-      break;
-
-    default:
-      if (record->event.pressed) {
-        lower_pressed = false;
-        raise_pressed = false;
-      }
-      break;
-
-  }
-  return true;
-}

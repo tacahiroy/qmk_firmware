@@ -1,9 +1,10 @@
-BOOTMAGIC_ENABLE     = no
-COMMAND_ENABLE       = no
-DEBUG_ENABLE         = no
-CONSOLE_ENABLE       = no
-TAP_DANCE_ENABLE     = yes
-NKRO_ENABLE          = yes
+BOOTMAGIC_ENABLE = no
+COMMAND_ENABLE   = no
+DEBUG_ENABLE     = no
+CONSOLE_ENABLE   = no
+TAP_DANCE_ENABLE = yes
+NKRO_ENABLE      = yes
+LEADER_ENABLE    = yes
 
 AUDIO_ENABLE = no
 

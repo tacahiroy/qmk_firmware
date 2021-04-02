@@ -1,7 +1,22 @@
-#ifndef USERSPACE
-#define USERSPACE
+#pragma once
 
 #include "quantum.h"
+
+#include "version.h"
+#include "eeprom.h"
+
+/* #include "quantum.h" */
+
+// Layer shorthand
+enum usespace_layers {
+  _COLEMAK,
+  _QWERTY,
+  _LOWER,
+  _RAISE,
+  _MOUS,
+  _MOVE,
+  _ADJUST,
+};
 
 #ifdef TAP_DANCE_ENABLE
 enum {
@@ -72,5 +87,3 @@ void toggle_ime(bool is_on);
 // Shortcut for macros
 #define MC_VMW_REL M(maVMW_REL)
 #define MC_EXPS M(maEXPS)
-
-#endif

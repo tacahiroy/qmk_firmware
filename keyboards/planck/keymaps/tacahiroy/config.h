@@ -1,5 +1,4 @@
-#ifndef CONFIG_USER_H
-#define CONFIG_USER_H
+#pragma once
 
 #include "../../config.h"
 
@@ -22,4 +21,3 @@
 #define MOUSEKEY_WHEEL_DELAY    0
 
 #define MUSIC_MASK (keycode != KC_NO)
-#endif
