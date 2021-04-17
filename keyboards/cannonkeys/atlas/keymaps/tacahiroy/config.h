@@ -20,4 +20,6 @@
 #define MOUSEKEY_MAX_SPEED      4
 #define MOUSEKEY_WHEEL_DELAY    0
 
+#define RGBLIGHT_LAYERS_OVERRIDE_RGB_OFF
+
 #endif

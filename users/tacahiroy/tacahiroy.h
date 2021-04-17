@@ -8,7 +8,7 @@
 /* #include "quantum.h" */
 
 // Layer shorthand
-enum usespace_layers {
+enum tacahiroy_layers {
   _COLEMAK,
   _QWERTY,
   _LOWER,
@@ -16,6 +16,18 @@ enum usespace_layers {
   _MOUS,
   _MOVE,
   _ADJUST,
+};
+
+enum tacahiroy_keycodes {
+  COLEMAK = SAFE_RANGE,
+  QWERTY,
+  LOWER,
+  RAISE,
+  MOUS,
+  MOVE,
+  ADJUST,
+  VERSION,
+  EPRM
 };
 
 #ifdef TAP_DANCE_ENABLE

@@ -1,17 +1,5 @@
 #include "tacahiroy.h"
 
-enum tacahiroy_keycodes {
-  COLEMAK = SAFE_RANGE,
-  QWERTY,
-  LOWER,
-  RAISE,
-  MOUS,
-  MOVE,
-  ADJUST,
-  VERSION,
-  EPRM
-};
-
 void toggle_ime(bool is_on) {
     if (is_on) {
         register_code(KC_HENK);

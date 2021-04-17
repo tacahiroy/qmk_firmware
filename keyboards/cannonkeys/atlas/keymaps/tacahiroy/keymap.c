@@ -21,18 +21,6 @@
 
 #include "tacahiroy.h"
 
-enum atlas_keycodes {
-  COLEMAK = SAFE_RANGE,
-  QWERTY,
-  LOWER,
-  RAISE,
-  MOVE,
-  MOUS,
-  ADJUST,
-  VERSION,
-  EPRM
-};
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_COLEMAK] = LAYOUT_ortho_5x12( \
