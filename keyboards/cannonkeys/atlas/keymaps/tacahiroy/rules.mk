@@ -4,7 +4,7 @@ DEBUG_ENABLE     = no
 CONSOLE_ENABLE   = no
 TAP_DANCE_ENABLE = yes
 NKRO_ENABLE      = yes
-LEADER_ENABLE    = yes
+LEADER_ENABLE    = no
 
 AUDIO_ENABLE = no
 

@@ -16,17 +16,6 @@
 #include QMK_KEYBOARD_H
 #include "tacahiroy.h"
 
-enum boardwalk_keycodes {
-  COLEMAK = SAFE_RANGE,
-  QWERTY,
-  LOWER,
-  RAISE,
-  MOUS,
-  ADJUST,
-  VERSION,
-  EPRM
-};
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
  [_COLEMAK] = LAYOUT_2u_arrow(
@@ -47,17 +36,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
  [_LOWER] = LAYOUT_2u_arrow(
     MC_EXPS, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  _______,
-    _______, _______, KC_LEAD, _______, _______, _______, _______, TM_PREV, KC_BSPC, TM_NEXT, _______, _______, _______, KC_PIPE,
-    _______, _______, _______, W_SSHOT, MOUS,    W_IME,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  TOP,     _______, _______,
-    _______, _______, _______, _______, _______, _______, _______, KC_HOME, KC_END,  _______, TM_LSTS, BOTTOM,  _______, _______,
+    _______, _______, _______, _______, _______, TOP,     _______, TM_PREV, KC_BSPC, TM_NEXT, _______, _______, _______, KC_PIPE,
+    _______, _______, _______, W_SSHOT, MOUS,    W_IME,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______, _______, _______,
+    _______, W_QUIT,  _______, _______, _______, BOTTOM,  _______, KC_HOME, KC_END,  _______, TM_LSTS, _______, _______, _______,
     _______, _______, _______, _______,          _______, _______,          _______, _______, _______, _______, _______, _______
   ),
 
  [_RAISE] = LAYOUT_2u_arrow(
     W_S_WIN, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, W_QUIT,
     _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, FX_NEXT, _______, _______, _______, VMW_REL,
-    _______, KC_MINS, KC_EQL,  KC_PLUS, KC_LPRN, KC_LBRC, KC_RBRC, KC_RPRN, KC_DEL,  KC_BSLS, _______, _______, _______, KC_HOME,
-    _______, KC_UNDS, CUT,     COPY2,   PASTE2,  KC_LCBR, KC_RCBR, _______, _______, _______, _______, _______, _______, KC_END,
+    _______, KC_MINS, KC_EQL,  KC_PLUS, KC_LPRN, KC_LBRC, KC_RBRC, KC_RPRN, KC_DEL,  KC_BSLS, _______, _______, _______, _______,
+    _______, KC_UNDS, CUT,     COPY2,   PASTE2,  KC_LCBR, KC_RCBR, _______, _______, _______, _______, _______, _______, _______,
     _______, _______, _______, _______,          _______, _______,          _______, _______, _______, _______, _______, _______
  ),
 

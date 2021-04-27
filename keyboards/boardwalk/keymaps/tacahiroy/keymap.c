@@ -16,17 +16,6 @@
 #include QMK_KEYBOARD_H
 #include "tacahiroy.h"
 
-enum boardwald_keycodes {
-  COLEMAK = SAFE_RANGE,
-  QWERTY,
-  LOWER,
-  RAISE,
-  MOUS,
-  ADJUST,
-  VERSION,
-  EPRM
-};
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
  [_COLEMAK] = LAYOUT_ortho_hhkb(
@@ -47,9 +36,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
  [_LOWER] = LAYOUT_ortho_hhkb(
   MC_EXPS, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F11,  KC_F12,  KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_EQL,  \
-  _______, _______, _______, _______, _______, _______, _______, _______, V_ALTB,  TM_PREV, KC_BSPC, TM_NEXT, _______, KC_PIPE, \
-  _______, _______, _______, W_SSHOT, MOUS,    W_IME,   TOP,     BOTTOM,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______, \
-  _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_HOME, KC_END,  _______, TM_LSTS, _______, \
+  _______, _______, _______, _______, _______, TOP,     _______, _______, V_ALTB,  TM_PREV, KC_BSPC, TM_NEXT, _______, KC_PIPE, \
+  _______, _______, _______, W_SSHOT, MOUS,    W_IME,   _______, _______  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______, \
+  _______, W_QUIT,  _______, _______, _______, BOTTOM,  _______, _______, _______, KC_HOME, KC_END,  _______, TM_LSTS, _______, \
            _______, _______, _______, _______,    _______,           _______,      _______, _______, _______, _______           \
  ),
 
