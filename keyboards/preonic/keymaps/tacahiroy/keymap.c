@@ -119,7 +119,6 @@ void dip_update(uint8_t index, bool active) {
    }
 }
 
-
 bool music_mask_user(uint16_t keycode) {
   switch (keycode) {
     case RAISE:
