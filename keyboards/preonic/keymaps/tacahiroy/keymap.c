@@ -80,7 +80,7 @@ uint8_t muse_offset = 70;
 uint16_t muse_tempo = 50;
 
 #ifdef ENCODER_ENABLE
-void encoder_update_user(uint8_t index, bool clockwise) {
+bool encoder_update_user(uint8_t index, bool clockwise) {
     uint16_t held_keycode_timer = timer_read();
     if (clockwise) {
         register_code(KC_VOLU);
@@ -95,6 +95,8 @@ void encoder_update_user(uint8_t index, bool clockwise) {
         }
         unregister_code(KC_VOLD);
     }
+
+    return true;
 }
 #endif
 
