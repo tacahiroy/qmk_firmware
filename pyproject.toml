@@ -6,7 +6,7 @@ authors = ["Jack Humbert <jack.humb@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-qmk = "^0.0.51"
+qmk = "^0.1.0"
 
 [tool.poetry.dev-dependencies]
 
