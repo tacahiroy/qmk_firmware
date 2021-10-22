@@ -52,20 +52,22 @@ void toggle_ime(bool is_on);
 #define _______  KC_TRNS
 
 // Windows specific key combinations
-#define W_CADEL  LCTL(LALT(KC_DEL)) // Ctrl + Alt + Del
+#define BOTTOM   LCTL(KC_END)
 #define COPY     LCTL(KC_C)         // C-c Copy
 #define COPY2    LALT(KC_C)         // M-c Copy
 #define CUT      LCTL(KC_X)         // C-x Cut
 #define PASTE    LCTL(KC_V)         // C-v Paste
 #define PASTE2   S(KC_INS)          // Shift+Ins Paste
 #define SELALL   LCTL(KC_A)         // C-v Paste
-#define W_QUIT   LALT(KC_F4)        // M-F4 Close window on Windows
-#define W_S_WIN  LCTL(LALT(KC_TAB)) // Activate the window switcher
-#define W_IME    LALT(KC_GRV)       // Toggle IME on / off state on Windows
-#define VMW_REL  RALT(KC_RCTL)      // Hotkey to release keyboard in a VMware window
 #define TOP      LCTL(KC_HOME)
-#define BOTTOM   LCTL(KC_END)
+#define VMW_REL  RALT(KC_RCTL)      // Hotkey to release keyboard in a VMware window
+#define W_CADEL  LCTL(LALT(KC_DEL)) // Ctrl + Alt + Del
+#define W_IME    LALT(KC_GRV)       // Toggle IME on / off state on Windows
+#define W_QUIT   LALT(KC_F4)        // M-F4 Close window on Windows
 #define W_SSHOT  S(LGUI(KC_S))      // Activate the screenshot tool
+#define W_S_WIN  LCTL(LALT(KC_TAB)) // Activate the window switcher
+#define XX_TAB   LCTL(KC_W)         // C-w Close current tab
+#define XX_WIN   LALT(KC_F4)        // M-F4 Close window on Windows
 
 // Vim
 #define V_ALTB   LCTL(KC_6) 				// Changing to an alternate buffer in Vim
