@@ -52,14 +52,15 @@ void toggle_ime(bool is_on);
 #define _______  KC_TRNS
 
 // Windows specific key combinations
+#define TOP      LCTL(KC_HOME)
 #define BOTTOM   LCTL(KC_END)
+
 #define COPY     LCTL(KC_C)         // C-c Copy
-#define COPY2    LALT(KC_C)         // M-c Copy
+#define COPY2    S(LCTL(KC_C))      // C-S-c Copy
 #define CUT      LCTL(KC_X)         // C-x Cut
 #define PASTE    LCTL(KC_V)         // C-v Paste
-#define PASTE2   S(KC_INS)          // Shift+Ins Paste
-#define SELALL   LCTL(KC_A)         // C-v Paste
-#define TOP      LCTL(KC_HOME)
+#define PASTE2   S(LCTL(KC_V))      // C-S-v Paste
+#define SELALL   LCTL(KC_A)         // Select all
 #define VMW_REL  RALT(KC_RCTL)      // Hotkey to release keyboard in a VMware window
 #define W_CADEL  LCTL(LALT(KC_DEL)) // Ctrl + Alt + Del
 #define W_IME    LALT(KC_GRV)       // Toggle IME on / off state on Windows
