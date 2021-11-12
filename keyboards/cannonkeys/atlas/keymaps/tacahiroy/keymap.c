@@ -40,16 +40,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
 [_LOWER] = LAYOUT_ortho_5x12( \
-  MC_EXPS, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_EQL,  \
-  KC_GRV,  KC_F11,  KC_F12,  W_IME,   _______, _______, V_ALTB,  TM_PREV, KC_BSPC, TM_NEXT, _______, KC_PIPE, \
+  W_IME,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_EQL,  \
+  MC_EXPS, KC_F11,  KC_F12,  _______, _______, _______, V_ALTB,  TM_PREV, KC_BSPC, TM_NEXT, _______, KC_PIPE, \
   _______, _______, _______, W_SSHOT, MOUS,    _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______, \
   _______, W_QUIT,  CUT,     COPY2,   PASTE,   TOP,     BOTTOM,  KC_HOME, KC_END,  _______, TM_LSTS, _______, \
   _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______  \
 ),
 
 [_RAISE] = LAYOUT_ortho_5x12( \
-  W_S_WIN, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, W_QUIT,  \
-  KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, FX_NEXT, _______, VMW_REL, \
+  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, W_QUIT,  \
+  W_S_WIN, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, FX_NEXT, _______, VMW_REL, \
   _______, KC_MINS, KC_EQL,  KC_PLUS, KC_LPRN, KC_LBRC, KC_RBRC, KC_RPRN, KC_DEL,  KC_BSLS, _______, _______, \
   _______, KC_UNDS, CUT,     COPY,    PASTE2,  KC_LCBR, KC_RCBR, KC_PGUP, KC_PGDN, _______, _______, _______, \
   _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______  \
