@@ -13,7 +13,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * Copyright 2017-2019 Takahiro Yoshihara <tacahiroy@gmail.com>
+ * Copyright 2017-2021 Takahiro Yoshihara <tacahiroy@gmail.com>
  * This file was based on default/keymap.c.
  */
 
@@ -43,7 +43,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_LOWER] = { /* Lower */
   {KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_PIPE},
-  {_______, _______, _______, W_IME,   MOUS,    _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______},
+  {_______, W_IME, _______,   _______, MOUS,    _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______},
   {_______, W_QUIT,  _______, _______, _______, _______, _______, KC_HOME, KC_END,  _______, TM_LSTS, _______},
   {_______, _______, _______, _______, _______, TOP,     BOTTOM,  _______, _______, _______, _______, _______}
 },
