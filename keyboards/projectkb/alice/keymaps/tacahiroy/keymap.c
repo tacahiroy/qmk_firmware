@@ -45,10 +45,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [_RAISE] = LAYOUT_alice(
-    _______, _______, _______, _______, _______, _______, _______, _______,   _______, _______, _______, _______, _______, _______,          W_QUIT,
+    _______, _______, _______, _______, _______, _______, _______, _______,   W_LFT_D, W_RGT_D, _______, _______, _______, _______,          W_QUIT,
     _______, W_S_WIN, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,            KC_CIRC, KC_AMPR, KC_ASTR, FX_NEXT, _______, _______, _______, _______,
     _______, _______, _______, KC_EQL,  KC_PLUS, KC_LPRN, KC_LBRC,            KC_RBRC, KC_RPRN, KC_DEL,  KC_BSLS, _______, _______,          _______,
-             _______, KC_UNDS, CUT,     COPY2,   PASTE2,  KC_LCBR,            KC_RCBR, KC_RCBR, KC_PGUP, KC_PGDN, _______, _______, _______, _______,
+             _______, KC_UNDS, CUT,     COPY2,   PASTE2,  KC_LCBR,            KC_RCBR, KC_PGUP, KC_PGDN, _______, _______, _______, _______, _______,
              _______,          _______, _______, _______,                          _______,  _______,                                    _______
   ),
 
