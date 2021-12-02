@@ -1,11 +1,8 @@
 #pragma once
 
 #include "quantum.h"
-
 #include "version.h"
 #include "eeprom.h"
-
-/* #include "quantum.h" */
 
 // Layer shorthand
 enum tacahiroy_layers {
@@ -30,45 +27,28 @@ enum tacahiroy_keycodes {
   EPRM
 };
 
-#ifdef TAP_DANCE_ENABLE
-enum {
-    TD_KOPIPE,
-    TD_SELALL_CTRL_ALT,
-    TD_SUPER_ESC,
-};
-
-#define TDKPP  TD(TD_KOPIPE)
-#define TDSACA TD(TD_SELALL_CTRL_ALT)
-#define TDSPESC TD(TD_SUPER_ESC)
-#define KC_TDSPESC TDSPESC
-
-void td_selall_ctrl_alt(qk_tap_dance_state_t *state, void *user_data);
-void td_super_esc(qk_tap_dance_state_t *state, void *user_data);
-#endif
-
 void toggle_ime(bool is_on);
-
-// key combinations
-#define _______  KC_TRNS
 
 // Windows specific key combinations
 #define TOP      LCTL(KC_HOME)
 #define BOTTOM   LCTL(KC_END)
 
-#define COPY     LCTL(KC_C)         // C-c Copy
-#define COPY2    S(LCTL(KC_C))      // C-S-c Copy
-#define CUT      LCTL(KC_X)         // C-x Cut
-#define PASTE    LCTL(KC_V)         // C-v Paste
-#define PASTE2   S(LCTL(KC_V))      // C-S-v Paste
-#define SELALL   LCTL(KC_A)         // Select all
-#define VMW_REL  RALT(KC_RCTL)      // Hotkey to release keyboard in a VMware window
-#define W_CADEL  LCTL(LALT(KC_DEL)) // Ctrl + Alt + Del
-#define W_IME    LALT(KC_GRV)       // Toggle IME on / off state on Windows
-#define W_QUIT   LALT(KC_F4)        // M-F4 Close window on Windows
-#define W_SSHOT  S(LGUI(KC_S))      // Activate the screenshot tool
-#define W_S_WIN  LCTL(LALT(KC_TAB)) // Activate the window switcher
-#define XX_TAB   LCTL(KC_W)         // C-w Close current tab
-#define XX_WIN   LALT(KC_F4)        // M-F4 Close window on Windows
+#define COPY     LCTL(KC_C)           // C-c Copy
+#define COPY2    S(LCTL(KC_C))        // C-S-c Copy
+#define CUT      LCTL(KC_X)           // C-x Cut
+#define PASTE    LCTL(KC_V)           // C-v Paste
+#define PASTE2   S(LCTL(KC_V))        // C-S-v Paste
+#define SELALL   LCTL(KC_A)           // Select all
+#define VMW_REL  RALT(KC_RCTL)        // Hotkey to release keyboard in a VMware window
+#define W_CADEL  LCTL(LALT(KC_DEL))   // Ctrl + Alt + Del
+#define W_IME    LALT(KC_GRV)         // Toggle IME on / off state on Windows
+#define W_QUIT   LALT(KC_F4)          // M-F4 Close window on Windows
+#define W_SSHOT  S(LGUI(KC_S))        // Activate the screenshot tool
+#define W_S_WIN  LCTL(LALT(KC_TAB))   // Activate the window switcher
+#define W_LFT_D  LCTL(LGUI(KC_LEFT))  // Switch to a left desktop
+#define W_RGT_D  LCTL(LGUI(KC_RGHT))  // Switch to a right desktop
+#define XX_TAB   LCTL(KC_W)           // C-w Close current tab
+#define XX_WIN   LALT(KC_F4)          // M-F4 Close window on Windows
 
 // Vim
 #define V_ALTB   LCTL(KC_6) 				// Changing to an alternate buffer in Vim
