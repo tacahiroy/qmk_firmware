@@ -10,7 +10,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,      KC_Q,     KC_W,     KC_F,    KC_P,     KC_G,     KC_J,   KC_L,      KC_U,  KC_Y,     KC_SCLN,  KC_LBRC,  KC_RBRC,  KC_BSLS,
     CTL_X(ESC),  KC_A,     KC_R,     KC_S,    KC_T,     KC_D,     KC_H,   KC_N,      KC_E,  KC_I,     KC_O,     KC_QUOT,  KC_ENT,
     KC_LSFT,     KC_LSFT,  KC_Z,     KC_X,    KC_C,     KC_V,     KC_B,   KC_K,      KC_M,  KC_COMM,  KC_DOT,   KC_SLSH,  KC_RSFT,  KC_RSFT,
-    KC_LGUI,     KC_LALT,  LOWER,                           RS_X(SPC),                                RAISE,    KC_RALT,  KC_RCTL,  MOUS),
+    KC_LGUI,     KC_LALT,  LOWER,                           RS_X(SPC),                                RAISE,    KC_RCTL,  KC_RALT,  MOUS),
 
 [_QWERTY] = LAYOUT_all(
     _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,
@@ -30,7 +30,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______,  _______,  _______,  _______,  _______,  _______,  W_LFT_D,  W_RGT_D,  _______,  _______,  _______,  _______,  _______,  W_QUIT,  W_QUIT,
     W_S_WIN,  KC_EXLM,  KC_AT,    KC_HASH,  KC_DLR,   KC_PERC,  KC_CIRC,  KC_AMPR,  KC_ASTR,  FX_NEXT,  _______,  _______,  _______,  VMW_REL,
     _______,  KC_MINS,  KC_EQL,   KC_PLUS,  KC_LPRN,  KC_LBRC,  KC_RBRC,  KC_RPRN,  KC_DEL,   KC_BSLS,  _______,  _______,  _______,
-    _______,  KC_UNDS,  CUT,      COPY2,    PASTE2,   KC_LCBR,  _______,  KC_RCBR,  KC_PGUP,  KC_PGDN,  _______,  _______,  _______,  _______,
+    _______,  _______,  KC_UNDS,  CUT,      COPY2,    PASTE2,   KC_LCBR,  KC_RCBR,  KC_PGUP,  KC_PGDN,  _______,  _______,  _______,  _______,
     _______,  _______,  _______,                             _______,                                   _______,  _______,  _______,  _______),
 
 [_MOUS] = LAYOUT_all(
