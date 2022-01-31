@@ -13,7 +13,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * Copyright 2021 Takahiro Yoshihara <tacahiroy@gmail.com>
+ * Copyright 2021-2022 Takahiro Yoshihara <tacahiroy@gmail.com>
  * Created my own version of this file based on preonic/default.
  */
 
