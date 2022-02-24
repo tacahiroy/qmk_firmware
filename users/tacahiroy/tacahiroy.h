@@ -27,6 +27,17 @@ enum tacahiroy_keycodes {
   EPRM
 };
 
+// Macro ID numbers
+#define M_MHEN 1
+#define M_HENK 2
+#define M_EXPS 3
+
+// Macro keys
+#define MK_MHEN MACROTAP(M_MHEN)
+#define MK_HENK MACROTAP(M_HENK)
+#define MK_EXPS M(M_EXPS) // Expose
+
+
 void toggle_ime(bool is_on);
 
 // Windows specific key combinations
@@ -39,7 +50,7 @@ void toggle_ime(bool is_on);
 #define PASTE    LCTL(KC_V)           // C-v Paste
 #define PASTE2   S(LCTL(KC_V))        // C-S-v Paste
 #define SELALL   LCTL(KC_A)           // Select all
-#define VMW_REL  RALT(KC_RCTL)        // Hotkey to release keyboard in a VMware window
+#define RAL_RCT  RALT(KC_RCTL)        // Hotkey to release keyboard in a VMware window
 #define W_CADEL  LCTL(LALT(KC_DEL))   // Ctrl + Alt + Del
 #define W_IME    LALT(KC_GRV)         // Toggle IME on / off state on Windows
 #define W_QUIT   LALT(KC_F4)          // M-F4 Close window on Windows
@@ -66,19 +77,12 @@ void toggle_ime(bool is_on);
 #define FX_NEXT  LCTL(KC_TAB)
 #define FX_PREV  LCTL(LSFT(KC_TAB))
 
-#define CTL_X(k) MT(MOD_LCTL, KC_ ## k)
-#define SFT_X(k) MT(MOD_LSFT, KC_ ## k)
-#define MEH_X(k) MT((MOD_LCTL | MOD_LSFT | MOD_LALT), KC_ ## k)
+#define CTL_X(k) LCTL_T(KC_ ## k)
+#define SFT_X(k) LSFT_T(KC_ ## k)
+#define MEH_X(k) MEH_T(KC_ ## k)
 
 #define LW_X(k)  LT(_LOWER, KC_ ## k)
 #define RS_X(k)  LT(_RAISE, KC_ ## k)
 #define MOV_X(k) LT(_MOVE, KC_ ## k)
 #define MDI_X(k) LT(_MDIA, KC_ ## k)
 #define MOS_X(k) LT(_MOUS, KC_ ## k)
-
-#define maVMW_REL 2
-#define maEXPS 3
-
-// Shortcut for macros
-#define MC_VMW_REL M(maVMW_REL)
-#define MC_EXPS M(maEXPS)
