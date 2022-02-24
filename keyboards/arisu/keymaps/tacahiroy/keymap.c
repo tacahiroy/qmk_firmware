@@ -13,7 +13,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * Copyright 2021 Takahiro Yoshihara <tacahiroy@gmail[dot]com>
+ * Copyright 2021-2022 Takahiro Yoshihara <tacahiroy@gmail.com>
  */
 #include QMK_KEYBOARD_H
 #include "tacahiroy.h"
@@ -38,13 +38,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_LOWER] = LAYOUT(
     W_IME,    KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F12,  KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_MUTE,  KC_MSTP,  KC_MPLY,
     MK_EXPS,  _______,  W_SSHOT,  KC_MS_U,  _______,  KC_BTN1,           KC_BTN2,  TM_PREV,  KC_BSPC,  TM_NEXT,  KC_PIPE,  KC_LBRC,  KC_RBRC,  KC_MNXT,  KC_VOLU,
-    KC_CAPS,  _______,  KC_MS_L,  KC_MS_D,  KC_MS_R,  MOUS,              KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  TM_SSH,   _______,  _______,            KC_VOLD,
+    KC_CAPS,  _______,  KC_MS_L,  KC_MS_D,  KC_MS_R,  _______,           KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  TM_SSH,   _______,  _______,            KC_VOLD,
     _______,  W_QUIT,   _______,  _______,  _______,  TOP,               BOTTOM,   KC_HOME,  KC_END,   _______,  TM_LSTS,  _______,  _______,
     _______,            _______,            _______,  _______,           KC_SPC,   _______,                                KC_MPRV,  _______,  KC_MNXT
   ),
 
   [_RAISE] = LAYOUT(
-    RAL_RCT,  _______,  _______,  _______,  _______,  _______,  _______, _______,  _______,  _______,  _______,  _______,  _______,  _______,  W_QUIT,  _______,
+    _______,  _______,  _______,  _______,  _______,  _______,  _______, _______,  _______,  _______,  _______,  _______,  _______,  _______,  W_QUIT,  RESET,
     W_S_WIN,  KC_EXLM,  KC_AT,    KC_HASH,  KC_DLR,   KC_PERC,           KC_CIRC,  KC_AMPR,  KC_ASTR,  FX_NEXT,  _______,  _______,  _______,  RAL_RCT, _______,
 
     _______,  _______,  KC_EQL,   KC_PLUS,  KC_LPRN,  KC_LBRC,           KC_RBRC,  KC_RPRN,  KC_DEL,   KC_BSLS,  _______,  _______,  _______,           _______,
