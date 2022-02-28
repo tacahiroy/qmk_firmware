@@ -20,7 +20,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         set_single_persistent_default_layer(_COLEMAK);
       }
       return false;
-      break;
 
     case QWERTY:
       if (record->event.pressed) {
@@ -28,7 +27,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         set_single_persistent_default_layer(_QWERTY);
       }
       return false;
-      break;
 
     case LOWER:
       if (record->event.pressed) {
@@ -44,7 +42,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         lower_pressed = false;
       }
       return false;
-      break;
 
     case RAISE:
       if (record->event.pressed) {
@@ -61,6 +58,19 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       }
       return false;
       break;
+
+    case M_HENK:
+      if (record->event.pressed) {
+        toggle_ime(true);
+        lower_pressed = false;
+      }
+      return false;
+
+    case M_MHEN:
+      if (record->event.pressed) {
+        toggle_ime(false);
+      }
+      return false;
 
     case MOUS:
       if (record->event.pressed) {

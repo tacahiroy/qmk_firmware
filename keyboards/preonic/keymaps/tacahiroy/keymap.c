@@ -41,16 +41,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
 [_LOWER] = LAYOUT_preonic_grid(
-  W_IME,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_EQL,
-  MC_EXPS, KC_F11,  KC_F12,  _______, _______, _______, V_ALTB,  TM_PREV, KC_BSPC, TM_NEXT, _______, KC_PIPE,
-  _______, _______, _______, W_SSHOT, MOUS,    _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______,
+  W_IME,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,
+  M_EXPS,  XX_WIN,  XX_TAB,  KC_MS_U, W_SSHOT, KC_BTN1, V_ALTB,  TM_PREV, KC_BSPC, TM_NEXT, KC_PIPE, KC_F12,
+  _______, _______, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN2, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______,
   _______, _______, _______, _______, _______, TOP,     BOTTOM,  KC_HOME, KC_END,  _______, TM_LSTS, _______,
   _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
 ),
 
 [_RAISE] = LAYOUT_preonic_grid(
-  KC_ESC,  _______, _______, _______, _______, _______, W_LFT_D, W_RGT_D, _______, _______, _______, W_QUIT,
-  W_S_WIN, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, FX_NEXT, _______, VMW_REL,
+  RESET,   _______, _______, _______, _______, _______, W_LFT_D, W_RGT_D, _______, _______, _______, XX_WIN,
+  W_S_WIN, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, FX_NEXT, _______, RAL_RCT,
   _______, KC_MINS, KC_EQL,  KC_PLUS, KC_LPRN, KC_LBRC, KC_RBRC, KC_RPRN, KC_DEL,  KC_BSLS, _______, _______,
   _______, KC_UNDS, CUT,     COPY2,   PASTE2,  KC_LCBR, KC_RCBR, KC_PGUP, KC_PGDN, _______, _______, _______,
   _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______

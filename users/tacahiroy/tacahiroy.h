@@ -26,7 +26,7 @@ enum tacahiroy_keycodes {
   VERSION,
   EPRM,
   M_MHEN,
-  M_MHENK,
+  M_HENK,
   M_EXPS,
 };
 

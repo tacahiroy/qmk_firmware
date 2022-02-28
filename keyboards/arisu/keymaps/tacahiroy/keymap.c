@@ -37,10 +37,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT(
     W_IME,    KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F12,  KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_MUTE,  KC_MSTP,  KC_MPLY,
-    MK_EXPS,  _______,  W_SSHOT,  KC_MS_U,  _______,  KC_BTN1,           KC_BTN2,  TM_PREV,  KC_BSPC,  TM_NEXT,  KC_PIPE,  KC_LBRC,  KC_RBRC,  KC_MNXT,  KC_VOLU,
+    M_EXPS,   _______,  W_SSHOT,  KC_MS_U,  _______,  KC_BTN1,           KC_BTN2,  TM_PREV,  KC_BSPC,  TM_NEXT,  KC_PIPE,  KC_LBRC,  KC_RBRC,  KC_MNXT,  KC_VOLU,
     KC_CAPS,  _______,  KC_MS_L,  KC_MS_D,  KC_MS_R,  _______,           KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  TM_SSH,   _______,  _______,            KC_VOLD,
-    _______,  W_QUIT,   _______,  _______,  _______,  TOP,               BOTTOM,   KC_HOME,  KC_END,   _______,  TM_LSTS,  _______,  _______,
-    _______,            _______,            _______,  _______,           KC_SPC,   _______,                                KC_MPRV,  _______,  KC_MNXT
+    _______,  W_QUIT,   _______,  _______,  _______,  TOP,               BOTTOM,   KC_HOME,  KC_END,   KC_SPC,   TM_LSTS,  _______,  _______,
+    _______,            _______,            _______,  _______,           M_HENK,   _______,                                KC_MPRV,  _______,  KC_MNXT
   ),
 
   [_RAISE] = LAYOUT(
