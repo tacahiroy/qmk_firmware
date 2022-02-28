@@ -24,19 +24,11 @@ enum tacahiroy_keycodes {
   MOVE,
   ADJUST,
   VERSION,
-  EPRM
+  EPRM,
+  M_MHEN,
+  M_MHENK,
+  M_EXPS,
 };
-
-// Macro ID numbers
-#define M_MHEN 1
-#define M_HENK 2
-#define M_EXPS 3
-
-// Macro keys
-#define MK_MHEN MACROTAP(M_MHEN)
-#define MK_HENK MACROTAP(M_HENK)
-#define MK_EXPS M(M_EXPS) // Expose
-
 
 void toggle_ime(bool is_on);
 

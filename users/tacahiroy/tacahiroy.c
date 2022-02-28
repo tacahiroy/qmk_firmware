@@ -1,31 +1,12 @@
 #include "tacahiroy.h"
 
+
 void toggle_ime(bool is_on) {
     if (is_on) {
         tap_code(KC_HENK);
     } else {
         tap_code(KC_MHEN);
     }
-}
-
-const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
-{
-    // MACRODOWN only works in this function
-    switch(id) {
-        case M_EXPS:
-            // Escape from VirtualBox window :|
-            if (record->event.pressed) {
-                return MACRO( D(RCTL), D(RALT), U(RCTL), U(RALT), D(LCTL), D(LALT), T(TAB), END);
-            }
-            break;
-
-        case M_MHEN:
-            return MACRO_TAP_HOLD_LAYER(record, MACRO(T(INT5), END), _LOWER);
-
-        case M_HENK:
-            return MACRO_TAP_HOLD_LAYER(record, MACRO(T(INT4), END), _RAISE);
-    }
-    return MACRO_NONE;
 }
 
 static bool lower_pressed = false;
@@ -112,27 +93,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
           SEND_STRING(QMK_KEYBOARD "/" QMK_KEYMAP " @ " QMK_VERSION);
       }
       return false;
-      break;
 
-    case MK_HENK:
+    case M_EXPS:
+      // Escape from VirtualBox / ESXi window :|
       if (record->event.pressed) {
-        layer_on(_LOWER);
-        update_tri_layer(_LOWER, _RAISE, _ADJUST);
-      } else {
-        layer_off(_LOWER);
-        update_tri_layer(_LOWER, _RAISE, _ADJUST);
+          set_mods(MOD_BIT(KC_RCTL) | MOD_BIT(KC_RALT)); clear_mods();
+          set_mods(MOD_BIT(KC_LCTL) | MOD_BIT(KC_LALT)); tap_code(KC_TAB); clear_mods();
       }
       return false;
-      break;
-
-    case MK_MHEN:
-      if (record->event.pressed) {
-        update_tri_layer(_LOWER, _RAISE, _ADJUST);
-      } else {
-        update_tri_layer(_LOWER, _RAISE, _ADJUST);
-      }
-      return false;
-      break;
 
     default:
       if (record->event.pressed) {
