@@ -38,7 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
  [_LOWER] = LAYOUT_ortho_7u(
     W_IME,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_MPLY,
-    M_EXPS,  XX_WIN,  XX_TAB,  KC_MS_U, W_SSHOT, _______, _______, TM_PREV, KC_BSPC, TM_NEXT, KC_PIPE, KC_BTN1, KC_BTN2, KC_PIPE,
+    M_EXPS,  XX_WIN,  XX_TAB,  KC_MS_U, W_SSHOT, KC_PGUP, KC_PGDN, TM_PREV, KC_BSPC, TM_NEXT, KC_PIPE, KC_BTN1, KC_BTN2, KC_PIPE,
     _______, _______, KC_MS_L, KC_MS_D, KC_MS_R, MOUS,    KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______, _______, RESET,
     _______, _______, CUT,     COPY2,   PASTE2,  TOP,     BOTTOM,  KC_HOME, KC_END,  _______, TM_LSTS, _______, KC_VOLU, KC_VOLD,
              _______, _______,                       _______,                                          _______, _______
