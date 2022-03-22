@@ -22,6 +22,9 @@ case "$1" in
     au|arisu)
         kb=arisu
         ;;
+    pa|palice|projectkb/alice)
+        kb=projectkb/alice/rev2
+        ;;
     a|at|atlas)
         kb=cannonkeys/atlas
         ;;
