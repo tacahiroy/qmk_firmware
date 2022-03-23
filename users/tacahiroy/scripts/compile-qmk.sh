@@ -19,7 +19,7 @@ case "$1" in
     pl|planck)
         kb=planck/rev4
         ;;
-    au|arisu)
+    ar|arisu)
         kb=arisu
         ;;
     pa|palice|projectkb/alice)
