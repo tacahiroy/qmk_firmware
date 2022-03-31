@@ -2,8 +2,20 @@
 
 set -Cueo pipefail
 
+list-boards() {
+    printf "%-18s\t%-20s\n" 'a|at|atlas'         'cannonkeys/atlas'
+    printf "%-18s\t%-20s\n" 'aa|ata|atlas_alps'  'cannonkeys/atlas_alps'
+    printf "%-18s\t%-20s\n" 'ar'                 'arisu'
+    printf "%-18s\t%-20s\n" 'b|bw'               'boardwalk'
+    printf "%-18s\t%-20s\n" 'pa|palice'          'projectkb/alice/rev2'
+    printf "%-18s\t%-20s\n" 'pl'                 'planck/rev4'
+    printf "%-18s\t%-20s\n" 'pr'                 'preonic/rev3'
+    printf "%-18s\t%-20s\n" 'l|lj'               'peej/lumberjack'
+}
+
 if [ $# -lt 1 ]; then
     echo "Usage: $0 KEYBOARD KEYMAP"
+    list-boards
     exit 1
 fi
 
@@ -30,6 +42,9 @@ case "$1" in
         ;;
     aa|ata|atlas_alps)
         kb=cannonkeys/atlas_alps
+        ;;
+    l|lj|lumberjack)
+        kb=peej/lumberjack
         ;;
     *)
         kb=$1
