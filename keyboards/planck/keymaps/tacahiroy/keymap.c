@@ -43,20 +43,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_LOWER] = { /* Lower */
   {KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_PIPE},
-  {_______, W_IME, _______,   _______, MOUS,    _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______},
-  {_______, W_QUIT,  _______, _______, _______, _______, _______, KC_HOME, KC_END,  _______, TM_LSTS, _______},
-  {_______, _______, _______, _______, _______, TOP,     BOTTOM,  _______, _______, _______, _______, _______}
+  {_______, W_IME,   _______, _______, MOUS,    _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______},
+  {_______, XX_WIN,  _______, _______, _______, TOP,     BOTTOM,  KC_HOME, KC_END,  _______, TM_LSTS, _______},
+  {_______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______}
 },
 
 [_RAISE] = { /* Raise */
-  {KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, FX_NEXT, _______, W_QUIT},
-  {_______, KC_ASTR, KC_EQL,  KC_PLUS, KC_LPRN, KC_LBRC, KC_RBRC, KC_RPRN, KC_DEL,  KC_BSLS, MOVE,    VMW_REL},
-  {_______, KC_ESC,  CUT,     COPY2,   PASTE2,  KC_LCBR, KC_RCBR, KC_PGUP, KC_PGDN, MC_EXPS, _______, _______},
+  {KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, FX_NEXT, _______, XX_WIN},
+  {_______, KC_ASTR, KC_EQL,  KC_PLUS, KC_LPRN, KC_LBRC, KC_RBRC, KC_RPRN, KC_DEL,  KC_BSLS, MOVE,    RAL_RCT},
+  {_______, KC_ESC,  CUT,     COPY2,   PASTE2,  KC_LCBR, KC_RCBR, KC_PGUP, KC_PGDN, _______, _______, _______},
   {_______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______}
 },
 
 [_MOVE] = { /* Move */
-  {MC_EXPS, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   V_ALTB,  TM_PREV, TM_PWIN, TM_NEXT, _______, _______},
+  {M_EXPS,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   V_ALTB,  TM_PREV, TM_PWIN, TM_NEXT, _______, _______},
   {_______, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  _______, _______, _______, _______, TM_SSH,  _______},
   {_______, _______, _______, _______, KC_F11,  KC_F12,  _______, _______, _______, _______, _______, _______},
   {_______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______}
@@ -71,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_ADJUST] = { /* Adjust (Lower + Raise) */
   {RESET,   _______, EPRM,    _______, _______, _______, _______, _______, _______,  _______, _______, _______},
-  {_______, W_CADEL, _______, _______, _______, DEBUG,   _______, _______, _______,  _______, _______, _______},
+  {_______, CADEL,   _______, _______, _______, DEBUG,   _______, _______, _______,  _______, _______, _______},
   {_______, _______, _______, _______, VERSION, _______, _______, QWERTY,  COLEMAK,  _______, _______, _______},
   {_______, _______, _______, _______, _______, _______, _______, _______, _______,  _______, _______, _______}
 }
