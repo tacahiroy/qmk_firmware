@@ -1,5 +1,5 @@
 /*
-Copyright 2022 Tommy Alatalo <@altosys>
+Copyright 2021 @cyril279
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -14,14 +14,8 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #pragma once
 
-/* Use I2C or Serial, not both */
-#define USE_I2C
-/* #define USE_SERIAL */
-
-/* Select hand configuration */
-#define EE_HANDS
-/* #define MASTER_LEFT */
-/* #define MASTER_RIGHT */
+#define TAPPING_TERM 150
+#define TAPPING_TERM_PER_KEY
+#define IGNORE_MOD_TAP_INTERRUPT
