@@ -24,7 +24,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,      KC_Q,  KC_W,     KC_F,  KC_P,   KC_G,             KC_J,       KC_L,     KC_U,     KC_Y,    KC_SCLN,  KC_LBRC,  KC_RBRC, KC_BSLS,   KC_PGUP,
     CTL_X(ESC),  KC_A,  KC_R,     KC_S,  KC_T,   KC_D,             KC_H,       KC_N,     KC_E,     KC_I,    KC_O,     KC_QUOT,  KC_ENT,              KC_PGDN,
     KC_LSFT,     KC_Z,  KC_X,     KC_C,  KC_V,   KC_B,             KC_K,       KC_M,     KC_COMM,  KC_DOT,  KC_SLSH,  KC_RSFT,  KC_UP,
-    KC_LGUI,            KC_LALT,         LOWER,  KC_ESC,           RS_X(SPC),  KC_RCTL,                               KC_LEFT,  KC_DOWN,  KC_RGHT
+    KC_LGUI,            KC_LALT,         LOWER,  RAISE,            RS_X(SPC),  KC_RCTL,                               KC_LEFT,  KC_DOWN,  KC_RGHT
   ),
 
   [_QWERTY] = LAYOUT(
@@ -38,7 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_LOWER] = LAYOUT(
     W_IME,    KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F12,  KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   _______,  KC_MUTE,  KC_MPLY,
     M_EXPS,   XX_WIN,   XX_TAB,   KC_MS_U,  W_SSHOT,  KC_BTN1,           KC_BTN2,  TM_PREV,  KC_BSPC,  TM_NEXT,  KC_PIPE,  KC_LBRC,  KC_RBRC,  _______,   KC_VOLU,
-    _______,  _______,  KC_MS_L,  KC_MS_D,  KC_MS_R,  MOUS,              KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  TM_SSH,   RAISE,    _______,              KC_VOLD,
+    _______,  KC_ESC,   KC_MS_L,  KC_MS_D,  KC_MS_R,  MOUS,              KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  TM_SSH,   RAISE,    _______,              KC_VOLD,
     _______,  _______,  _______,  _______,  _______,  TOP,               BOTTOM,   KC_HOME,  KC_END,   KC_SPC,   TM_LSTS,  _______,  _______,
     _______,            _______,            _______,  _______,           M_HENK,   _______,                                _______,  _______,  _______
   ),
