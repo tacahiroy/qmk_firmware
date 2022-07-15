@@ -46,6 +46,9 @@ case "$1" in
     l|lj|lumberjack)
         kb=peej/lumberjack
         ;;
+    plain|plain60)
+        kb=evyd13/plain60
+        ;;
     *)
         kb=$1
         ;;
