@@ -52,6 +52,7 @@ void toggle_ime(bool is_on);
 #define XX_WIN   LALT(KC_F4)         // M-F4 Close window on Windows
 #define ZOOMIN   LCTL(KC_EQL)        // C-+ to increase font size
 #define ZOOMOUT  LCTL(KC_MINS)       // C-- to decrease font size
+#define MIC_TGL  LGUI(KC_N)          // Win-N to mute / unmute microphone
 
 // Vim
 #define V_ALTB   LCTL(KC_6) 				// Changing to an alternate buffer in Vim
