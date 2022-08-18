@@ -49,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  [_RAISE] = LAYOUT_ortho_hhkb(
   _______,  ZOOMIN,  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, ZOOMOUT, XX_WIN,  \
   W_S_WIN,  KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, _______, _______, KC_CIRC, KC_AMPR, KC_ASTR, FX_NEXT, _______, RAL_RCT, \
-  _______,  KC_MINS, KC_EQL,  KC_PLUS, KC_LPRN, KC_LBRC, _______, _______, KC_RBRC, KC_RPRN, KC_DEL,  KC_BSLS, _______, _______, \
+  _______,  KC_MINS, KC_EQL,  KC_PLUS, KC_LPRN, KC_LBRC, _______, _______, KC_RBRC, KC_RPRN, KC_DEL,  KC_BSLS, MIC_TGL, _______, \
   _______,  KC_UNDS, CUT,     COPY2,   PASTE2,  KC_LCBR, _______, _______, KC_RCBR, KC_PGUP, KC_PGDN, _______, _______, _______, \
             _______, _______, _______, _______,    _______,          _______,       _______, _______, _______, _______           \
  ),
