@@ -11,6 +11,7 @@ list-boards() {
     printf "%-18s\t%-20s\n" 'pl'                 'planck/rev4'
     printf "%-18s\t%-20s\n" 'pr'                 'preonic/rev3'
     printf "%-18s\t%-20s\n" 'l|lj'               'peej/lumberjack'
+    printf "%-18s\t%-20s\n" 'ep|plain60'         'evyd13/plain60'
 }
 
 if [ $# -lt 1 ]; then
@@ -24,6 +25,9 @@ km="tacahiroy${2:-}"
 case "$1" in
     b|bw|boardwalk)
         kb=boardwalk
+        ;;
+    ev|ep|plain60)
+        kb=evyd13/plain60
         ;;
     pr|preonic)
         kb=preonic/rev3
