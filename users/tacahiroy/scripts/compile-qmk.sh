@@ -12,6 +12,7 @@ list-boards() {
     printf "%-18s\t%-20s\n" 'pr'                 'preonic/rev3'
     printf "%-18s\t%-20s\n" 'l|lj'               'peej/lumberjack'
     printf "%-18s\t%-20s\n" 'ep|plain60'         'evyd13/plain60'
+    printf "%-18s\t%-20s\n" 't|tmov2'            'cannonkeys/tmov2'
 }
 
 if [ $# -lt 1 ]; then
@@ -50,8 +51,8 @@ case "$1" in
     l|lj|lumberjack)
         kb=peej/lumberjack
         ;;
-    plain|plain60)
-        kb=evyd13/plain60
+    t|tmo*)
+        kb=cannonkeys/tmov2
         ;;
     *)
         kb=$1
