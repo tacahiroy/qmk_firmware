@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  ),
 
  [_RAISE] = LAYOUT_ortho_5x12(
-   RESET,   ZOOMIN,  _______, _______, _______, _______, WS_LEFT, WS_RGHT, _______, _______, ZOOMOUT, XX_WIN,
+   QK_BOOT, ZOOMIN,  _______, _______, _______, _______, WS_LEFT, WS_RGHT, _______, _______, ZOOMOUT, XX_WIN,
    W_S_WIN, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, FX_NEXT, _______, RAL_RCT,
    _______, KC_MINS, KC_EQL,  KC_PLUS, KC_LPRN, KC_LBRC, KC_RBRC, KC_RPRN, KC_DEL,  KC_BSLS, MIC_TGL, _______,
    _______, KC_UNDS, CUT,     COPY2,   PASTE2,  KC_LCBR, KC_RCBR, KC_PGUP, KC_PGDN, _______, _______, _______,
@@ -56,7 +56,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  ),
 
  [_MOUS] = LAYOUT_ortho_5x12(
-   RESET,   _______, _______, _______, _______, _______, _______, _______, _______, KC_MUTE, KC_MSTP, KC_MPLY,
+   QK_BOOT, _______, _______, _______, _______, _______, _______, _______, _______, KC_MUTE, KC_MSTP, KC_MPLY,
    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_VOLD, KC_VOLU,
    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_MPRV, KC_MNXT,
    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
@@ -64,7 +64,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  ),
 
  [_ADJUST] = LAYOUT_ortho_5x12(
-   RESET,   _______, EPRM,    _______, _______, _______, _______, _______, _______,  _______, _______,  _______,
+   QK_BOOT, _______, EPRM,    _______, _______, _______, _______, _______, _______,  _______, _______,  _______,
    _______, _______, _______, _______, _______, _______, _______, RGB_VAI, RGB_SAI,  RGB_HUI, RGB_MOD,  _______,
    _______, CADEL,   _______, _______, _______, DEBUG,   _______, RGB_VAD, RGB_SAD,  RGB_HUD, RGB_RMOD, _______,
    _______, _______, _______, _______, VERSION, _______, _______, QWERTY,  COLEMAK,  _______, RGB_TOG,  _______,

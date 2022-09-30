@@ -8,10 +8,10 @@ list-boards() {
     printf "%-18s\t%-20s\n" 'ar'                 'arisu'
     printf "%-18s\t%-20s\n" 'b|bw'               'boardwalk'
     printf "%-18s\t%-20s\n" 'pa|palice'          'projectkb/alice/rev2'
-    printf "%-18s\t%-20s\n" 'pl'                 'planck/rev4'
-    printf "%-18s\t%-20s\n" 'pr'                 'preonic/rev3'
+    printf "%-18s\t%-20s\n" 'pl|planck'          'planck/rev4'
+    printf "%-18s\t%-20s\n" 'pr|preonic'         'preonic/rev3'
     printf "%-18s\t%-20s\n" 'l|lj'               'peej/lumberjack'
-    printf "%-18s\t%-20s\n" 'ep|plain60'         'evyd13/plain60'
+    printf "%-18s\t%-20s\n" 'p60|plain60'        'evyd13/plain60'
     printf "%-18s\t%-20s\n" 't|tmov2'            'cannonkeys/tmov2'
     printf "%-18s\t%-20s\n" 'y|yeti'             'axolstudio/yeti/soldered'
 }
@@ -28,7 +28,7 @@ case "$1" in
     b|bw|boardwalk)
         kb=boardwalk
         ;;
-    ev|ep|plain60)
+    p60|plain60)
         kb=evyd13/plain60
         ;;
     pr|preonic)

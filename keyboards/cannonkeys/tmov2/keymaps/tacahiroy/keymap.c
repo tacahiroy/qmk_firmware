@@ -1,7 +1,4 @@
 /*
-Copyright 2022 Takahiro YOSHIHARA <tacahiroy@gmail.com>
-This file is based on cannonkeys/tmov2/keymaps/default/keymap.c
-
 Copyright 2012,2013 Jun Wako <wakojun@gmail.com>
 
 This program is free software: you can redistribute it and/or modify
@@ -16,6 +13,9 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+Copyright 2022 Takahiro YOSHIHARA <tacahiroy@gmail.com>
+This file is based on cannonkeys/tmov2/keymaps/default/keymap.c@bbc3bc55
 */
 #include QMK_KEYBOARD_H
 
@@ -23,10 +23,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[_COLEMAK] = LAYOUT_default(
-        KC_ESC,   KC_TAB,      KC_Q,     KC_W,    KC_F,  KC_P,  KC_G,  KC_J,  KC_L,  KC_U,  KC_Y,     KC_SCLN,  KC_MINS,  KC_EQL,   KC_BSPC,
-        KC_PGUP,  CTL_X(ESC),  KC_A,     KC_R,    KC_S,  KC_T,  KC_D,  KC_H,  KC_N,  KC_E,  KC_I,     KC_O,     KC_QUOT,  KC_ENT,
-        KC_PGDN,  KC_LSFT,     XXXXXXX,  KC_Z,    KC_X,  KC_C,  KC_V,  KC_B,  KC_K,  KC_M,  KC_COMM,  KC_DOT,   KC_SLSH,  KC_RSFT,  MOUS,
-        KC_MPLY,               KC_LGUI,  KC_LALT,        LOWER,               KC_SPC,       RAISE,              KC_RCTL
+        KC_ESC,   KC_TAB,      KC_Q,     KC_W,    KC_F,  KC_P,  KC_G,  KC_J,  KC_L,   KC_U,  KC_Y,     KC_SCLN,  KC_MINS,  KC_EQL,   KC_BSPC,
+        KC_PGUP,  CTL_X(ESC),  KC_A,     KC_R,    KC_S,  KC_T,  KC_D,  KC_H,  KC_N,   KC_E,  KC_I,     KC_O,     KC_QUOT,  KC_ENT,
+        KC_PGDN,  KC_LSFT,     XXXXXXX,  KC_Z,    KC_X,  KC_C,  KC_V,  KC_B,  KC_K,   KC_M,  KC_COMM,  KC_DOT,   KC_SLSH,  KC_RSFT,  MOUS,
+        KC_MPLY,               KC_LGUI,  KC_LALT,        LOWER,               KC_SPC,        RAISE,              KC_RCTL
     ),
 
 	[_QWERTY] = LAYOUT_default(
@@ -40,7 +40,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         W_IME,    KC_GRV,   KC_1,     KC_2,     KC_3,     KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     _______,  _______,  _______,
         KC_VOLU,  _______,  _______,  _______,  W_SSHOT,  KC_F,     KC_G,     KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  TM_SSH,   _______,  _______,
         KC_VOLD,  _______,  XXXXXXX,  _______,  _______,  _______,  _______,  TOP,      BOTTOM,   KC_HOME,  KC_END,   _______,  _______,  _______,  _______,
-        _______,            _______,  _______,        _______,             _______,     _______,            _______
+        _______,            _______,  _______,            _______,            M_HENK,   _______,            _______
     ),
 
 	[_RAISE] = LAYOUT_default(
