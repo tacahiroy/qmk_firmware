@@ -76,6 +76,5 @@ void toggle_ime(bool is_on);
 
 #define LW_X(k)  LT(_LOWER, KC_ ## k)
 #define RS_X(k)  LT(_RAISE, KC_ ## k)
-#define MOV_X(k) LT(_MOVE, KC_ ## k)
-#define MDI_X(k) LT(_MDIA, KC_ ## k)
-#define MOS_X(k) LT(_MOUS, KC_ ## k)
+#define MV_X(k)  LT(_MOVE, KC_ ## k)
+#define MO_X(k)  LT(_MOUS, KC_ ## k)
