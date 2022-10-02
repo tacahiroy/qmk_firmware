@@ -38,7 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 	[_LOWER] = LAYOUT_default(
         W_IME,    KC_GRV,   KC_1,     KC_2,     KC_3,     KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     KC_PIPE,  _______,  KC_DEL,
-        _______,  _______,  _______,  _______,  W_SSHOT,  KC_F5,    _______,  KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  TM_SSH,   _______,  _______,
+        _______,  _______,  _______,  XX_TAB,   W_SSHOT,  KC_F5,    _______,  KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  TM_SSH,   _______,  _______,
         _______,  _______,  XXXXXXX,  _______,  _______,  _______,  _______,  TOP,      BOTTOM,   KC_HOME,  KC_END,   _______,  _______,  _______,  _______,
         _______,            _______,  _______,            _______,            M_HENK,   _______,            _______
     ),
