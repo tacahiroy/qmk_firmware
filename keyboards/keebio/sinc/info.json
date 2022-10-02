@@ -5,6 +5,7 @@
     "usb": {
         "vid": "0xCB10"
     },
+<<<<<<< HEAD
     "processor": "atmega32u4",
     "protocol": "atmel-dfu",
     "features": {
@@ -23,6 +24,27 @@
     "build": {
         "lto": true,
     },
+||||||| 7b4dc5a7e4
+=======
+    "processor": "atmega32u4",
+    "bootloader": "atmel-dfu",
+    "features": {
+        "audio": false,
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "extrakey": true,
+        "mousekey": false,
+        "nkro": false,
+        "unicode": false,
+    },
+    "split": {
+        "enabled": true,
+    },
+    "build": {
+        "lto": true,
+    },
+>>>>>>> upstream/master
     "layouts": {
         "LAYOUT_75": {
             "layout": [

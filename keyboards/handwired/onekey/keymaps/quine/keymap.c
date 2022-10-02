@@ -1,7 +1,19 @@
+<<<<<<< HEAD
 #include <quantum.h>
+||||||| 7b4dc5a7e4
+#include <handwired/onekey/onekey.h>
+=======
+#include QMK_KEYBOARD_H
+>>>>>>> upstream/master
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = { LAYOUT_ortho_1x1(KC_A) };
 const char *buf[30] = {
+<<<<<<< HEAD
 "#include <quantum.h>",
+||||||| 7b4dc5a7e4
+"#include <handwired/onekey/onekey.h>",
+=======
+"#include QMK_KEYBOARD_H",
+>>>>>>> upstream/master
 "const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = { LAYOUT_ortho_1x1(KC_A) };",
 "const char *buf[30] = {",
 "",
@@ -57,4 +69,3 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   }
   return true;
 };
-
