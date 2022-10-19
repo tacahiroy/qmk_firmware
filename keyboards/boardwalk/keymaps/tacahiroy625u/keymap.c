@@ -23,7 +23,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  [_COLEMAK] = LAYOUT_625u_arrow(
     KC_GRV,      KC_1,     KC_2,    KC_3,  KC_4,  KC_5,  KC_6,  KC_7,  KC_8,     KC_9,    KC_0,     KC_MINS,  KC_EQL,   KC_BSPC,
     KC_TAB,      KC_Q,     KC_W,    KC_F,  KC_P,  KC_G,  KC_J,  KC_L,  KC_U,     KC_Y,    KC_SCLN,  KC_LBRC,  KC_RBRC,  KC_BSLS,
-    CTL_X(ESC),  KC_A,     KC_R,    KC_S,  KC_T,  KC_D,  KC_H,  KC_N,  KC_E,     KC_I,    KC_O,     KC_QUOT,  KC_ENT,   KC_PGUP,
+    CTL_X(ESC),  KC_A,     KC_R,    KC_S,  KC_T,  KC_D,  KC_H,  KC_N,  KC_E,     KC_I,    KC_O,     KC_QUOT,  KC_ENT,   MO_X(PGUP),
     KC_LSFT,     KC_Z,     KC_X,    KC_C,  KC_V,  KC_B,  KC_K,  KC_M,  KC_COMM,  KC_DOT,  KC_SLSH,  KC_RSFT,  KC_UP,    KC_PGDN,
     KC_LGUI,     KC_LALT,  LOWER,                   RS_X(SPC),                   RAISE,   KC_RCTL,  KC_LEFT,  KC_DOWN,  KC_RGHT
   ),
@@ -38,8 +38,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
  [_LOWER] = LAYOUT_625u_arrow(
     W_IME,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_MPLY,
-    M_EXPS,  XX_WIN,  XX_TAB,  KC_MS_U, W_SSHOT, KC_BTN1, KC_BTN2, TM_PREV, KC_BSPC, TM_NEXT, KC_PIPE, _______, KC_VOLD, KC_VOLU,
-    _______, _______, KC_MS_L, KC_MS_D, KC_MS_R, MOUS,    KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______, _______, QK_BOOT,
+    M_EXPS,  XX_WIN,  XX_TAB,  _______, _______, _______, _______, TM_PREV, KC_BSPC, TM_NEXT, KC_PIPE, _______, KC_VOLD, KC_VOLU,
+    _______, KC_LGUI, _______, W_SSHOT, KC_F5,   KC_F3,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______, _______, QK_BOOT,
     _______, _______, _______, _______, _______, TOP,     BOTTOM,  KC_HOME, KC_END,  KC_SPC,  TM_LSTS, _______, _______, _______,
     _______, _______, _______,                      KC_HENK,                         _______, _______, _______, _______, _______
 
@@ -55,8 +55,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
  [_MOUS] = LAYOUT_625u_arrow(
     QK_BOOT, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+    _______, _______, _______, KC_MS_U, _______, KC_BTN1, KC_BTN2, _______, _______, _______, _______, _______, _______, _______,
+    _______, _______, KC_MS_L, KC_MS_D, KC_MS_R, _______, _______, _______, _______, _______, _______, _______, _______, _______,
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
     _______, _______, _______,                      _______,                         _______, _______, _______, _______, _______
  ),
