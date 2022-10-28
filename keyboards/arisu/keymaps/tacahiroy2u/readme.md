@@ -1,0 +1,1 @@
+# Arisu keymap for tacahiroy
