@@ -19,7 +19,6 @@
 
 #include QMK_KEYBOARD_H
 
-#include "muse.h"
 #include "tacahiroy.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -67,17 +66,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_ADJUST] = LAYOUT_preonic_grid(
   QK_BOOT, _______, EPRM,    _______, _______, _______, _______, _______, _______,  _______, _______, _______,
   _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______, _______, _______,
-  _______, CADEL,   _______, _______, _______, DEBUG,   _______, _______, _______,  _______, _______, _______,
+  _______, CADEL,   _______, _______, _______, DB_TOGG, _______, _______, _______,  _______, _______, _______,
   _______, _______, _______, _______, VERSION, _______, _______, QWERTY,  COLEMAK,  _______, _______, _______,
   _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______, _______, _______
 )
 };
 
-bool muse_mode = false;
-uint8_t last_muse_note = 0;
-uint16_t muse_counter = 0;
-uint8_t muse_offset = 70;
-uint16_t muse_tempo = 50;
 
 #ifdef ENCODER_ENABLE
 bool encoder_update_user(uint8_t index, bool clockwise) {
@@ -99,34 +93,3 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
     return true;
 }
 #endif
-
-void dip_update(uint8_t index, bool active) {
-  switch (index) {
-    case 0:
-      if (active) {
-        layer_on(_ADJUST);
-      } else {
-        layer_off(_ADJUST);
-      }
-      break;
-    case 1:
-      if (active) {
-        muse_mode = true;
-      } else {
-        muse_mode = false;
-        #ifdef AUDIO_ENABLE
-          stop_all_notes();
-        #endif
-      }
-   }
-}
-
-bool music_mask_user(uint16_t keycode) {
-  switch (keycode) {
-    case RAISE:
-    case LOWER:
-      return false;
-    default:
-      return true;
-  }
-}

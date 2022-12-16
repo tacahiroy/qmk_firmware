@@ -3,9 +3,9 @@
 
 void toggle_ime(bool is_on) {
     if (is_on) {
-        tap_code(KC_HENK);
+        tap_code(JP_HENK);
     } else {
-        tap_code(KC_MHEN);
+        tap_code(JP_MHEN);
     }
 }
 

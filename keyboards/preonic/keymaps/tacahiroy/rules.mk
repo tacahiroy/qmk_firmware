@@ -1,5 +1,3 @@
-SRC += muse.c
-
 BOOTMAGIC_ENABLE = no
 COMMAND_ENABLE   = no
 DEBUG_ENABLE     = no
