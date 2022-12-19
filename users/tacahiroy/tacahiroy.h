@@ -2,7 +2,7 @@
 
 #include "quantum.h"
 #include "version.h"
-#include "eeprom.h"
+/* #include "eeprom.h" */
 #include "keymap_japanese.h"
 
 // Layer shorthand
