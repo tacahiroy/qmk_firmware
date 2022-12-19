@@ -12,6 +12,7 @@ list-boards() {
     printf "%-18s\t%-20s\n" 'pr|preonic'         'preonic/rev3'
     printf "%-18s\t%-20s\n" 'l|lj'               'peej/lumberjack'
     printf "%-18s\t%-20s\n" 'p60|plain60'        'evyd13/plain60'
+    printf "%-18s\t%-20s\n" 'pi65|pizza65'       'pizzakeyboards/pizza65'
     printf "%-18s\t%-20s\n" 't|tmov2'            'cannonkeys/tmov2'
     printf "%-18s\t%-20s\n" 'y|yeti'             'axolstudio/yeti/soldered'
 }
@@ -25,32 +26,35 @@ fi
 km="tacahiroy${2:-}"
 
 case "$1" in
-    b|bw|boardwalk)
-        kb=boardwalk
-        ;;
-    p60|plain60)
-        kb=evyd13/plain60
-        ;;
-    pr|preonic)
-        kb=preonic/rev3
-        ;;
-    pl|planck)
-        kb=planck/rev4
-        ;;
-    ar|arisu)
-        kb=arisu
-        ;;
-    pa|palice|projectkb/alice)
-        kb=projectkb/alice/rev2
-        ;;
     a|at|atlas)
         kb=cannonkeys/atlas
         ;;
     aa|ata|atlas_alps)
         kb=cannonkeys/atlas_alps
         ;;
+    ar|arisu)
+        kb=arisu
+        ;;
+    b|bw|boardwalk)
+        kb=boardwalk
+        ;;
     l|lj|lumberjack)
         kb=peej/lumberjack
+        ;;
+    p60|plain60)
+        kb=evyd13/plain60
+        ;;
+    pa|palice|projectkb/alice)
+        kb=projectkb/alice/rev2
+        ;;
+    pi|pi65|pizza65)
+        kb=pizzakeyboards/pizza65
+        ;;
+    pl|planck)
+        kb=planck/rev4
+        ;;
+    pr|preonic)
+        kb=preonic/rev3
         ;;
     t|tmo*)
         kb=cannonkeys/tmov2
