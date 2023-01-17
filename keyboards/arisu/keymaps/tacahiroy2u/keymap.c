@@ -40,7 +40,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     M_EXPS,   XX_WIN,   XX_TAB,   _______,  _______,  _______,           _______,  TM_PREV,  KC_BSPC,  TM_NEXT,  KC_PIPE,  _______,  _______,  _______,  KC_VOLU,
     _______,  KC_ESC,   MOUS,     W_SSHOT,  KC_F5,    KC_F3,             KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  TM_SSH,   _______,  _______,            KC_VOLD,
     _______,  _______,  _______,  _______,  _______,  TOP,               BOTTOM,   KC_HOME,  KC_END,   _______,  TM_LSTS,  _______,  _______,
-    _______,            _______,            _______,  _______,           M_HENK,   KC_ESC,                                 _______,  _______,  _______
+    _______,            _______,            _______,  _______,           JP_HENK,  KC_ESC,                                 _______,  _______,  _______
   ),
 
   [_RAISE] = LAYOUT(

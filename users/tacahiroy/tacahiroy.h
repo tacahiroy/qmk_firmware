@@ -1,8 +1,22 @@
+/* Copyright 2020-2023 Takahiro Yoshihara <tacahiroy@gmail.com>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 #pragma once
 
 #include "quantum.h"
 #include "version.h"
-/* #include "eeprom.h" */
 #include "keymap_japanese.h"
 
 // Layer shorthand
@@ -26,12 +40,13 @@ enum tacahiroy_keycodes {
   ADJUST,
   VERSION,
   EPRM,
-  M_MHEN,
-  M_HENK,
   M_EXPS,
 };
 
 void toggle_ime(bool is_on);
+
+#define LOWER LT(_LOWER, JP_MHEN)
+#define RAISE LT(_RAISE, JP_HENK)
 
 // Windows specific key combinations
 #define TOP      LCTL(KC_HOME)
@@ -51,14 +66,12 @@ void toggle_ime(bool is_on);
 #define W_S_WIN  LCTL(LALT(KC_TAB))  // Activate the window switcher
 #define XX_TAB   LCTL(KC_W)          // C-w Close current tab
 #define XX_WIN   LALT(KC_F4)         // M-F4 Close window on Windows
-#define ZOOMIN   LCTL(KC_EQL)        // C-+ to increase font size
-#define ZOOMOUT  LCTL(KC_MINS)       // C-- to decrease font size
 #define MIC_TGL  LGUI(KC_N)          // Win-N to mute / unmute microphone
 
 // Vim
 #define V_ALTB   LCTL(KC_6) 				// Changing to an alternate buffer in Vim
 
-// Tmux
+// tmux
 #define TM_PREV  LALT(KC_L)
 #define TM_NEXT  LALT(KC_Y)
 #define TM_SSH   LALT(KC_O)

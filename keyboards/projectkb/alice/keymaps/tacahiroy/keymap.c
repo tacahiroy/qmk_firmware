@@ -41,7 +41,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_VOLU, M_EXPS,  XX_WIN,  XX_TAB,  KC_MS_U, W_SSHOT, KC_BTN1,           KC_BTN2, TM_PREV, KC_BSPC, TM_NEXT, KC_PIPE, KC_LCBR, KC_RCBR, _______,
     KC_VOLD, _______, _______, KC_MS_L, KC_MS_D, KC_MS_R, _______,           KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______,          _______,
              _______, _______, _______, _______, _______, TOP,               BOTTOM,  KC_HOME, KC_END,  _______, _______, TM_LSTS, _______, KC_PGUP,
-             _______,                   _______, _______, _______,           M_HENK,  _______,                                         _______
+             _______,                   _______, _______, _______,           JP_HENK, _______,                                         _______
   ),
 
   [_RAISE] = LAYOUT_alice(

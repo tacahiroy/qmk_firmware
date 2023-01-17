@@ -21,11 +21,11 @@ Copyright 2022 Takahiro Yoshihara <tacahiroy@gmail.com>
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_COLEMAK] = LAYOUT_alice_split_bs(
-    KC_ESC,    KC_GRV,     KC_1, KC_2, KC_3,    KC_4,  KC_5,   KC_EQL,  KC_6,      KC_7,    KC_8, KC_9,    KC_0,    KC_MINS, KC_EQL,  KC_BSPC,
-    KC_PGUP,   KC_TAB,     KC_Q, KC_W, KC_F,    KC_P,  KC_G,            KC_J,      KC_L,    KC_U, KC_Y,    KC_SCLN, KC_LBRC, KC_RBRC, KC_BSLS,
-    KC_PGDN,   CTL_X(ESC), KC_A, KC_R, KC_S,    KC_T,  KC_D,            KC_H,      KC_N,    KC_E, KC_I,    KC_O,    KC_QUOT, KC_ENT,
-               KC_LSFT,    KC_Z, KC_X, KC_C,    KC_V,  KC_B,            KC_K,      KC_K,    KC_M, KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT, MOUS,
-               KC_LGUI,                KC_LALT, LOWER, RAISE,           RS_X(SPC), KC_RCTL,                                           KC_RCTL
+    KC_ESC,    KC_GRV,     KC_1,   KC_2,   KC_3,      KC_4,    KC_5,   KC_EQL,  KC_6,      KC_7,    KC_8,   KC_9,    KC_0,    KC_MINS, KC_EQL,  KC_BSPC,
+    KC_PGUP,   KC_TAB,     KC_Q,   KC_W,   KC_F,      KC_P,    KC_G,            KC_J,      KC_L,    KC_U,   KC_Y,    KC_SCLN, KC_LBRC, KC_RBRC, KC_BSLS,
+    KC_PGDN,   CTL_X(ESC), KC_A,   KC_R,   KC_S,      KC_T,    KC_D,            KC_H,      KC_N,    KC_E,   KC_I,    KC_O,    KC_QUOT, KC_ENT,
+               KC_LSFT,    KC_Z,   KC_X,   KC_C,      KC_V,    KC_B,            KC_K,      KC_K,    KC_M,   KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT, MOUS,
+               KC_LGUI,                    KC_LALT,   LOWER,   RAISE,           RS_X(SPC), KC_RCTL,                                             KC_RCTL
   ),
 
   [_QWERTY] = LAYOUT_alice_split_bs(
@@ -41,7 +41,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_VOLU,   M_EXPS,  XX_WIN,  XX_TAB,  _______, _______, _______,           _______, TM_PREV, KC_BSPC, TM_NEXT, KC_PIPE, KC_LCBR, KC_RCBR, _______,
     KC_VOLD,   _______, KC_ESC,  MOUS,    W_SSHOT, KC_F5,   KC_F3,             KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______, _______,
                _______, _______, _______, _______, _______, TOP,               BOTTOM,  KC_HOME, KC_END,  _______, _______, TM_LSTS, _______, _______,
-               _______,                   _______, _______, _______,           M_HENK,  _______,                                              _______
+               _______,                   _______, _______, _______,           JP_HENK, _______,                                              _______
   ),
 
   [_RAISE] = LAYOUT_alice_split_bs(

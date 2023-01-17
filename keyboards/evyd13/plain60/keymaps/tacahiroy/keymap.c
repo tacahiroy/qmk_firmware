@@ -25,10 +25,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT(
     W_IME,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_MSTP, KC_MPLY,
-    M_EXPS,  XX_WIN,  XX_TAB,  KC_MS_U, W_SSHOT, KC_BTN1, KC_BTN2, TM_PREV, KC_BSPC, TM_NEXT, KC_PIPE, _______, KC_VOLD, KC_VOLU,
-    _______, _______, KC_MS_L, KC_MS_D, KC_MS_R, MOUS,    KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______, XXXXXXX, _______,
+    M_EXPS,  XX_WIN,  XX_TAB,  _______, _______, _______, _______, TM_PREV, KC_BSPC, TM_NEXT, KC_PIPE, _______, KC_VOLD, KC_VOLU,
+    _______, _______, MOUS,    W_SSHOT, KC_F5,   KC_F3,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______, XXXXXXX, _______,
     _______, XXXXXXX, _______, CUT,     COPY2,   PASTE,   TOP,     BOTTOM,  KC_HOME, KC_END,  _______, TM_LSTS, _______, _______,
-    XXXXXXX, _______, _______,                       M_HENK,                                  XXXXXXX, _______, _______, XXXXXXX
+    XXXXXXX, _______, _______,                       JP_HENK,                                 XXXXXXX, _______, _______, XXXXXXX
   ),
 
   [_RAISE] = LAYOUT(
@@ -41,8 +41,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_MOUS] = LAYOUT(
     QK_BOOT, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_MUTE, KC_MSTP, KC_MPLY,
-    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_VOLD, KC_VOLU,
-    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, XXXXXXX, _______,
+    _______, _______, _______, _______, _______, _______, _______, KC_BTN1, _______, KC_BTN2, _______, _______, KC_VOLD, KC_VOLU,
+    _______, _______, _______, _______, _______, _______, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, TM_SSH,  _______, XXXXXXX, _______,
     _______, XXXXXXX, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
     XXXXXXX, _______, _______,                       _______,                                 XXXXXXX, _______, _______, XXXXXXX
   ),
@@ -50,7 +50,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_ADJUST] = LAYOUT(
     QK_BOOT, _______, EPRM,    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-    _______, CADEL,   _______, _______, _______, DEBUG,   _______, _______, _______, _______, _______, _______, XXXXXXX, _______,
+    _______, CADEL,   _______, _______, _______, DB_TOGG, _______, _______, _______, _______, _______, _______, XXXXXXX, _______,
     _______, XXXXXXX, _______, _______, _______, VERSION, _______, _______, QWERTY,  COLEMAK, _______, _______, _______, _______,
     XXXXXXX, _______, _______,                       _______,                                 XXXXXXX, _______, _______, XXXXXXX
   )

@@ -25,7 +25,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[_COLEMAK] = LAYOUT_default(
         KC_ESC,      KC_TAB,      KC_Q,     KC_W,  KC_F,   KC_P,  KC_G,  KC_J,  KC_L,       KC_U,  KC_Y,     KC_SCLN,  KC_MINS,  KC_EQL,   KC_BSPC,
         KC_PGUP,     CTL_X(ESC),  KC_A,     KC_R,  KC_S,   KC_T,  KC_D,  KC_H,  KC_N,       KC_E,  KC_I,     KC_O,     KC_QUOT,  KC_ENT,
-        KC_PGDN,     KC_LSFT,     XXXXXXX,  KC_Z,  KC_X,   KC_C,  KC_V,  KC_B,  KC_K,       KC_M,  KC_COMM,  KC_DOT,   KC_SLSH,  KC_RSFT,  MOVE,
+        KC_PGDN,     KC_LSFT,     XXXXXXX,  KC_Z,  KC_X,   KC_C,  KC_V,  KC_B,  KC_K,       KC_M,  KC_COMM,  KC_DOT,   KC_SLSH,  KC_RSFT,  XXXXXXX,
         MO_X(MPLY),  KC_LGUI,     KC_LALT,         LOWER,                RS_X(SPC),                RAISE,              KC_RCTL
     ),
 
@@ -40,7 +40,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         W_IME,    KC_GRV,   KC_1,     KC_2,     KC_3,     KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     KC_PIPE,  _______,  KC_DEL,
         _______,  _______,  _______,  XX_TAB,   W_SSHOT,  KC_F5,    KC_F3,    KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  TM_SSH,   _______,  _______,
         _______,  _______,  XXXXXXX,  _______,  _______,  _______,  _______,  TOP,      BOTTOM,   KC_HOME,  KC_END,   _______,  _______,  _______,  _______,
-        _______,            _______,  _______,            _______,            M_HENK,   _______,            _______
+        _______,            _______,  _______,            _______,            JP_HENK,  _______,            _______
     ),
 
 	[_RAISE] = LAYOUT_default(
@@ -71,4 +71,5 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,            _______,  _______,            _______,            _______,            _______,            _______
     ),
 };
+
 
