@@ -14,7 +14,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-Copyright 2022 Takahiro YOSHIHARA <tacahiroy@gmail.com>
+Copyright 2022-2023 Takahiro YOSHIHARA <tacahiroy@gmail.com>
 This file is based on cannonkeys/tmov2/keymaps/default/keymap.c@bbc3bc55
 */
 #include QMK_KEYBOARD_H
@@ -55,13 +55,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_BTN2,  _______,  KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_MS_L,  KC_MS_D,  KC_MS_U,  KC_MS_R,  _______,  _______,  _______,
         KC_BTN1,  _______,  XXXXXXX,  KC_F11,   KC_F12,   _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,
         _______,            _______,  _______,            _______,            _______,            _______,            _______
-    ),
-
-	[_MOVE] = LAYOUT_default(
-        _______,  _______,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    V_ALTB,   TM_PREV,  TM_PWIN,  TM_NEXT,  _______,  _______,  _______,  _______,
-        KC_BTN2,  _______,  KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   _______,  _______,  _______,  _______,  _______,  _______,  _______,
-        KC_BTN1,  _______,  XXXXXXX,  KC_F11,   KC_F12,   _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,
-        _______,            _______,  _______,            _______,            _______,  _______,            _______
     ),
 
 	[_ADJUST] = LAYOUT_default(
