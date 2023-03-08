@@ -47,8 +47,8 @@ case "$1" in
     pa|palice|projectkb/alice)
         kb=projectkb/alice/rev2
         ;;
-    pi|pi65|pizza65)
-        kb=pizzakeyboards/pizza65
+    sl|slice65*)
+        kb=pizzakeyboards/slice65
         ;;
     pl|planck)
         kb=planck/rev4
