@@ -1,8 +1,6 @@
 #ifndef CONFIG_USER_H
 #define CONFIG_USER_H
 
-#include "config_common.h"
-
 #define FORCE_NKRO
 #define PREVENT_STUCK_MODIFIERS // when switching layers, this will release all mods
 
