@@ -22,6 +22,7 @@
 // Layer shorthand
 enum tacahiroy_layers {
   _COLEMAK,
+  _HHKB,
   _QWERTY,
   _LOWER,
   _RAISE,
@@ -32,6 +33,7 @@ enum tacahiroy_layers {
 
 enum tacahiroy_keycodes {
   COLEMAK = SAFE_RANGE,
+  HHKB,
   QWERTY,
   LOWER,
   RAISE,
