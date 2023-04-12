@@ -2,43 +2,32 @@
 
 #include "leader.h"
 
-bool leader_succeed;
+void leader_start_user(void) {
+    // Do something when the leader key is pressed
+}
 
-LEADER_EXTERNS();
-
-void matrix_scan_user(void) {
-#ifdef AUDIO_ENABLE
-    if (muse_mode) {
-        if (muse_counter == 0) {
-            uint8_t muse_note = muse_offset + SCALE[muse_clock_pulse()];
-            if (muse_note != last_muse_note) {
-                stop_note(compute_freq_for_midi_note(last_muse_note));
-                play_note(compute_freq_for_midi_note(muse_note), 0xF);
-                last_muse_note = muse_note;
-            }
-        }
-        muse_counter = (muse_counter + 1) % muse_tempo;
-    }
-#endif
-
-    LEADER_DICTIONARY() {
-        leader_succeed = leading = false;
-        leader_end();
-
-        SEQ_ONE_KEY(KC_L) {
-            layer_on(_LOWER);
-            leader_succeed = true;
-        }
-
-        SEQ_ONE_KEY(KC_SLSH) { // ~/
-            SEND_STRING("~/");
-            leader_succeed = true;
-        }
+void leader_end_user(void) {
+    if (leader_sequence_two_keys(KC_D, KC_D)) {
+        // dd => Deletes a line
+        tap_code(KC_HOME);
+        tap_code16(S(KC_END));
+        tap_code(KC_DEL);
+        tap_code(KC_BSPC);
+    } else if (leader_sequence_two_keys(KC_Y, KC_Y)) {
+        // yy => Copies a line
+        tap_code(KC_HOME);
+        tap_code16(S(KC_END));
+        tap_code16(C(KC_C));
+    } else if (leader_sequence_one_key(KC_P)) {
+        // p => Pastes the clipboard content
+        tap_code16(S(C(KC_V)));
+        tap_code(KC_ENT);
+    } else if (leader_sequence_two_keys(KC_Y, KC_S)) {
+        // tmux copy: prefix + y, v, y
+        tap_code16(C(KC_K));
+        tap_code(KC_Y);
+        tap_code16(S(KC_V));
+        tap_code(KC_Y);
     }
 }
 
-void leader_start(void) {
-}
-
-void leader_end(void) {
-}
