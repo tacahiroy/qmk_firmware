@@ -1,5 +1,6 @@
 // this is based on users/kuchosauronad0/leader.c
 
+#include "tacahiroy.h"
 #include "leader.h"
 
 void leader_start_user(void) {
@@ -28,6 +29,12 @@ void leader_end_user(void) {
         tap_code(KC_Y);
         tap_code16(S(KC_V));
         tap_code(KC_Y);
+    } else if (leader_sequence_one_key(KC_H)) {
+        // Browser back
+        tap_code16(FX_BACK);
+    } else if (leader_sequence_one_key(KC_I)) {
+        // Browser forward
+        tap_code16(FX_FWD);
     }
 }
 
