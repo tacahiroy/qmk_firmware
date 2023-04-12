@@ -7,12 +7,11 @@ list-boards() {
     printf "%-18s\t%-20s\n" 'aa|ata|atlas_alps'  'cannonkeys/atlas_alps'
     printf "%-18s\t%-20s\n" 'ar'                 'arisu'
     printf "%-18s\t%-20s\n" 'b|bw'               'boardwalk'
+    printf "%-18s\t%-20s\n" 'merr|merro60'       'chlx/merro60'
     printf "%-18s\t%-20s\n" 'pa|palice'          'projectkb/alice/rev2'
     printf "%-18s\t%-20s\n" 'pl|planck'          'planck/rev4'
     printf "%-18s\t%-20s\n" 'pr|preonic'         'preonic/rev3'
-    printf "%-18s\t%-20s\n" 'l|lj'               'peej/lumberjack'
     printf "%-18s\t%-20s\n" 'pal|palmetto|h60'   'hineybush/h60'
-    printf "%-18s\t%-20s\n" 'p60|plain60'        'evyd13/plain60'
     printf "%-18s\t%-20s\n" 'pi65|pizza65'       'pizzakeyboards/pizza65'
     printf "%-18s\t%-20s\n" 't|tmov2'            'cannonkeys/tmov2'
     printf "%-18s\t%-20s\n" 'y|yeti'             'axolstudio/yeti/soldered'
@@ -39,14 +38,11 @@ case "$1" in
     b|bw|boardwalk)
         kb=boardwalk
         ;;
-    l|lj|lumberjack)
-        kb=peej/lumberjack
+    merr|merro60)
+        kb=chlx/merro60
         ;;
     pal|palmetto|h60)
         kb=hineybush/h60
-        ;;
-    p60|plain60)
-        kb=evyd13/plain60
         ;;
     pa|palice|projectkb/alice)
         kb=projectkb/alice/rev2
