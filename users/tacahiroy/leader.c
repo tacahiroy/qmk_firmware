@@ -23,7 +23,7 @@ void leader_end_user(void) {
         // p => Pastes the clipboard content
         tap_code16(S(C(KC_V)));
         tap_code(KC_ENT);
-    } else if (leader_sequence_two_keys(KC_Y, KC_S)) {
+    } else if (leader_sequence_two_keys(KC_T, KC_Y)) {
         // tmux copy: prefix + y, v, y
         tap_code16(C(KC_K));
         tap_code(KC_Y);
