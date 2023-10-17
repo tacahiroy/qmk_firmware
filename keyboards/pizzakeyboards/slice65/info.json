@@ -20,7 +20,7 @@
     "features":{
         "bootmagic": true,
         "nkro": true,
-        "mouse_key.enabled": true
+        "mousekey": true
     },
     "layouts": {
         "LAYOUT": {
