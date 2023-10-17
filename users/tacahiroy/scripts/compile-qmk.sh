@@ -69,4 +69,4 @@ esac
 
 echo "Compling a QMK firmware: board:${kb} map:${km}"
 
-poetry run qmk compile -kb "${kb}" -km "${km}"
+rye run qmk compile -kb "${kb}" -km "${km}"

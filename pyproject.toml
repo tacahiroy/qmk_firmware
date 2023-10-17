@@ -1,31 +1,41 @@
-[tool.poetry]
-name = "qmk_firmware"
+[project]
+name = "qmk-firmware"
 version = "0.16.7"
 description = "Quantum Mechanical Keyboard Firmware"
-authors = ["Jack Humbert <jack.humb@gmail.com>"]
+authors = [
+    { name = "Jack Humbert", email = "jack.humb@gmail.com"},
+    { name = "YOSHIHARA Takahiro", email = "tacahiroy@gmail.com" }
+]
 
-[tool.poetry.dependencies]
-python = "^3.9"
-appdirs = "^1.4.4"
-argcomplete = "^1.12.3"
-colorama = "^0.4.4"
-hid = "^1.0.4"
-hjson = "^3.0.2"
-jsonschema = ">=4"
-milc = ">=1.4.2"
-Pygments = "^2.9.0"
-pyusb = "^1.2.0"
-qmk-dotty-dict = "^1.3.0"
-Pillow = "^9.1.1"
-qmk = "^1.1.0"
-dotty-dict = "^1.3.0"
-
-[tool.poetry.dev-dependencies]
-nose2 = "^0.10.0"
-pep8-naming = "^0.12.1"
-yapf = "^0.31.0"
-pyflakes = "^2.4.0"
+dependencies = [
+    "appdirs<1.5.0",
+    "argcomplete<1.13.0",
+    "colorama<0.5.0",
+    "hid<1.1.0",
+    "hjson<3.1.0",
+    "jsonschema>=4",
+    "milc>=1.4.2",
+    "Pygments<2.10.0",
+    "pyusb<1.3.0",
+    "qmk-dotty-dict<1.4.0",
+    "Pillow<9.2.0",
+    "qmk<1.2.0",
+    "dotty-dict<1.4.0",
+]
+readme = "readme.md"
+requires-python = ">= 3.10"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "nose2>=0.10.0",
+    "pep8-naming>=0.12.1",
+    "ruff>=0.1.0",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
