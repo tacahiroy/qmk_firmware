@@ -35,6 +35,9 @@ case "$1" in
     ar|arisu)
         kb=arisu
         ;;
+    ar2|arisu2)
+        kb=arisu
+        ;;
     b|bw|boardwalk)
         kb=boardwalk
         ;;

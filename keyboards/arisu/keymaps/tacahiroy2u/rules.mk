@@ -15,6 +15,8 @@ LEADER_ENABLE    = no
 
 MOUSEKEY_ENABLE  = yes # Mouse keys(+4700)
 
+CAPS_WORD_ENABLE = yes
+
 ifndef QUANTUM_DIR
 	^ include ../../../../Makefile
 endif
