@@ -66,7 +66,7 @@ void toggle_ime(bool is_on);
 #define W_S_WIN  C(A(KC_TAB))  // Activate the window switcher
 #define XX_TAB   C(KC_W)       // C-w Close current tab
 #define XX_WIN   A(KC_F4)      // M-F4 Close window on Windows
-#define MIC_TGL  G(KC_N)       // Win-N to mute / unmute microphone
+#define WIN_W    G(KC_W)       // Win-W
 
 // Vim
 #define V_ALTB   C(KC_6) 				// Changing to an alternate buffer in Vim

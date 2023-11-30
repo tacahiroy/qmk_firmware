@@ -32,3 +32,5 @@
 #define MOUSEKEY_TIME_TO_MAX    20
 #define MOUSEKEY_MAX_SPEED      3
 #define MOUSEKEY_WHEEL_DELAY    0
+// https://docs.qmk.fm/#/squeezing_avr?id=layers
+#define LAYER_STATE_16BIT
