@@ -56,10 +56,10 @@ void toggle_ime(bool is_on);
 
 #define CADEL    C(A(KC_DEL))  // Ctrl + Alt + Del
 #define COPY     C(KC_C)       // C-c Copy
-#define COPY2    S(LCTL(KC_C)) // C-S-c Copy
+#define COPY2    S(C(KC_C))    // C-S-c Copy on some terminal emulators
 #define CUT      C(KC_X)       // C-x Cut
 #define PASTE    C(KC_V)       // C-v Paste
-#define PASTE2   S(C(KC_V))    // C-S-v Paste
+#define PASTE2   S(C(KC_V))    // C-S-v Paste on some terminal emulators
 #define RAL_RCT  RALT(KC_RCTL) // Hotkey to release keyboard in a VMware window
 #define W_IME    A(KC_GRV)     // Toggle IME on / off state on Windows
 #define W_SSHOT  S(G(KC_S))    // Activate the screenshot tool
