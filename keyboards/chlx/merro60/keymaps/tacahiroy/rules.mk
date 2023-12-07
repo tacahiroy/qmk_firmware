@@ -11,11 +11,10 @@ NKRO_ENABLE      = yes # Nkey Rollover - if this doesn't work, see here: https:/
 RGBLIGHT_ENABLE  = no  # Enable WS2812 RGB underlight.  Do not enable this with audio at the same time.
 TAP_DANCE_ENABLE = no
 UNICODE_ENABLE   = no  # Unicode
-LEADER_ENABLE    = yes
+LEADER_ENABLE    = no
+MOUSEKEY_ENABLE  = yes # Mouse keys(+4700)
 
 CAPS_WORD_ENABLE = yes
-
-MOUSEKEY_ENABLE      = yes # Mouse keys(+4700)
 
 ifndef QUANTUM_DIR
 	^ include ../../../../Makefile
