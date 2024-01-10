@@ -54,22 +54,19 @@ void toggle_ime(bool is_on);
 #define TOP      C(KC_HOME)
 #define BOTTOM   C(KC_END)
 
-#define CADEL    C(A(KC_DEL))  // Ctrl + Alt + Del
+#define CADEL    LCA(KC_DEL)   // Ctrl + Alt + Del
 #define COPY     C(KC_C)       // C-c Copy
 #define COPY2    S(C(KC_C))    // C-S-c Copy on some terminal emulators
 #define CUT      C(KC_X)       // C-x Cut
 #define PASTE    C(KC_V)       // C-v Paste
 #define PASTE2   S(C(KC_V))    // C-S-v Paste on some terminal emulators
-#define RAL_RCT  RALT(KC_RCTL) // Hotkey to release keyboard in a VMware window
 #define W_IME    A(KC_GRV)     // Toggle IME on / off state on Windows
-#define W_SSHOT  S(G(KC_S))    // Activate the screenshot tool
-#define W_S_WIN  C(A(KC_TAB))  // Activate the window switcher
+#define W_SNIP   S(G(KC_S))    // Activate the screenshot tool
 #define XX_TAB   C(KC_W)       // C-w Close current tab
 #define XX_WIN   A(KC_F4)      // M-F4 Close window on Windows
-#define WIN_W    G(KC_W)       // Win-W
 
 // Vim
-#define V_ALTB   C(KC_6) 				// Changing to an alternate buffer in Vim
+#define V_ALTB   C(KC_6)       // Changing to an alternate buffer in Vim
 
 // tmux
 #define TM_PREV  A(KC_L)
@@ -78,7 +75,9 @@ void toggle_ime(bool is_on);
 #define TM_NEW   A(KC_N)
 #define TM_PWIN  A(KC_G)
 // last session
-#define TM_LSTS  A(KC_SLSH)
+#define TM_LASS  A(KC_MINS)
+#define TM_SLST  A(KC_S)
+#define TM_WLST  A(KC_W)
 
  // Firefox and other web browsers
 #define FX_NEXT  C(KC_TAB)

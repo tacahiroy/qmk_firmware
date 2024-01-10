@@ -352,7 +352,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
          * _Activate_ below line to use a "WASD" type layout (on the spot where WASD is in Qwerty).
          * _Remove_ if you prefer a flat type layout, with arrows in a row, on the right hand.
          */
-  #define ARROWS_TRIANGLE // Implies mouse is also similarly in a triangle.
+  #define ARRO_______NGLE // Implies mouse is also similarly in a triangle.
         /*
          *          • VI editor arrows
          *
@@ -361,7 +361,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
          * arrows in the editor vi(1). “HJKL” meaning: the 7th to 10th key on the 3rd row.
          * The arrows on the additional MOREKEY2_ARROW_CLUSTER also get harmonized to be like vi.
          */
-//#define VI_SWITCHERYDOO //  You have to _remove_ ARROWS_TRIANGLE, or this gets ignored.
+//#define VI_SWITCHERYDOO //  You have to _remove_ ARRO_______NGLE, or this gets ignored.
 
 
         /*                  -8- ➡ Number pad Configuration⬅
@@ -625,9 +625,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 # endif
 
 // When choosing 'triangle' arrows, then they go left. Not 'triangle' arrows, than right.
-# ifdef ARROWS_TRIANGLE
+# ifdef ARRO_______NGLE
          /* _Activate_ below line to put the arrows on the left, comment out to have arrows right. */
-#     define ARROWS_LEFT // Implies mouse is right
+#     define ARRO_______ // Implies mouse is right
 # endif
 
 

@@ -747,7 +747,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
           * Configured for arrows on the right, mouse on the left (BTN* on the left side, that is).
           */
 
-#     ifndef ARROWS_TRIANGLE
+#     ifndef ARRO_______NGLE
 #         define NAVI_11 KC_BTN3 // NAVI for 'navigation cluster', 11 for row 1, column 1, etc.
 #         define                 NAVI_12 KC_PGUP
 #         define                                 NAVI_13 KC_HOME
@@ -785,7 +785,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // Alternative navigation/mouse layout: arrows in triangle, and left hand on the left 'wasd' location.
 // If you want these arrows on the right hand, you may want to edit this, to put right most column left, etc.
 
-#     ifdef ARROWS_TRIANGLE
+#     ifdef ARRO_______NGLE
 #         define NAVI_11 KC_PGDN
 #         define                 NAVI_12 KC_UP   
 #         define                                 NAVI_13 KC_PGUP
@@ -821,7 +821,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #     endif
 
 // Default left/right layout, meaning arrows right and mouse left.
-#     ifndef ARROWS_LEFT
+#     ifndef ARRO_______
 #         define LEFT_AA MOUS_11
 #         define LEFT_AB MOUS_12
 #         define LEFT_AC MOUS_13
@@ -854,7 +854,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #         define RGHT_CE NAVI_35
 #     endif
       
-#     ifdef ARROWS_LEFT
+#     ifdef ARRO_______
 #         define LEFT_AA NAVI_11
 #         define LEFT_AB NAVI_12
 #         define LEFT_AC NAVI_13
@@ -900,12 +900,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * There are several configurations, worked down in order to keep this mess under control.
  *                
  *                                           v----------------------not-defined-------------v----------------v
- *                                 !MOREKEY2_ARROW_CLUSTER   !MOREKEY2_ADD_NAVIGATION  !ARROWS_TRIANGLE  !ARROWS_LEFT             
+ *                                 !MOREKEY2_ARROW_CLUSTER   !MOREKEY2_ADD_NAVIGATION  !ARRO_______NGLE  !ARRO_______             
  * defined MOREKEY2_ARROW_CLUSTER   ......................            yes                    yes            yes
  * defined MOREKEY2_ADD_NAVIGATION        yes                 .......................        yes          only for flat arrows
- * defined ARROWS_TRIANGLE                yes                         yes               ...............      no  
- * defined ARROWS_LEFT                    yes                    only for triangle          yes           ...........
- *                                  MOREKEY2_ARROW_CLUSTER    MOREKEY2_ADD_NAVIGATION   ARROWS_TRIANGLE   ARROWS_LEFT             
+ * defined ARRO_______NGLE                yes                         yes               ...............      no  
+ * defined ARRO_______                    yes                    only for triangle          yes           ...........
+ *                                  MOREKEY2_ARROW_CLUSTER    MOREKEY2_ADD_NAVIGATION   ARRO_______NGLE   ARRO_______             
  *                                           ^--------------------------defined-------------^----------------^
  *
  * Definition order:
@@ -937,7 +937,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                               /* 1 (triangle arrows with arrow cluster) */
 
 // Patch in the arrows for arrow triangle layout
-#     if defined(MOREKEY2_ARROW_CLUSTER) && defined(ARROWS_TRIANGLE)
+#     if defined(MOREKEY2_ARROW_CLUSTER) && defined(ARRO_______NGLE)
 //                                                                             Arrow cluster
 #         define _MOV_KEY_ROW2_KEY2                     KC_UP                
 //                                 ------------------------------------------
@@ -949,7 +949,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #     endif
 
 // The default layout around the arrows
-#     if defined(MOREKEY2_ARROW_CLUSTER) && !defined(MOREKEY2_ADD_NAVIGATION) && defined(ARROWS_TRIANGLE)      
+#     if defined(MOREKEY2_ARROW_CLUSTER) && !defined(MOREKEY2_ADD_NAVIGATION) && defined(ARRO_______NGLE)      
 //                                                                             Default keys
 #         define _MOV_KEY_ROW2_KEY1                               KC_RSFT    
 #         define _MOV_KEY_ROW2_KEY3           RGHT_CD                        
@@ -963,7 +963,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                               /*  2 (  ''                  ''          + additional navigation and repositioning displaced keys) */
 
 // Patch in the navigation keys for the arrow in triangle layout.
-#     if defined(MOREKEY2_ADD_NAVIGATION) && defined(ARROWS_TRIANGLE)        // Navigation additional keys (arrows implied).
+#     if defined(MOREKEY2_ADD_NAVIGATION) && defined(ARRO_______NGLE)        // Navigation additional keys (arrows implied).
 #         define _MOV_KEY_ROW2_KEY1                               KC_PGDN    
 #         define _MOV_KEY_ROW2_KEY3           KC_PGUP                        
 #         define _MOV_KEY_ROW2_KEY4 KC_HOME                                  
@@ -975,7 +975,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 // We have now overwritten the positions of RGHT_CC and RGHT_CD, which could be useful keys.
 // You don't want to mess with BTN1 on the other hand, because it needs to select together with mouse moving in many applications.
-#     if defined(MOREKEY2_ADD_NAVIGATION) && defined(ARROWS_TRIANGLE) && defined(ARROWS_LEFT)  // ARROWS_LEFT because the wider map is edited
+#     if defined(MOREKEY2_ADD_NAVIGATION) && defined(ARRO_______NGLE) && defined(ARRO_______)  // ARRO_______ because the wider map is edited
 //
 //        ... spelling this out to keep brain for exploding:
 //        Overwritten (copied from above):
@@ -999,7 +999,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
                                               /* 3 (flat arrows with arrow cluster) */
 
-#     if defined(MOREKEY2_ARROW_CLUSTER) && !defined(ARROWS_TRIANGLE)
+#     if defined(MOREKEY2_ARROW_CLUSTER) && !defined(ARRO_______NGLE)
 //                                                                         arrow cluster
 #         define _MOV_KEY_ROW1_KEY1                               KC_RIGHT                                 
 #         define _MOV_KEY_ROW1_KEY2                     KC_DOWN                        
@@ -1010,7 +1010,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #     endif
 
 // The default layout around the arrows
-#     if defined(MOREKEY2_ARROW_CLUSTER) && !defined(MOREKEY2_ADD_NAVIGATION) && !defined(ARROWS_TRIANGLE)      
+#     if defined(MOREKEY2_ARROW_CLUSTER) && !defined(MOREKEY2_ADD_NAVIGATION) && !defined(ARRO_______NGLE)      
 //                                                                         Default 
 #         define _MOV_KEY_ROW2_KEY1                               KC_RSFT    
 #         define _MOV_KEY_ROW2_KEY2                     RGHT_CE              // Key counting from the right to the left. 
@@ -1024,7 +1024,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                               /* 4 (   ''                  ''          + additional navigation and repositioning displaced keys) */
 
 // The definitions for the additional navigation keys (HOME, etc)
-#     if defined(MOREKEY2_ADD_NAVIGATION) && !defined(ARROWS_TRIANGLE)
+#     if defined(MOREKEY2_ADD_NAVIGATION) && !defined(ARRO_______NGLE)
 //                                                                         Additional navigation keys: flat
 #         define _MOV_KEY_ROW2_KEY1                               KC_PGDN                                  
 #         define _MOV_KEY_ROW2_KEY2                     KC_END                         
@@ -1035,7 +1035,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #     endif
 
 // Replace the overwritten key positions:
-# if defined(MOREKEY2_ADD_NAVIGATION) && !defined(ARROWS_TRIANGLE) && !defined(ARROWS_LEFT)   // !ARROWS_LEFT because the wider map is edited
+# if defined(MOREKEY2_ADD_NAVIGATION) && !defined(ARRO_______NGLE) && !defined(ARRO_______)   // !ARRO_______ because the wider map is edited
 //
 //        Overwritten (copied from above):
 //         #define RGHT_CC NAVI_33
@@ -1061,7 +1061,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // and causes the arrow block to move one key to the left. The key lost on the left is
 // put back on the other end (pinky).
 // Row 3
-#     if defined(VI_SWITCHERYDOO) && !defined(ARROWS_TRIANGLE) // For all hardware variants
+#     if defined(VI_SWITCHERYDOO) && !defined(ARRO_______NGLE) // For all hardware variants
 //                |, indx2>  , index>  , middl>   , ring>     , pinky>    , pink2>    ,
 //               <|,>        ,         ,          ,           ,           ,           ,
 #         undef  RGHT_BA
@@ -1076,7 +1076,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #         define RGHT_BE                                            KC_BTN1
 #     endif
 // Row 1
-#     if defined(VI_SWITCHERYDOO) && !defined(ARROWS_TRIANGLE) && defined(MOREKEY2_ARROW_CLUSTER) // Only for 'arrow' hardware
+#     if defined(VI_SWITCHERYDOO) && !defined(ARRO_______NGLE) && defined(MOREKEY2_ARROW_CLUSTER) // Only for 'arrow' hardware
 //                                                                         arrow cluster
 #         undef  _MOV_KEY_ROW1_KEY1 
 #         define _MOV_KEY_ROW1_KEY1                               KC_RIGHT                                 
