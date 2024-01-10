@@ -46,6 +46,7 @@ enum tacahiroy_keycodes {
 };
 
 void toggle_ime(bool is_on);
+bool shift_backspace_for_delete(keyrecord_t *record);
 
 #define LOWER LT(_LOWER, JP_MHEN)
 #define RAISE LT(_RAISE, JP_HENK)
