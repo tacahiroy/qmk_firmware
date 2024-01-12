@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Takahiro Yoshihara
+ * Copyright 2023-2024 Takahiro Yoshihara
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -45,9 +45,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [_LOWER] = LAYOUT_60_tsangan_hhkb(
-    W_IME,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_MUTE, KC_MPLY,
-    _______,   XX_WIN,  XX_TAB,  KC_GRV,  _______, _______, TM_SLST, TM_PREV, TM_WLST, TM_NEXT, KC_PIPE, KC_VOLD, KC_VOLU, KC_DEL,
-    _______, _______, MOUS,    W_SNIP, KC_F5,   KC_F3,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  TM_LASS, _______,
+    W_IME,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_MUTE, _______,
+    _______, XX_WIN,  XX_TAB,  KC_GRV,  _______, _______, TM_SLST, TM_PREV, TM_WLST, TM_NEXT, KC_PIPE, KC_VOLD, KC_VOLU, KC_MPLY,
+    _______, _______, MOUS,    W_SNIP,  KC_F5,   KC_F3,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  TM_LASS, _______,
     _______, _______, CUT,     COPY2,   PASTE2,  TOP,     BOTTOM,  KC_HOME, KC_END,  _______, _______, _______, _______,
     _______, _______, _______,                   JP_HENK,                            _______, _______, _______ 
   ),
@@ -61,8 +61,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [_MOUS] = LAYOUT_60_tsangan_hhkb(
-    QK_BOOT, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_MUTE, KC_MSTP, KC_MPLY,
-    _______, _______, _______, _______, _______, _______, _______, KC_BTN1, _______, KC_BTN2, _______, _______, KC_VOLD, KC_VOLU,
+    QK_BOOT, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_MUTE,  _______,
+    _______, _______, _______, _______, _______, _______, _______, KC_BTN1, _______, KC_BTN2, _______, KC_VOLD, KC_VOLU, KC_MPLY,
     _______, _______, _______, _______, _______, _______, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, TM_SSH,  _______, _______,
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
     _______, _______, _______,                   _______,                            _______, _______, _______
