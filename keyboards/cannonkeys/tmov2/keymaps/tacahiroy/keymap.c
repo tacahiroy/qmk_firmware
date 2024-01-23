@@ -25,21 +25,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[_COLEMAK] = LAYOUT_default(
         QK_GESC,     KC_TAB,      KC_Q,     KC_W,  KC_F,   KC_P,  KC_G,  KC_J,  KC_L,       KC_U,  KC_Y,     KC_SCLN,  KC_MINS,  KC_EQL,   KC_BSPC,
         KC_PGUP,     CTL_X(ESC),  KC_A,     KC_R,  KC_S,   KC_T,  KC_D,  KC_H,  KC_N,       KC_E,  KC_I,     KC_O,     KC_QUOT,  KC_ENT,
-        KC_PGDN,     KC_LSFT,     XXXXXXX,  KC_Z,  KC_X,   KC_C,  KC_V,  KC_B,  KC_K,       KC_M,  KC_COMM,  KC_DOT,   KC_SLSH,  KC_RSFT,  XXXXXXX,
-        MO_X(MPLY),  MOUS,        KC_LALT,         LOWER,                RS_X(SPC),                KC_LGUI,            KC_RCTL
+        KC_PGDN,     SC_LSPO,     XXXXXXX,  KC_Z,  KC_X,   KC_C,  KC_V,  KC_B,  KC_K,       KC_M,  KC_COMM,  KC_DOT,   KC_SLSH,  SC_RSPC,  XXXXXXX,
+        MO_X(MPLY),  KC_LGUI,     KC_LALT,         LOWER,                RS_X(SPC),                MOUS,               KC_RCTL
     ),
 
 	[_QWERTY] = LAYOUT_default(
         _______,  _______,  KC_Q,     KC_W,     KC_E,  KC_R,     KC_T,  KC_Y,  KC_U,     KC_I,  KC_O,     KC_P,     _______,  _______,  _______,
         _______,  _______,  KC_A,     KC_S,     KC_D,  KC_F,     KC_G,  KC_H,  KC_J,     KC_K,  KC_L,     KC_SCLN,  _______,  _______,
-        _______,  _______,  XXXXXXX,  KC_Z,     KC_X,  KC_C,     KC_V,  KC_B,  KC_K,     KC_M,  _______,  _______,  _______,  _______,  _______,
+        _______,  _______,  XXXXXXX,  KC_Z,     KC_X,  KC_C,     KC_V,  KC_B,  KC_K,     KC_M,  _______,  _______,  _______,  _______,  XXXXXXX,
         _______,  _______,  _______,            _______,                _______,                _______,            _______
     ),
 
 	[_LOWER] = LAYOUT_default(
         W_IME,    KC_GRV,   KC_1,     KC_2,     KC_3,    KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     KC_PIPE,  TM_WLST,  KC_DEL,
 		_______,  _______,  _______,  XX_TAB,   W_SNIP,  KC_F5,    KC_F3,    KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  TM_SSH,   TM_LASS,  _______,
-        _______,  _______,  XXXXXXX,  _______,  CUT,     COPY2,    PASTE2,   TOP,      BOTTOM,   KC_HOME,  KC_END,   TM_SLST,  _______,  _______,  XXXXXXX,
+        _______,  _______,  XXXXXXX,  _______,  CUT,     COPY2,    PASTE2,   TOP,      BOTTOM,   KC_HOME,  KC_END,   _______,  TM_SLST,  _______,  XXXXXXX,
         _______,  _______,  _______,            _______,                     JP_HENK,                      _______,            _______
     ),
 
@@ -51,9 +51,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
 	[_MOUS] = LAYOUT_default(
-        QK_BOOT,  _______,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12,   _______,
-        _______,  _______,  _______,  _______,  _______,  _______,  _______,  KC_MS_L,  KC_MS_D,  KC_MS_U,  KC_MS_R,  KC_BTN1,  KC_BTN2,  _______,
-        _______,  _______,  XXXXXXX,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  XXXXXXX,
+        KC_ACL0,  _______,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12,   QK_BOOT,
+        KC_ACL1,  _______,  C(KC_A),  C(KC_R),  C(KC_S),  KC_BTN1,  KC_BTN2,  _______,  _______,  KC_MS_L,  KC_MS_D,  KC_MS_U,  KC_MS_R,  _______,
+        KC_ACL2,  _______,  XXXXXXX,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  XXXXXXX,
         _______,            _______,  _______,            _______,            _______,                      _______,            _______
     ),
 
