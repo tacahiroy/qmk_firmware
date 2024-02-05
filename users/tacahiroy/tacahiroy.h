@@ -63,6 +63,7 @@ bool shift_backspace_for_delete(keyrecord_t *record);
 #define PASTE2   S(C(KC_V))    // C-S-v Paste on some terminal emulators
 #define W_IME    A(KC_GRV)     // Toggle IME on / off state on Windows
 #define W_SNIP   S(G(KC_S))    // Activate the screenshot tool
+#define W_WLST   C(A(KC_TAB))  // Activate the window list on Windows
 #define XX_TAB   C(KC_W)       // C-w Close current tab
 #define XX_WIN   A(KC_F4)      // M-F4 Close window on Windows
 
