@@ -55,7 +55,7 @@ case "$1" in
     pi65|pizza65)
         kb=pizzakeyboards/pizza65
         ;;
-    sl|slice65*)
+    sl65|slice65*)
         kb=pizzakeyboards/slice65
         ;;
     pl|planck)

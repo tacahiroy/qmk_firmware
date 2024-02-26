@@ -12,6 +12,7 @@ RGBLIGHT_ENABLE  = no  # Enable WS2812 RGB underlight.  Do not enable this with 
 TAP_DANCE_ENABLE = no
 UNICODE_ENABLE   = no  # Unicode
 LEADER_ENABLE    = no
+CAPS_WORD_ENABLE = yes
 
 MOUSEKEY_ENABLE  = yes # Mouse keys(+4700)
 
