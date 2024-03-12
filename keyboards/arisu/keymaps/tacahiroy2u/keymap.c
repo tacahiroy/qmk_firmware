@@ -13,7 +13,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * Copyright 2021-2023 Takahiro Yoshihara <tacahiroy@gmail.com>
+ * Copyright 2021-2024 Takahiro YOSHIHARA <tacahiroy@gmail.com>
  */
 #include QMK_KEYBOARD_H
 #include "tacahiroy.h"
@@ -36,11 +36,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [_LOWER] = LAYOUT(
-    W_IME,    KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F12,  KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_DEL,   KC_DEL,  KC_MPLY,
-    _______,    _______,  XX_TAB,   KC_GRV,  _______,  _______,            TM_SLST,  TM_PREV,  TM_WLST,  TM_NEXT,  KC_PIPE,  _______,  _______,  _______, KC_VOLU,
-    _______,  _______,  MOUS,     W_SNIP,  KC_F5,    KC_F3,             KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  TM_SSH,   _______,  _______,           KC_VOLD,
-    _______,  _______,  _______,  _______,  _______,  TOP,               BOTTOM,   KC_HOME,  KC_END,   _______,  TM_LASS,  _______,  TOP,
-    _______,            _______,            _______,  _______,           JP_HENK,  KC_ESC,                                 _______,  BOTTOM,  _______
+    KC_GRV,   KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F12,  KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_DEL,   KC_DEL,  KC_MUTE,
+    W_WLST,   _______,  XX_TAB,   _______, _______,  _______,            TM_SLST,  TM_PREV,  TM_WLST,  TM_NEXT,  KC_PIPE,  KC_VOLD,  KC_VOLU,  KC_MPLY, KC_MPRV,
+    _______,  _______,  MOUS,     W_SNIP,   KC_F5,    KC_F3,             KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  TM_SSH,   TM_LASS,  _______,           KC_MNXT,
+    _______,  _______,  _______,  _______,  _______,  TOP,               BOTTOM,   KC_HOME,  KC_END,   _______,  _______,  _______,  TOP,
+    _______,            _______,            _______,  _______,           JP_HENK,  _______,                                KC_HOME,  BOTTOM,  KC_END
   ),
 
   [_RAISE] = LAYOUT(
