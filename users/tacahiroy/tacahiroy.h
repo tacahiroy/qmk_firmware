@@ -82,8 +82,8 @@ bool shift_backspace_for_delete(keyrecord_t *record);
 #define TM_WLST  A(KC_W)
 
 // Parsec (Windows)
-#define PS_MNU  C(S(KC_M))
-#define PS_WIM  C(S(KC_W))
+#define PS_MENU C(S(KC_M))
+#define PS_WINM C(S(KC_W))
 #define PS_DETM C(A(KC_Z))
 
  // Firefox and other web browsers
