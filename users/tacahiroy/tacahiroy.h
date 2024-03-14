@@ -81,6 +81,11 @@ bool shift_backspace_for_delete(keyrecord_t *record);
 #define TM_SLST  A(KC_S)
 #define TM_WLST  A(KC_W)
 
+// Parsec (Windows)
+#define PS_MNU  C(S(KC_M))
+#define PS_WIM  C(S(KC_W))
+#define PS_DETM C(A(KC_Z))
+
  // Firefox and other web browsers
 #define FX_NEXT  C(KC_TAB)
 #define FX_PREV  C(LSFT(KC_TAB))
