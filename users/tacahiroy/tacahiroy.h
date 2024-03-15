@@ -83,6 +83,7 @@ bool shift_backspace_for_delete(keyrecord_t *record);
 
 // Parsec (Windows)
 #define PS_MENU C(S(KC_M))
+#define PS_IMER C(S(KC_I))
 #define PS_WINM C(S(KC_W))
 #define PS_DETM C(A(KC_Z))
 
