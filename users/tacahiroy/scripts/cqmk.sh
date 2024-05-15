@@ -5,6 +5,7 @@ set -Cueo pipefail
 list-boards() {
     printf "%-18s\t%-20s\n" 'aa|ata|atlas_alps'    'cannonkeys/atlas_alps'
     printf "%-18s\t%-20s\n" 'a|at|atlas'           'cannonkeys/atlas'
+    printf "%-18s\t%-20s\n" 'b60|bn60|bakeneko60'  'kkatano/bakeneko60'
     printf "%-18s\t%-20s\n" 'b|bw'                 'boardwalk'
     printf "%-18s\t%-20s\n" 'jp02|jp-02|ar|arisu'  'arisu'
     printf "%-18s\t%-20s\n" 'merr|merro60'         'chlx/merro60'
@@ -36,6 +37,9 @@ case "$1" in
         ;;
     ar|arisu|jp02|jp-02)
         kb=arisu
+        ;;
+    b60|bn60|bakeneko60)
+        kb=kkatano/bakeneko60
         ;;
     b|bw|boardwalk)
         kb=boardwalk
