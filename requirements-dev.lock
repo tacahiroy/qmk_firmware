@@ -5,37 +5,83 @@
 #   pre: false
 #   features: []
 #   all-features: false
+#   with-sources: false
+#   generate-hashes: false
 
 -e file:.
 appdirs==1.4.4
+    # via milc
+    # via qmk-firmware
 argcomplete==1.12.3
+    # via milc
+    # via qmk-firmware
 attrs==23.1.0
+    # via jsonschema
+    # via referencing
 colorama==0.4.6
+    # via halo
+    # via log-symbols
+    # via milc
+    # via qmk-firmware
 dotty-dict==1.3.1
+    # via qmk
+    # via qmk-firmware
 flake8==6.1.0
+    # via pep8-naming
 halo==0.0.31
+    # via milc
 hid==1.0.5
+    # via qmk
+    # via qmk-firmware
 hjson==3.0.2
+    # via qmk
+    # via qmk-firmware
 jsonschema==4.19.1
+    # via qmk
+    # via qmk-firmware
 jsonschema-specifications==2023.7.1
+    # via jsonschema
 log-symbols==0.0.14
+    # via halo
 mccabe==0.7.0
+    # via flake8
 milc==1.6.8
+    # via qmk
+    # via qmk-firmware
 nose2==0.14.0
 pep8-naming==0.13.3
 pillow==9.1.1
+    # via qmk
+    # via qmk-firmware
 pycodestyle==2.11.1
+    # via flake8
 pyflakes==3.1.0
+    # via flake8
 pygments==2.9.0
+    # via qmk
+    # via qmk-firmware
 pyserial==3.5
+    # via qmk
 pyusb==1.2.1
+    # via qmk
+    # via qmk-firmware
 qmk==1.1.2
+    # via qmk-firmware
 qmk-dotty-dict==1.3.0.post1
+    # via qmk-firmware
 referencing==0.30.2
+    # via jsonschema
+    # via jsonschema-specifications
 rpds-py==0.10.6
+    # via jsonschema
+    # via referencing
 ruff==0.1.0
-six==1.16.0
-spinners==0.0.24
-termcolor==2.3.0
-# The following packages are considered to be unsafe in a requirements file:
 setuptools==68.2.2
+    # via qmk
+six==1.16.0
+    # via halo
+spinners==0.0.24
+    # via halo
+    # via milc
+termcolor==2.3.0
+    # via halo
