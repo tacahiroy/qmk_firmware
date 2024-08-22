@@ -41,11 +41,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         W_WLST,  XX_WIN,  XX_TAB,  PS_DETM, PS_WINM, PS_IMER, TM_SLST, TM_PREV, TM_WLST, TM_NEXT, KC_PIPE, KC_VOLD, KC_VOLU, KC_MPLY,   KC_MPRV,
         _______, _______, MOUS,    W_SNIP,  KC_F5,   KC_F3,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  TM_LASS,          _______,   KC_MNXT,
         _______, _______, CUT,     COPY2,   PASTE2,  TOP,     BOTTOM,  KC_HOME, KC_END,  _______, _______, _______,          TOP,       _______,
-        _______, _______, _______,                   JP_HENK,                            _______, _______,          KC_HOME, BOTTOM, KC_END
+        _______, _______, _______,                   JP_HENK,                            _______, _______,          C_LEFT,  BOTTOM, C_RIGHT
     ),
 
     [_RAISE] = LAYOUT_65_ansi_blocker(
-        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, XX_WIN,    _______,
+        _______, _______, _______, KC_F3,   _______, KC_F5,   _______, _______, _______, _______, _______, _______, _______, XX_WIN,    _______,
         _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, FX_NEXT, _______, _______, _______, _______,   _______,
         CW_TOGG, KC_UNDS, KC_EQL,  KC_PLUS, KC_LPRN, KC_LBRC, KC_RBRC, KC_RPRN, KC_DEL,  KC_BSLS, _______, _______,          _______,   _______,
         _______, _______, CUT,     COPY2,   PASTE2,  KC_LCBR, KC_RCBR, KC_PGUP, KC_PGDN, _______, _______, _______,          _______,   QK_BOOT,

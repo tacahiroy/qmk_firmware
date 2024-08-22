@@ -66,6 +66,8 @@ bool shift_backspace_for_delete(keyrecord_t *record);
 #define W_WLST   C(A(KC_TAB))  // Activate the window list on Windows
 #define XX_TAB   C(KC_W)       // C-w Close current tab
 #define XX_WIN   A(KC_F4)      // M-F4 Close window on Windows
+#define C_LEFT   C(KC_LEFT)
+#define C_RIGHT  C(KC_RGHT)
 
 // Vim
 #define V_ALTB   C(KC_6)       // Changing to an alternate buffer in Vim
