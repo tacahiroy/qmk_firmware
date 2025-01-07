@@ -55,8 +55,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_60_tsangan_split_bs_rshift(
     KC_GRV,  A(KC_1), A(KC_2), A(KC_3), A(KC_4), A(KC_5), _______, C_LEFT,  C_RIGHT, _______, _______, _______, _______, _______, _______,
-    W_WLST,  _______, XX_TAB,  _______, _______, _______, TM_SLST, TM_PREV, TM_WLST, TM_NEXT, KC_PIPE, _______, _______, _______,
-    KC_CAPS, KC_MPLY, MOUS,    W_SNIP,  KC_F5,   KC_F3,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  TM_LASS, _______,
+    W_WLST,  _______, XX_TAB,  _______, _______, _______, TM_SLST, TM_PREV, TM_WLST, TM_NEXT, KC_PIPE, KC_CAPS, CW_TOGG, _______,
+    _______, KC_MPLY, MOUS,    W_SNIP,  KC_F5,   KC_F3,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  KC_MINS, _______,
     _______, _______, CUT,     COPY2,   PASTE2,  TOP,     BOTTOM,  KC_HOME, KC_END,  _______, _______, _______, KC_PGUP,
     _______, _______, _______,                   JP_HENK,                            _______, _______, _______ 
   ),
@@ -64,13 +64,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_RAISE] = LAYOUT_60_tsangan_split_bs_rshift(
     W_IME,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  XX_WIN,  XX_WIN,
     _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, FX_NEXT, _______, _______, _______, _______,
-    CW_TOGG, KC_UNDS, KC_EQL,  KC_PLUS, KC_LPRN, KC_LBRC, KC_RBRC, KC_RPRN, KC_DEL,  KC_BSLS, _______, _______, _______,
+    _______, KC_UNDS, KC_EQL,  KC_PLUS, KC_LPRN, KC_LBRC, KC_RBRC, KC_RPRN, KC_DEL,  KC_BSLS, _______, _______, _______,
     _______, _______, CUT,     COPY2,   PASTE2,  KC_LCBR, KC_RCBR, KC_PGUP, KC_PGDN, _______, _______, _______, QK_BOOT,
     _______, _______, _______,                   _______,                            _______, _______, _______
   ),
 
   [_MOUS] = LAYOUT_60_tsangan_split_bs_rshift(
-    QK_BOOT, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_MUTE, KC_MUTE,
+    QK_BOOT, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_MPRV, KC_MNXT, _______,
     _______, _______, _______, _______, _______, _______, _______, KC_BTN1, _______, KC_BTN2, _______, KC_VOLD, KC_VOLU, KC_MPLY,
     _______, _______, _______, _______, _______, _______, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, TM_SSH,  _______, _______,
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
@@ -78,9 +78,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [_ADJUST] = LAYOUT_60_tsangan_split_bs_rshift(
-    QK_BOOT, _______, EPRM,    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, BS2U,    BS2U,
+    QK_BOOT, _______, EPRM,    _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_SYRQ, KC_SCRL, KC_BRK,
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-    _______, CADEL,   _______, _______, _______, DB_TOGG, HHKB,    _______, _______, _______, _______, _______, _______,
+    _______, CADEL,   _______, _______, _______, DB_TOGG, HHKB,    BS2U,    _______, _______, _______, _______, _______,
     _______, _______, _______, _______, VERSION, _______, _______, QWERTY,  COLEMAK, _______, _______, _______, _______,
     _______, _______, _______,                            _______,                   _______, _______, _______ 
   )
