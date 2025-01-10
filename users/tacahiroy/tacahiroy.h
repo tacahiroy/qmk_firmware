@@ -71,6 +71,8 @@ bool shift_backspace_for_delete(keyrecord_t *record);
 #define C_LEFT   C(KC_LEFT)
 #define C_RIGHT  C(KC_RGHT)
 
+#define SK_KANA  C(KC_J)      // SKK Kana on
+
 // Vim
 #define V_ALTB   C(KC_6)       // Changing to an alternate buffer in Vim
 
