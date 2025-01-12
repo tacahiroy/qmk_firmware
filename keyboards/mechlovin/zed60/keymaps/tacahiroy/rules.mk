@@ -14,6 +14,7 @@ UNICODE_ENABLE   = no  # Unicode
 LEADER_ENABLE    = no
 
 CAPS_WORD_ENABLE = yes
+AUTOCORRECT_ENABLE = no
 
 MOUSEKEY_ENABLE      = yes # Mouse keys(+4700)
 
