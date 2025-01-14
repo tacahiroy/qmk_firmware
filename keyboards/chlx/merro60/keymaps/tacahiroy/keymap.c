@@ -30,12 +30,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_LGUI,  KC_LALT, LOWER,                          RS_X(SPC),                KC_RCTL, KC_RALT, KC_RGUI
   ),
 
-  [_NORMAN] = LAYOUT_iso_tsangan(
+  [_NORMAN] = LAYOUT_60_tsangan_hhkb(
     _______, _______,  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-    _______, KC_Q,     KC_W,    KC_D,    KC_F,    KC_K,    KC_J,    KC_U,    KC_R,    KC_L,    KC_SCLN, _______, _______,
-    _______, KC_A,     KC_S,    KC_E,    KC_T,    KC_G,    KC_Y,    KC_N,    KC_I,    KC_O,    KC_H,    _______, _______, _______,
-    _______, _______,  KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_P,    KC_M,    _______, _______, _______, _______, _______,
-    _______, _______, _______,                                               _______,                   _______, _______, _______
+    _______, KC_Q,     KC_W,    KC_D,    KC_F,    KC_K,    KC_J,    KC_U,    KC_R,    KC_L,    KC_SCLN, _______, _______, _______,
+    _______, KC_A,     KC_S,    KC_E,    KC_T,    KC_G,    KC_Y,    KC_N,    KC_I,    KC_O,    KC_H,    _______, _______,
+    _______, KC_Z,     KC_X,    KC_C,    KC_V,    KC_B,    KC_P,    KC_M,    _______, _______, _______, _______, _______,
+    _______, _______, _______,                    _______,                            _______, _______, _______
   ),
 
   [_HHKB] = LAYOUT_60_tsangan_hhkb(
