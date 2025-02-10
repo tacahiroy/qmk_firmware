@@ -101,9 +101,17 @@ bool shift_backspace_for_delete(keyrecord_t *record);
 #define FX_BACK  A(KC_LEFT)
 #define FX_FWD   A(KC_RGHT)
 
+#define GUI_X(k) RGUI_T(KC_ ## k)
+#define ALT_X(k) RALT_T(KC_ ## k)
 #define CTL_X(k) LCTL_T(KC_ ## k)
 #define SFT_X(k) LSFT_T(KC_ ## k)
 #define MEH_X(k) MEH_T(KC_ ## k)
+
+#define GUIX(k) GUI_X(k)
+#define ALTX(k) ALT_X(k)
+#define CTLX(k) CTL_X(k)
+#define SFTX(k) SFT_X(k)
+#define MEHX(k) MEH_X(k)
 
 #define LW_X(k)  LT(_LOWER, KC_ ## k)
 #define RS_X(k)  LT(_RAISE, KC_ ## k)
