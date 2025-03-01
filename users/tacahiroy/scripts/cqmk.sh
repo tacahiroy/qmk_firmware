@@ -11,6 +11,7 @@ list-boards() {
     printf "%-18s\t%-20s\n" 'merr|merro60'         'chlx/merro60'
     printf "%-18s\t%-20s\n" 'pal|palmetto|h60'     'hineybush/h60'
     printf "%-18s\t%-20s\n" 'pa|palice'            'projectkb/alice/rev2'
+    printf "%-18s\t%-20s\n" 'pi65k|kbd67r2'        'kbdfans/kbd67/rev2'
     printf "%-18s\t%-20s\n" 'pi65|pizza65'         'pizzakeyboards/pizza65'
     printf "%-18s\t%-20s\n" 'pl|planck'            'planck/rev4'
     printf "%-18s\t%-20s\n" 'pr|preonic'           'preonic/rev3'
@@ -54,6 +55,9 @@ case "$1" in
         ;;
     pi65|pizza65)
         kb=pizzakeyboards/pizza65
+        ;;
+    pi65k|kbd67r2)
+        kb=kbdfans/kbd67/rev2
         ;;
     pl|planck)
         kb=planck/rev4
