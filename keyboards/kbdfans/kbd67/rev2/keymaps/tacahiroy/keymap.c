@@ -37,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_LOWER] = LAYOUT_65_ansi_blocker(
         KC_GRV,  A(KC_1), A(KC_2), A(KC_3), A(KC_4), A(KC_5), _______, C_LEFT,  C_RIGHT, _______, _______, _______, _______, _______,   KC_MPLY,
-        W_WLST,  XX_WIN,  XX_TAB,  PS_DETM, PS_WINM, PS_IMER, TM_SLST, TM_PREV, TM_WLST, TM_NEXT, KC_PIPE, KC_CAPS, CW_TOGG, _______,   KC_VOLU,
+        W_WLST,  XX_WIN,  XX_TAB,  _______, _______, _______, SK_KANA, TM_PREV, TM_WLST, TM_NEXT, KC_PIPE, KC_CAPS, CW_TOGG, _______,   KC_VOLU,
         _______, KC_MPLY, MOUS,    W_SNIP,  KC_F5,   KC_F3,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  KC_MINS, _______,            KC_VOLD,
         _______, _______, CUT,     COPY2,   PASTE2,  TOP,     BOTTOM,  KC_HOME, KC_END,  _______, _______, _______,          TOP,       _______,
         _______, _______, _______,                   JP_HENK,                            _______, _______,          _______, BOTTOM,    _______
