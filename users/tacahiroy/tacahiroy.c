@@ -48,13 +48,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       }
       return false;
 
-    case HHKB:
-      if (record->event.pressed) {
-        print("mode just switched to HHKB and this is a huge string\n");
-        set_single_persistent_default_layer(_HHKB);
-      }
-      return false;
-
     case BS2U:
       if (record->event.pressed) {
         print("mode just switched to BS2U and this is a huge string\n");
