@@ -18,6 +18,7 @@ list-boards() {
     printf "%-18s\t%-20s\n" 't|tmov2'              'cannonkeys/tmov2'
     printf "%-18s\t%-20s\n" 'y|yeti'               'axolstudio/yeti/soldered'
     printf "%-18s\t%-20s\n" 'jd|jjwd|derivative|zed60'   'mechlovin/zed60'
+    printf "%-18s\t%-20s\n" 'mv|minivan'                 'thevankeyboards/minivan'
 }
 
 if [ $# -lt 1 ]; then
@@ -73,6 +74,9 @@ case "$1" in
         ;;
     jd|jjwd|derivative|zed60)
         kb=mechlovin/zed60
+        ;;
+    mv|minivan)
+        kb=thevankeyboards/minivan
         ;;
     *)
         kb=$1
