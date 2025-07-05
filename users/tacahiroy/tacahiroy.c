@@ -93,6 +93,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       return false;
       break;
 
+    case MOVE:
+      if (record->event.pressed) {
+        layer_on(_MOVE);
+      } else {
+        layer_off(_MOVE);
+      }
+      return false;
+      break;
+
     case MOUS:
       if (record->event.pressed) {
         layer_on(_MOUS);
