@@ -35,7 +35,10 @@
 #define LAYER_STATE_16BIT
 
 // https://docs.qmk.fm/features/caps_word
-#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
-// NOTE: This doesn't work with key codes for Space cadet shift
 #define CAPS_WORD_INVERT_ON_SHIFT
 #define CAPS_WORD_IDLE_TIMEOUT 3000  // 3 seconds.
+
+#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
+
+// https://docs.qmk.fm/#/squeezing_avr?id=layers
+#define LAYER_STATE_16BIT
