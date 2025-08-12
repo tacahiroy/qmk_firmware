@@ -70,6 +70,8 @@ bool shift_backspace_for_delete(keyrecord_t *record);
 #define XX_WIN   A(KC_F4)      // M-F4 Close window on Windows
 #define C_LEFT   C(KC_LEFT)
 #define C_RIGHT  C(KC_RGHT)
+#define AHK_ZOM  S(KC_SCRL)    // Activates the Zoom window on the host side. This is useful when the MobaXTerm RDP window is active.
+#define AHK_ATB  KC_SCRL       // Activates window switcher on the host side.
 
 #define SK_KANA  C(KC_J)      // SKK Kana on
 
