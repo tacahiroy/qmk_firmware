@@ -32,5 +32,11 @@
 #define MOUSEKEY_MAX_SPEED      3
 #define MOUSEKEY_WHEEL_DELAY    0
 
+// https://docs.qmk.fm/features/caps_word
 #define CAPS_WORD_INVERT_ON_SHIFT
+#define CAPS_WORD_IDLE_TIMEOUT 3000  // 3 seconds.
+
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
+
+// https://docs.qmk.fm/#/squeezing_avr?id=layers
+#define LAYER_STATE_16BIT

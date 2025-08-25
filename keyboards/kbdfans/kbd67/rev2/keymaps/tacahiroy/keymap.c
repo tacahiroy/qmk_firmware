@@ -53,9 +53,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_RAISE] = LAYOUT_65_ansi_blocker(
         _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  XX_WIN,    KC_F13,
-        _______, A(KC_1), A(KC_2), A(KC_3), A(KC_4), A(KC_9), KC_CIRC, KC_AMPR, KC_ASTR, FX_NEXT, _______, _______, _______, _______,   _______,
-        _______, _______, KC_EQL,  KC_PLUS, KC_LPRN, KC_LBRC, KC_RBRC, KC_RPRN, KC_DEL,  KC_BSLS, _______, _______, _______,            _______,
-        _______, _______, CUT,     COPY2,   PASTE2,  KC_LCBR, KC_RCBR, KC_PGUP, KC_PGDN, _______, _______, _______,          _______,   QK_BOOT,
+        AHK_ATB, AHK_MOB, _______, _______, _______, _______, _______, _______, _______, FX_NEXT, _______, _______, _______, _______,   _______,
+        _______, KC_UNDS, KC_EQL,  KC_PLUS, KC_LPRN, KC_LBRC, KC_RBRC, KC_RPRN, KC_DEL,  KC_BSLS, _______, _______, _______,            _______,
+        _______, AHK_ZOM, CUT,     COPY2,   PASTE2,  KC_LCBR, KC_RCBR, KC_PGUP, KC_PGDN, _______, _______, _______,          _______,   QK_BOOT,
         _______, _______, _______,                   _______,                            _______, _______,          _______, _______,   _______
     ),
 
