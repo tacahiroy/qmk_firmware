@@ -48,6 +48,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       }
       return false;
 
+    case MACOS:
+      if (record->event.pressed) {
+        print("mode just switched to macOS and this is a huge string\n");
+        set_single_persistent_default_layer(_MACOS);
+      }
+      return false;
+
     case BS2U:
       if (record->event.pressed) {
         print("mode just switched to BS2U and this is a huge string\n");
