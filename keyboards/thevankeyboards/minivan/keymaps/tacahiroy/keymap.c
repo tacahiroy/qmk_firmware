@@ -49,9 +49,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [_RAISE] = LAYOUT_arrow(
-    KC_ESC,  KC_EXLM, KC_AT,    KC_HASH,  KC_DLR,   KC_PERC,  KC_CIRC,  KC_AMPR,  KC_ASTR,  FX_NEXT,  _______,  XX_WIN,
-    _______, _______, KC_EQL,   KC_PLUS,  KC_LPRN,  KC_LBRC,  KC_RBRC,  KC_RPRN,  KC_DEL,   KC_BSLS,  _______,  _______,
-    _______, _______, CUT,      COPY2,    PASTE2,   KC_LCBR,  KC_RCBR,  KC_PGUP,  KC_PGDN,  _______,  _______,  _______,
+    AHK_ATB, KC_EXLM, KC_AT,    KC_HASH,  KC_DLR,   KC_PERC,  KC_CIRC,  KC_AMPR,  KC_ASTR,  FX_NEXT,  _______,  XX_WIN,
+    _______, AHK_MOB, KC_EQL,   KC_PLUS,  KC_LPRN,  KC_LBRC,  KC_RBRC,  KC_RPRN,  KC_DEL,   KC_BSLS,  _______,  _______,
+    _______, AHK_ZOM, CUT,      COPY2,    PASTE2,   KC_LCBR,  KC_RCBR,  KC_PGUP,  KC_PGDN,  _______,  _______,  _______,
     _______, _______, _______,                      _______,  _______,            _______,  _______,  _______,  _______
   ),
 
@@ -62,7 +62,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, _______,                     _______, _______,            _______,  _______,  _______,  _______
   ),
 
-  [_aOUS] = LAYOUT_arrow(
+  [_MOUS] = LAYOUT_arrow(
     _______, _______, _______,  _______,  _______,  _______,  _______,  _______,  _______, _______,  _______, _______,
     _______, _______, _______,  _______,  _______,  _______,  _______,  _______,  _______, _______,  _______, _______,
     _______, _______, _______,  _______,  _______,  _______,  _______,  _______,  _______, _______,  _______, _______,
