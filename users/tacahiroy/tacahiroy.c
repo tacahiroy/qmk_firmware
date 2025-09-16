@@ -1,4 +1,4 @@
-/* Copyright 2020-2023 Takahiro Yoshihara <tacahiroy@gmail.com>
+/* Copyright 2020-2025 Takahiro YOSHIHARA <tacahiroy@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
