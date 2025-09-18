@@ -118,6 +118,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       return false;
       break;
 
+    case SYSTEM:
+      if (record->event.pressed) {
+        layer_on(_SYSTEM);
+      } else {
+        layer_off(_SYSTEM);
+      }
+      return false;
+      break;
+
     case ADJUST:
       if (record->event.pressed) {
         layer_on(_ADJUST);

@@ -30,6 +30,7 @@ enum tacahiroy_layers {
   _RAISE,
   _MOUS,
   _MOVE,
+  _SYSTEM,
   _ADJUST,
 };
 
@@ -43,6 +44,7 @@ enum tacahiroy_keycodes {
   RAISE,
   MOUS,
   MOVE,
+  SYSTEM,
   ADJUST,
   VERSION,
   EPRM,
