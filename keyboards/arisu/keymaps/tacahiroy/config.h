@@ -15,7 +15,7 @@
 
 #pragma once
 
-#define FORCE_NKRO
+#define NKRO_DEFAULT_ON true
 #define PREVENT_STUCK_MODIFIERS // when switching layers, this will release all mods
 #define DEBOUNCE 5              // the delay when reading the value of the pin (5 is default)
 #define LAYOUT_COLEMAK
@@ -31,5 +31,12 @@
 #define MOUSEKEY_TIME_TO_MAX    20
 #define MOUSEKEY_MAX_SPEED      3
 #define MOUSEKEY_WHEEL_DELAY    0
+#define MK_KINETIC_SPEED
+
+#define RGBLIGHT_LAYERS_OVERRIDE_RGB_OFF
+
+#define CAPS_WORD_INVERT_ON_SHIFT
+#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
+
 // https://docs.qmk.fm/#/squeezing_avr?id=layers
 #define LAYER_STATE_16BIT
