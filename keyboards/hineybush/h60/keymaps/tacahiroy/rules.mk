@@ -13,7 +13,7 @@ TAP_DANCE_ENABLE = no
 UNICODE_ENABLE   = no  # Unicode
 LEADER_ENABLE    = yes
 
-AUTOCORRECT_ENABLE = yes
+AUTOCORRECT_ENABLE = false
 CAPS_WORD_ENABLE   = yes
 MOUSEKEY_ENABLE    = yes # Mouse keys(+4700)
 
