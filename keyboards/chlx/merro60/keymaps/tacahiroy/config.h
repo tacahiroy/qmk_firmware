@@ -15,7 +15,7 @@
 
 #pragma once
 
-#define FORCE_NKRO
+#define NKRO_DEFAULT_ON true
 #define PREVENT_STUCK_MODIFIERS // when switching layers, this will release all mods
 #define DEBOUNCE 5              // the delay when reading the value of the pin (5 is default)
 #define LAYOUT_COLEMAK
