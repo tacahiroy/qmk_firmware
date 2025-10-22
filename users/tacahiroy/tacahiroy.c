@@ -55,6 +55,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       }
       return false;
 
+    case UKISO:
+      if (record->event.pressed) {
+        print("mode just switched to UKISO and this is a huge string\n");
+        set_single_persistent_default_layer(_UKISO);
+      }
+      return false;
+
     case BS2U:
       if (record->event.pressed) {
         print("mode just switched to BS2U and this is a huge string\n");
