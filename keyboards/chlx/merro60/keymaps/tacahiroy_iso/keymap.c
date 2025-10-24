@@ -55,7 +55,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [_LOWER] = LAYOUT_iso_tsangan(
-    KC_GRV,  A(KC_1), A(KC_2), A(KC_3), A(KC_4), A(KC_5), _______, C_LEFT,  C_RIGHT, _______, _______, _______, _______,  _______, _______,
+    KC_GRV,  _______, _______, _______, _______, _______, _______, C_LEFT,  C_RIGHT, _______, _______, _______, _______,  _______, _______,
     W_WLST,  _______, XX_TAB,  KC_MEH,  KC_CAPS, _______, SK_KANA, TM_PREV, TM_WLST, TM_NEXT, KC_PIPE, _______, CW_TOGG,
     _______, KC_MPLY, MOUS,    W_SNIP,  KC_F5,   KC_F3,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  KC_MINS, _______,  _______,
     _______, _______, _______, CUT,     COPY2,   PASTE2,  TOP,     BOTTOM,  KC_HOME, KC_END,  _______, _______, _______,  KC_PGUP,
@@ -64,16 +64,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_RAISE] = LAYOUT_iso_tsangan(
     _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_F13, XX_WIN,
-    _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, FX_NEXT, _______, _______, _______,
+    AHK_ATB, AHK_MOB, _______, _______, _______, _______, KC_CIRC, KC_AMPR, KC_ASTR, FX_NEXT, _______, _______, _______,
     _______, KC_UNDS, KC_EQL,  KC_PLUS, KC_LPRN, KC_LBRC, KC_RBRC, KC_RPRN, KC_DEL,  KC_BSLS, _______, _______, _______, _______,
-    _______, _______, _______, CUT,     COPY2,   PASTE2,  KC_LCBR, KC_RCBR, KC_PGUP, KC_PGDN, _______, _______, _______, QK_BOOT,
+    _______, _______, AHK_ZOM, CUT,     COPY2,   PASTE2,  KC_LCBR, KC_RCBR, KC_PGUP, KC_PGDN, _______, _______, _______, QK_BOOT,
     _______, _______, _______,                                     _______,                            _______, _______, _______
   ),
 
   [_MOUS] = LAYOUT_iso_tsangan(
     QK_BOOT, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_MPRV, KC_MNXT,  KC_MPLY,
-    _______, _______, _______, _______, _______, _______, _______, KC_BTN1, _______, KC_BTN2, _______, KC_VOLD, KC_VOLU,
-    _______, _______, _______, _______, _______, _______, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, TM_SSH,  _______, _______, _______,
+    _______, _______, _______, _______, _______, _______, _______, MS_BTN1, _______, MS_BTN2, _______, KC_VOLD, KC_VOLU,
+    _______, _______, _______, _______, _______, _______, MS_LEFT, MS_DOWN, MS_UP,   MS_RGHT, _______, _______, _______, _______,
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
     _______, _______, _______,                   _______,                            _______, _______, _______
   ),
