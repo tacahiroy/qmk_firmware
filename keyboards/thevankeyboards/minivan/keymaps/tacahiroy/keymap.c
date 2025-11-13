@@ -43,8 +43,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_arrow(
     KC_GRV,  KC_1,    KC_2,     KC_3,     KC_4,    KC_5,     KC_6,     KC_7,     KC_8,    KC_9,     KC_0,    KC_CAPS,
-    _______, KC_MEH,  XX_TAB,   W_SNIP,   KC_F5,   KC_F3,    KC_LEFT,  KC_DOWN,  KC_UP,   KC_RGHT,  KC_COLN, _______,
-    _______, KC_VOLD, KC_VOLU,  KC_MPLY,  _______, TOP,      BOTTOM,   KC_HOME,  KC_END,  _______,  _______, _______,
+    _______, KC_MEH,  XX_TAB,   W_SNIP,   KC_F5,   KC_F3,    KC_LEFT,  KC_DOWN,  KC_UP,   KC_RGHT,  KC_PIPE, _______,
+    _______, V_ALTB,  _______,  _______,  _______, TOP,      BOTTOM,   KC_HOME,  KC_END,  _______,  _______, _______,
     _______, _______, _______,                     _______,  JP_HENK,            _______, _______,  _______, _______
   ),
 
@@ -57,8 +57,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_MOVE] = LAYOUT_arrow(
     M_EXPS,  KC_F1,   KC_F2,    KC_F3,    KC_F4,   KC_F5,   V_ALTB,   TM_PREV,  _______,  TM_NEXT,  _______,  _______,
-    SYSTEM,  KC_F6,   KC_F7,    KC_F8,    KC_F9,   KC_F10,  MS_LEFT,  MS_DOWN,  MS_UP,    MS_RGHT,  TM_SSH,   KC_PIPE,
-    _______, _______, _______,  _______,  KC_F11,  KC_F12,  _______,  MS_BTN1,  MS_BTN2,  _______,  _______,  QK_BOOT,
+    SYSTEM,  KC_F6,   KC_F7,    KC_F8,    KC_F9,   KC_F10,  MS_LEFT,  MS_DOWN,  MS_UP,    MS_RGHT,  TM_SSH,   _______,
+    _______, KC_MPLY, KC_VOLD,  KC_VOLU,  KC_F11,  KC_F12,  _______,  MS_BTN1,  MS_BTN2,  _______,  _______,  QK_BOOT,
     _______, _______, _______,                     _______, _______,            _______,  _______,  _______,  _______
   ),
 
