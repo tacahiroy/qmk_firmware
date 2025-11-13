@@ -21,10 +21,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_COLEMAK] = LAYOUT_arrow(
-    KC_TAB,     KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_MINS,
-    CTL_X(ESC), KC_A,    KC_R,    KC_S,    KC_T,    KC_D,    KC_H,    KC_N,    KC_E,    KC_I,    KC_O,    KC_QUOT,
-    KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
-    KC_LGUI,    KC_LALT, MOVE,                 LW_X(ENT),    RS_X(SPC),        KC_BSPC, RAISE,   KC_RCTL, KC_RALT
+    KC_TAB,     KC_Q,  KC_W,    KC_F,    KC_P,    KC_G,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_MINS,
+    CTL_X(ESC), KC_A,  KC_R,    KC_S,    KC_T,    KC_D,    KC_H,    KC_N,    KC_E,    KC_I,    KC_O,    KC_ENT,
+    KC_LSFT,    KC_Z,  KC_X,    KC_C,    KC_V,    KC_B,    KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
+    KC_LGUI,    MOVE,  KC_LALT,              LW_X(ENT),    RS_X(SPC),        KC_BSPC, KC_QUOT, KC_RCTL, KC_RALT
   ),
 
   [_NORMAN] = LAYOUT_arrow(
