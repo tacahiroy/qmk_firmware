@@ -1,4 +1,4 @@
-/* Copyright 2020-2025 Takahiro YOSHIHARA <tacahiroy@gmail.com>
+/* Copyright 2020-2026 Takahiro YOSHIHARA <tacahiroy@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,8 +19,7 @@
 // representation of active modifiers.
 uint8_t mod_state;
 
-static bool lower_pressed = false;
-static bool raise_pressed = false;
+static bool on_bs2u = false;
 
 void toggle_ime(bool is_on) {
     if (is_on) {
@@ -66,6 +65,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       if (record->event.pressed) {
         print("mode just switched to BS2U and this is a huge string\n");
         set_single_persistent_default_layer(_BS2U);
+        on_bs2u = true;
       }
       return false;
 
@@ -78,31 +78,21 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     case LOWER:
       if (record->event.pressed) {
-        lower_pressed = true;
         layer_on(_LOWER);
         update_tri_layer(_LOWER, _RAISE, _ADJUST);
       } else {
         layer_off(_LOWER);
         update_tri_layer(_LOWER, _RAISE, _ADJUST);
-        if (lower_pressed) {
-            toggle_ime(false);
-        }
-        lower_pressed = false;
       }
       return false;
 
     case RAISE:
       if (record->event.pressed) {
-        raise_pressed = true;
         layer_on(_RAISE);
         update_tri_layer(_LOWER, _RAISE, _ADJUST);
       } else {
         layer_off(_RAISE);
         update_tri_layer(_LOWER, _RAISE, _ADJUST);
-        if (raise_pressed) {
-            toggle_ime(true);
-        }
-        raise_pressed = false;
       }
       return false;
       break;
@@ -172,10 +162,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       return shift_backspace_for_delete(record);
 
     default:
-      if (record->event.pressed) {
-        lower_pressed = false;
-        raise_pressed = false;
-      }
       break;
   }
   return true;
