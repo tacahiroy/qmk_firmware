@@ -1,8 +1,11 @@
 #ifndef CONFIG_USER_H
+
 #define CONFIG_USER_H
 
-#define NKRO_DEFAULT_ON 1
+#define NKRO_DEFAULT_ON true
 #define PREVENT_STUCK_MODIFIERS // when switching layers, this will release all mods
+
+#define LAYOUT_COLEMAK
 
 #define TAPPING_TERM 150
 #define MEDIA_KEY_DELAY 20

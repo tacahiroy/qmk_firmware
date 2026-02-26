@@ -126,3 +126,4 @@ bool shift_backspace_for_delete(keyrecord_t *record);
 #define RS_X(k)  LT(_RAISE, KC_ ## k)
 #define MV_X(k)  LT(_MOVE, KC_ ## k)
 #define MO_X(k)  LT(_MOUS, KC_ ## k)
+#define SY_X(k)  LT(_SYSTEM, KC_ ## k)
