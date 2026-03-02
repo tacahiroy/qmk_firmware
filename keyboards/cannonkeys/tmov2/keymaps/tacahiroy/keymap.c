@@ -23,10 +23,10 @@ This file is based on cannonkeys/tmov2/keymaps/default/keymap.c@bbc3bc55
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[_COLEMAK] = LAYOUT_default(
-        QK_GESC,     KC_TAB,    KC_Q,     KC_W,  KC_F,   KC_P,  KC_G,  KC_J,  KC_L,   KC_U,  KC_Y,     KC_SCLN,  KC_MINS,  KC_EQL,   KC_BSPC,
-        KC_PGUP,     CTLX(ESC), KC_A,     KC_R,  KC_S,   KC_T,  KC_D,  KC_H,  KC_N,   KC_E,  KC_I,     KC_O,     KC_QUOT,  KC_ENT,
-        KC_PGDN,     SC_LSPO,   XXXXXXX,  KC_Z,  KC_X,   KC_C,  KC_V,  KC_B,  KC_K,   KC_M,  KC_COMM,  KC_DOT,   KC_SLSH,  SC_RSPC,  SYSTEM,
-        SY_X(MPLY),  KC_LGUI,   KC_LALT,         LOWER,                RS_X(SPC),            KC_RALT,            KC_RCTL
+        QK_GESC,  KC_TAB,    KC_Q,     KC_W,  KC_F,   KC_P,  KC_G,  KC_J,  KC_L,   KC_U,  KC_Y,     KC_SCLN,  KC_MINS,  KC_EQL,   KC_BSPC,
+        KC_PGUP,  CTLX(ESC), KC_A,     KC_R,  KC_S,   KC_T,  KC_D,  KC_H,  KC_N,   KC_E,  KC_I,     KC_O,     KC_QUOT,  KC_ENT,
+        KC_PGDN,  SC_LSPO,   XXXXXXX,  KC_Z,  KC_X,   KC_C,  KC_V,  KC_B,  KC_K,   KC_M,  KC_COMM,  KC_DOT,   KC_SLSH,  SC_RSPC,  SYSTEM,
+        SYSTEM,   KC_LGUI,   KC_LALT,         LOWER,                RS_X(SPC),            KC_RALT,            KC_RCTL
     ),
 
 	[_NORMAN] = LAYOUT_default(
@@ -51,16 +51,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
 	[_RAISE] = LAYOUT_default(
-        KC_MPLY,  AHK_ATB,  KC_EXLM,  KC_AT,    KC_HASH,  KC_DLR,   KC_PERC,  KC_CIRC,  KC_AMPR,  KC_ASTR,  FX_NEXT,  V_ALTB,   TM_PREV,  TM_NEXT,  XX_WIN,
-        KC_VOLU,  KC_ESC,   AHK_MOB,  KC_EQL,   KC_PLUS,  KC_LPRN,  KC_LBRC,  KC_RBRC,  KC_RPRN,  KC_DEL,   KC_BSLS,  _______,  _______,  _______,
-        KC_VOLD,  _______,  XXXXXXX,  AHK_ZOM,  CUT,      COPY2,    PASTE2,   KC_LCBR,  KC_RCBR,  KC_PGUP,  KC_PGDN,  _______,  _______,  _______,  XXXXXXX,
+        _______,  AHK_ATB,  KC_EXLM,  KC_AT,    KC_HASH,  KC_DLR,   KC_PERC,  KC_CIRC,  KC_AMPR,  KC_ASTR,  FX_NEXT,  V_ALTB,   TM_PREV,  TM_NEXT,  XX_WIN,
+        _______,  KC_ESC,   AHK_MOB,  KC_EQL,   KC_PLUS,  KC_LPRN,  KC_LBRC,  KC_RBRC,  KC_RPRN,  KC_DEL,   KC_BSLS,  _______,  _______,  _______,
+        _______,  _______,  XXXXXXX,  AHK_ZOM,  CUT,      COPY2,    PASTE2,   KC_LCBR,  KC_RCBR,  KC_PGUP,  KC_PGDN,  _______,  _______,  _______,  XXXXXXX,
         _______,            _______,  _______,            _______,            _______,                      _______,            _______
     ),
 
 	[_SYSTEM] = LAYOUT_default(
-        _______,  _______,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    _______,  MS_BTN1,  _______,  MS_BTN2,  _______,  _______,  _______,  QK_BOOT,
-        _______,  _______,  KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   MS_LEFT,  MS_DOWN,  MS_UP,    MS_RGHT,  _______,  _______,  _______,
-        _______,  _______,  XXXXXXX,  _______,  _______,  KC_F11,   KC_F12,   _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,
+        KC_MPLY,  _______,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    _______,  MS_BTN1,  _______,  MS_BTN2,  _______,  _______,  _______,  QK_BOOT,
+        KC_VOLU,  _______,  KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   MS_LEFT,  MS_DOWN,  MS_UP,    MS_RGHT,  _______,  _______,  _______,
+        KC_VOLD,  _______,  XXXXXXX,  _______,  _______,  KC_F11,   KC_F12,   _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,
         _______,            _______,  _______,            _______,            _______,                      _______,            _______
     ),
 
