@@ -47,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         W_IME,    KC_GRV,   KC_1,     KC_2,     KC_3,    KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     _______,  _______,  KC_TILD,
 		_______,  _______,  SYSTEM,   XX_TAB,   W_SNIP,  KC_F5,    KC_F3,    KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  TM_SSH,   JP_MHEN,  _______,
         _______,  _______,  XXXXXXX,  KC_CAPS,  CUT,     COPY2,    PASTE2,   TOP,      BOTTOM,   KC_HOME,  KC_END,   _______,  _______,  _______,  XXXXXXX,
-        _______,  _______,  _______,            _______,                     JP_HENK,                      _______,            _______
+        _______,  _______,  _______,            _______,                     SK_KANA,                      _______,            _______
     ),
 
 	[_RAISE] = LAYOUT_default(
@@ -61,7 +61,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_MPLY,  _______,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    _______,  MS_BTN1,  _______,  MS_BTN2,  _______,  _______,  _______,  QK_BOOT,
         KC_VOLU,  _______,  KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   MS_LEFT,  MS_DOWN,  MS_UP,    MS_RGHT,  _______,  _______,  _______,
         KC_VOLD,  _______,  XXXXXXX,  _______,  _______,  KC_F11,   KC_F12,   _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,
-        _______,            _______,  _______,            _______,            _______,                      _______,            _______
+        XXXXXXX,            _______,  _______,            _______,            _______,                      _______,            _______
     ),
 
 	[_ADJUST] = LAYOUT_default(
