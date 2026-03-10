@@ -1,5 +1,5 @@
 /*
- * Copyright 2025 Takahiro YOSHIHARA <tacahiroy@gmail.com>
+ * Copyright 2025-2026 Takahiro YOSHIHARA <tacahiroy@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -45,17 +45,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_LOWER] = LAYOUT_65_ansi_blocker(
         KC_GRV,  _______, _______, _______, _______, _______, _______, C_LEFT,  C_RIGHT, _______, _______, _______, _______, _______,   KC_MPLY,
-        W_WLST,  _______, XX_TAB,  KC_MEH,  KC_CAPS, _______, SK_KANA, TM_PREV, TM_WLST, TM_NEXT, KC_PIPE, _______, _______, _______,   KC_VOLU,
-        _______, KC_MPLY, MOUS,    _______, _______, _______, _______, KC_PGDN, KC_PGUP, KC_BSLS, TM_SSH,  _______, _______,            KC_VOLD,
+        W_WLST,  _______, XX_TAB,  KC_MEH,  KC_CAPS, _______, JP_HENK, TM_PREV, TM_WLST, TM_NEXT, KC_PIPE, _______, _______, _______,   KC_VOLU,
+        _______, KC_MPLY, MOUS,    W_SNIP,  _______, _______, _______, KC_PGDN, KC_PGUP, KC_BSLS, TM_SSH,  JP_MHEN, _______,            KC_VOLD,
         _______, _______, CUT,     COPY2,   PASTE2,  TOP,     BOTTOM,  KC_HOME, KC_END,  _______, _______, _______,          TOP,       _______,
-        _______, _______, _______,                   JP_HENK,                            _______, _______,          _______, BOTTOM,    _______
+        _______, _______, _______,                   SK_KANA,                            _______, _______,          _______, BOTTOM,    _______
     ),
 
     [_RAISE] = LAYOUT_65_ansi_blocker(
         _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  XX_WIN,    KC_F13,
-        AHK_ATB, AHK_MOB, XX_TAB,  _______, _______, KC_LBRC, KC_RBRC, _______, KC_DEL,  FX_NEXT, _______, _______, KC_VOLD, KC_VOLU,   _______,
-        _______, KC_MPLY, KC_EQL,  W_SNIP,  KC_F5,   KC_F3,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______, _______, _______,            _______,
-        _______, AHK_ZOM, CUT,     COPY2,   PASTE2,  KC_LCBR, KC_RCBR, KC_HOME, KC_END, _______, _______, _______,          _______,   QK_BOOT,
+        AHK_ATB, AHK_MOB, XX_TAB,  _______, KC_LPRN, KC_LBRC, KC_RBRC, KC_RPRN, KC_DEL,  FX_NEXT, _______, _______, KC_VOLD, KC_VOLU,   _______,
+        _______, KC_MPLY, KC_EQL,  KC_PLUS, KC_F5,   KC_F3,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______, _______, _______,            _______,
+        _______, AHK_ZOM, CUT,     COPY2,   PASTE2,  KC_LCBR, KC_RCBR, KC_HOME, KC_END,  _______, _______, _______,          _______,   QK_BOOT,
         _______, _______, _______,                   _______,                            _______, _______,          _______, _______,   _______
     ),
 
