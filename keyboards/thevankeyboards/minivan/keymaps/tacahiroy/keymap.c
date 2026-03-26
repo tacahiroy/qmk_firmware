@@ -1,7 +1,7 @@
 /*
 for MiniVan by The Van Keyboards
 
-Copyright 2025 YOSHIHARA Takahiro <tacahiroy@gmail.com>
+Copyright 2025-2026 YOSHIHARA Takahiro <tacahiroy@gmail.com>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -45,7 +45,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_GRV,  KC_1,    KC_2,     KC_3,     KC_4,    KC_5,     KC_6,     KC_7,     KC_8,    KC_9,     KC_0,    KC_TILD,
     _______, V_ALTB,  XX_TAB,   W_SNIP,   KC_F5,   KC_F3,    KC_LEFT,  KC_DOWN,  KC_UP,   KC_RGHT,  KC_PIPE, _______,
     _______, KC_MEH,  KC_HYPR,  KC_CAPS,  MC_TOGG, TOP,      BOTTOM,   KC_HOME,  KC_END,  _______,  _______, _______,
-    _______, _______, _______,                     _______,  JP_HENK,            _______, _______,  _______, _______
+    _______, _______, _______,                     _______,  SK_KANA,            _______, _______,  _______, _______
   ),
 
   [_RAISE] = LAYOUT_arrow(
