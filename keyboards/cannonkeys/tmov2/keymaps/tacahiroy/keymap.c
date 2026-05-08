@@ -44,16 +44,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
 	[_LOWER] = LAYOUT_default(
-        W_IME,    KC_GRV,   KC_1,     KC_2,     KC_3,    KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     _______,  _______,  KC_TILD,
+        W_IME,    KC_GRV,   KC_1,     KC_2,     KC_3,    KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     _______,  KC_CAPS,  KC_TILD,
 		_______,  _______,  SYSTEM,   XX_TAB,   W_SNIP,  KC_F5,    KC_F3,    KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  TM_SSH,   JP_MHEN,  _______,
-        _______,  _______,  XXXXXXX,  KC_CAPS,  CUT,     COPY2,    PASTE2,   TOP,      BOTTOM,   KC_HOME,  KC_END,   _______,  _______,  _______,  XXXXXXX,
+        _______,  _______,  XXXXXXX,  _______,  CUT,     COPY2,    PASTE2,   TOP,      BOTTOM,   KC_HOME,  KC_END,   _______,  _______,  _______,  XXXXXXX,
         _______,  _______,  _______,            _______,                     SK_KANA,                      _______,            _______
     ),
 
 	[_RAISE] = LAYOUT_default(
         _______,  AHK_ATB,  KC_EXLM,  KC_AT,    KC_HASH,  KC_DLR,   KC_PERC,  KC_CIRC,  KC_AMPR,  KC_ASTR,  FX_NEXT,  V_ALTB,   TM_PREV,  TM_NEXT,  XX_WIN,
         _______,  KC_ESC,   AHK_MOB,  KC_EQL,   KC_PLUS,  KC_LPRN,  KC_LBRC,  KC_RBRC,  KC_RPRN,  KC_DEL,   KC_BSLS,  _______,  _______,  _______,
-        _______,  _______,  XXXXXXX,  AHK_ZOM,  CUT,      COPY2,    PASTE2,   KC_LCBR,  KC_RCBR,  KC_PGUP,  KC_PGDN,  _______,  _______,  _______,  XXXXXXX,
+        _______,  _______,  XXXXXXX,  AHK_ZOM,  CUT,      COPY2,    PASTE2,   KC_LCBR,  KC_RCBR,  KC_PGUP,  KC_PGDN,  _______,  _______,  _______,  QK_BOOT,
         _______,            _______,  _______,            _______,            _______,                      _______,            _______
     ),
 
