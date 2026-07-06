@@ -37,15 +37,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______,  _______,  _______,                      _______,                                          _______,  _______,  _______
   ),
 
-  [_MACOS] = LAYOUT_60_tsangan_hhkb(
-    _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,
-    _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,
-    _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,
-    _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,
-    KC_LOPT,  KC_LCMD,  _______,                      _______,                                          _______,  KC_RCMD,  KC_ROPT
-  ),
-
-
   [_BS2U] = LAYOUT_60_tsangan_hhkb(
     _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  KC_BSPC,  KC_BSPC,
     _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  KC_BSLS,
@@ -64,7 +55,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_60_tsangan_hhkb(
     KC_GRV,  _______, _______, _______, _______, _______, _______, C_LEFT,  C_RIGHT, _______, _______, _______, _______,  _______, _______,
-    W_WLST,  _______, XX_TAB,  KC_MEH,  KC_CAPS, _______, SK_KANA, TM_PREV, TM_WLST, TM_NEXT, KC_PIPE, _______, _______,  _______,
+    W_WLST,  _______, XX_TAB,  KC_MEH,  KC_CAPS, _______, SK_KANA, FX_PREV, _______, FX_NEXT, KC_PIPE, _______, _______,  _______,
     _______, KC_MPLY, MOUS,    W_SNIP,  _______, _______, _______, KC_PGDN, KC_PGUP, KC_BSLS, TM_SSH,  _______, _______,
     _______, _______, CUT,     COPY2,   PASTE2,  TOP,     BOTTOM,  KC_HOME, KC_END,  _______, _______, _______, KC_PGUP,
     _______, _______, _______,                   JP_HENK,                            _______, _______, _______ 
@@ -72,9 +63,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_RAISE] = LAYOUT_60_tsangan_hhkb(
     _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  XX_WIN, XX_WIN,
-    AHK_ATB, AHK_MOB, XX_TAB,  _______, _______, KC_LBRC, KC_RBRC, KC_AMPR, KC_ASTR, FX_NEXT, _______, KC_VOLD, KC_VOLU, _______,
-    _______, KC_MPLY, KC_EQL,  KC_PLUS, KC_F5,   KC_F3,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______, _______, _______,
-    _______, AHK_ZOM, _______, COPY2,   PASTE2,  KC_LCBR, KC_RCBR, KC_HOME, KC_END,  _______, _______, _______, QK_BOOT,
+    AHK_ATB, AHK_MOB, XX_TAB,  FX_PREV, FX_NEXT, KC_LBRC, KC_RBRC, TM_PREV, _______, TM_NEXT, _______, KC_VOLD, KC_VOLU, _______,
+    _______, KC_MPLY, KC_EQL,  KC_PLUS, KC_F5,   KC_F3,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______, _______,
+    _______, AHK_ZOM, TM_COPY, COPY2,   PASTE2,  KC_LCBR, KC_RCBR, KC_HOME, KC_END,  _______, _______, _______, QK_BOOT,
     _______, _______, _______,                   _______,                            _______, _______, _______
   ),
 

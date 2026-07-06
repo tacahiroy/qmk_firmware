@@ -93,6 +93,7 @@ bool shift_backspace_for_delete(keyrecord_t *record);
 #define TM_SSH   A(KC_O)
 #define TM_NEW   A(KC_N)
 #define TM_PWIN  A(KC_G)
+#define TM_COPY  A(KC_X)
 // last session
 #define TM_LASS  A(KC_MINS)
 #define TM_SLST  A(KC_S)
