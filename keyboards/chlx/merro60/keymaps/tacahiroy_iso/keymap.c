@@ -14,7 +14,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License 
 along with this program.  If not, see <http://www.gnu.org/licenses/>. 
 
-Copyright 2024-2025 YOSHIHARA Takahiro <tacahiroy@gmail.com>
+Copyright 2024-2026 YOSHIHARA Takahiro <tacahiroy@gmail.com>
 This is based on merro60/keymaps/iso/keymap.c
 */ 
 
@@ -48,17 +48,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_iso_tsangan(
     KC_GRV,  _______, _______, _______, _______, _______, _______, C_LEFT,  C_RIGHT, _______, _______, _______, _______,  _______, _______,
-    W_WLST,  _______, XX_TAB,  KC_MEH,  KC_CAPS, _______, SK_KANA, TM_PREV, TM_WLST, TM_NEXT, KC_PIPE, _______, CW_TOGG,
+    W_WLST,  _______, XX_TAB,  KC_MEH,  KC_CAPS, _______, SK_KANA, TM_PREV, TM_WLST, TM_NEXT, KC_PIPE, _______, _______,
     _______, KC_MPLY, MOUS,    W_SNIP,  KC_F5,   KC_F3,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  KC_MINS, _______,  _______,
-    _______, _______, _______, CUT,     COPY2,   PASTE2,  TOP,     BOTTOM,  KC_HOME, KC_END,  _______, _______, _______,  KC_PGUP,
+    _______, _______, _______, CUT,     COPY2,   PASTE2,  TOP,     BOTTOM,  KC_PGDN, KC_PGUP,  _______, _______, _______,  KC_PGUP,
     _______, _______, _______,                                     JP_HENK,                            _______, _______,  _______ 
   ),
 
   [_RAISE] = LAYOUT_iso_tsangan(
     _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_F13, XX_WIN,
-    AHK_ATB, AHK_MOB, _______, _______, _______, _______, KC_CIRC, KC_AMPR, KC_ASTR, FX_NEXT, _______, _______, _______,
-    _______, KC_UNDS, KC_EQL,  KC_PLUS, KC_LPRN, KC_LBRC, KC_RBRC, KC_RPRN, KC_DEL,  KC_BSLS, _______, _______, _______, _______,
-    _______, _______, AHK_ZOM, CUT,     COPY2,   PASTE2,  KC_LCBR, KC_RCBR, KC_PGUP, KC_PGDN, _______, _______, _______, QK_BOOT,
+    AHK_ATB, AHK_MOB, XX_TAB,  FX_PREV, FX_NEXT, KC_LBRC, KC_RBRC, TM_PREV, _______, TM_NEXT, _______, KC_VOLD, KC_VOLU,
+    _______, KC_MPLY, KC_EQL,  KC_PLUS, KC_F5,   KC_F3,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______, _______, _______,
+    _______, _______, AHK_ZOM, TM_COPY, COPY2,   PASTE2,  KC_LCBR, KC_RCBR, KC_HOME, KC_END,  _______, _______, _______, QK_BOOT,
     _______, _______, _______,                                     _______,                            _______, _______, _______
   ),
 
