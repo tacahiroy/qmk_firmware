@@ -20,5 +20,5 @@ while read -r keymap; do
 
     km=${keymap##*/keymaps/}
     echo "%%%%% Compiling ${kb} ${km} %%%%%"
-    rye run qmk compile -kb "${kb}" -km "${km}" || true
+    uv run qmk compile -kb "${kb}" -km "${km}" || true
 done < <(find "${repo_root}" -type d -path '*/keymaps/tacahiroy*')
