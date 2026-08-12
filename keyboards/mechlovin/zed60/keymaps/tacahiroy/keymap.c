@@ -63,7 +63,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_60_tsangan_hhkb(
     KC_GRV,  _______, _______, _______, _______, _______, _______, C_LEFT,  C_RIGHT, _______, _______, _______, _______,  _______, _______,
-    W_WLST,  _______, XX_TAB,  KC_MEH,  KC_CAPS, _______, SK_KANA, FX_PREV, _______, FX_NEXT, KC_PIPE, _______, _______,  _______,
+    W_WLST,  _______, XX_TAB,  KC_MEH,  KC_CAPS, _______, SK_KANA, FX_PREV, _______, FX_NEXT, KC_PIPE, _______, _______,  KC_DEL,
     _______, KC_MPLY, MOUS,    W_SNIP,  _______, _______, _______, KC_PGDN, KC_PGUP, KC_BSLS, TM_SSH,  _______, _______,
     _______, _______, CUT,     COPY2,   PASTE2,  TOP,     BOTTOM,  KC_HOME, KC_END,  _______, _______, _______, KC_PGUP,
     _______, _______, _______,                   JP_HENK,                            _______, _______, _______ 
