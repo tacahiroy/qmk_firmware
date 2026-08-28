@@ -5,12 +5,9 @@ set -Cueo pipefail
 list-boards() {
     printf "%-18s\t%-20s\n" 'aa|ata|atlas_alps'    'cannonkeys/atlas_alps'
     printf "%-18s\t%-20s\n" 'a|at|atlas'           'cannonkeys/atlas'
-    printf "%-18s\t%-20s\n" 'b60|bn60|bakeneko60'  'kkatano/bakeneko60'
-    printf "%-18s\t%-20s\n" 'b|bw'                 'boardwalk'
     printf "%-18s\t%-20s\n" 'jp02|jp-02|ar|arisu'  'arisu'
     printf "%-18s\t%-20s\n" 'merr|merro60'         'chlx/merro60'
     printf "%-18s\t%-20s\n" 'pal|palmetto|h60'     'hineybush/h60'
-    printf "%-18s\t%-20s\n" 'pa|palice'            'projectkb/alice/rev2'
     printf "%-18s\t%-20s\n" 'pi65k|kbd67r2'        'kbdfans/kbd67/rev2'
     printf "%-18s\t%-20s\n" 'pi65|pizza65'         'pizzakeyboards/pizza65'
     printf "%-18s\t%-20s\n" 'pl|planck'            'planck/rev4'
