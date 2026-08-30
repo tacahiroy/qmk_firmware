@@ -81,6 +81,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       }
       return false;
 
+    case TEN_U:
+      if (record->event.pressed) {
+        print("mode just switched to 10U and this is a huge string\n");
+        set_single_persistent_default_layer(_TEN_U);
+      }
+      return false;
+
     case QWERTY:
       if (record->event.pressed) {
         print("mode just switched to qwerty and this is a huge string\n");
