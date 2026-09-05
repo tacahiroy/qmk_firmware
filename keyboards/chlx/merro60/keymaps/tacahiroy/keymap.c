@@ -27,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,   KC_Q,    KC_W,   KC_F,   KC_P,   KC_G,   KC_J,   KC_L,   KC_U,     KC_Y,    KC_SCLN, KC_LBRC, KC_RBRC, KC_BSPC,
     KC_LCTL,  KC_A,    KC_R,   KC_S,   KC_T,   KC_D,   KC_H,   KC_N,   KC_E,     KC_I,    KC_O,    KC_QUOT, KC_ENT,
     SC_LSPO,  KC_Z,    KC_X,   KC_C,   KC_V,   KC_B,   KC_K,   KC_M,   KC_COMM,  KC_DOT,  KC_SLSH, SC_RSPC, KC_PGDN,
-    KC_LGUI,  KC_LALT, LOWER,                          RS_X(SPC),                         KC_RCTL, KC_RALT, KC_RGUI
+    KC_LGUI,  KC_LALT, LOWER,                          RS_X(SPC),                         KC_RCTL, KC_RGUI, KC_RALT
   ),
 
   [_NORMAN] = LAYOUT_60_tsangan_hhkb(
@@ -57,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_RAISE] = LAYOUT_60_tsangan_hhkb(
     _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_F13, XX_WIN,
     AHK_ATB, AHK_MOB, XX_TAB,  FX_PREV, FX_NEXT, KC_LBRC, KC_RBRC, TM_PREV, _______, TM_NEXT, _______, KC_VOLD, KC_VOLU, _______,
-    _______, KC_MPLY, KC_EQL,  KC_PLUS, KC_F5,   KC_F3,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______, _______,
+    ADJUST,  KC_MPLY, KC_EQL,  KC_PLUS, KC_F5,   KC_F3,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______, _______,
     _______, AHK_ZOM, TM_COPY, COPY2,   PASTE2,  KC_LCBR, KC_RCBR, KC_HOME, KC_END,  _______, _______, _______, QK_BOOT,
     _______, _______, _______,                   _______,                            _______, _______, _______
   ),
@@ -71,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [_ADJUST] = LAYOUT_60_tsangan_hhkb(
-    QK_BOOT, _______, EPRM,    _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_SYRQ, KC_SCRL, KC_BRK,
+    QK_BOOT, TEN_U,   EPRM,    _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_SYRQ, KC_SCRL, KC_BRK,
     _______, QWERTY,  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
     _______, CADEL,   _______, _______, _______, DB_TOGG, _______, NORMAN,  _______, _______, _______, _______, _______,
     _______, _______, _______, COLEMAK, VERSION, _______, _______, _______, _______, _______, _______, _______, _______,
