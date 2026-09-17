@@ -10,8 +10,6 @@ list-boards() {
     printf "%-18s\t%-20s\n" 'pal|palmetto|h60'     'hineybush/h60'
     printf "%-18s\t%-20s\n" 'pi65k|kbd67r2'        'kbdfans/kbd67/rev2'
     printf "%-18s\t%-20s\n" 'pi65|pizza65'         'pizzakeyboards/pizza65'
-    printf "%-18s\t%-20s\n" 'pl|planck'            'planck/rev4'
-    printf "%-18s\t%-20s\n" 'pr|preonic'           'preonic/rev3'
     printf "%-18s\t%-20s\n" 't|tmov2'              'cannonkeys/tmov2'
     printf "%-18s\t%-20s\n" 'y|yeti'               'axolstudio/yeti/soldered'
     printf "%-18s\t%-20s\n" 'jd|jjwd|derivative|zed60'   'mechlovin/zed60'
@@ -37,12 +35,6 @@ case "$1" in
     ar|arisu|jp02|jp-02)
         kb=arisu
         ;;
-    b60|bn60|bakeneko60)
-        kb=kkatano/bakeneko60
-        ;;
-    b|bw|boardwalk)
-        kb=boardwalk
-        ;;
     merr|merro60)
         kb=chlx/merro60
         ;;
@@ -57,12 +49,6 @@ case "$1" in
         ;;
     pi65k|kbd67r2)
         kb=kbdfans/kbd67/rev2
-        ;;
-    pl|planck)
-        kb=planck/rev4
-        ;;
-    pr|preonic)
-        kb=preonic/rev3
         ;;
     t|tmo*)
         kb=cannonkeys/tmov2
