@@ -33,157 +33,162 @@ void toggle_ime(bool is_on) {
 }
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-  on_bs2u = false;
-  on_wkl60 = false;
+    on_bs2u = false;
+    on_wkl60 = false;
 
-  switch (keycode) {
-    case COLEMAK:
-      if (record->event.pressed) {
-        print("mode just switched to Colemak and this is a huge string\n");
-        set_single_persistent_default_layer(_COLEMAK);
-      }
-      return false;
+#ifdef CONSOLE_ENABLE
+    uprintf("KL: kc: 0x%04X, col: %2u, row: %2u, pressed: %u, time: %5u, int: %u, count: %u\n", keycode, record->event.key.col, record->event.key.row, record->event.pressed, record->event.time, record->tap.interrupted, record->tap.count);
+#endif
 
-    case NORMAN:
-      if (record->event.pressed) {
-        print("mode just switched to Norman and this is a huge string\n");
-        set_single_persistent_default_layer(_NORMAN);
-      }
-      return false;
+    switch (keycode) {
+        case COLEMAK:
+            if (record->event.pressed) {
+                print("mode just switched to Colemak and this is a huge string\n");
+                set_single_persistent_default_layer(_COLEMAK);
+            }
+            return false;
 
-    case MACOS:
-      if (record->event.pressed) {
-        print("mode just switched to macOS and this is a huge string\n");
-        set_single_persistent_default_layer(_MACOS);
-      }
-      return false;
+        case NORMAN:
+            if (record->event.pressed) {
+                print("mode just switched to Norman and this is a huge string\n");
+                set_single_persistent_default_layer(_NORMAN);
+            }
+            return false;
 
-    case UKISO:
-      if (record->event.pressed) {
-        print("mode just switched to UKISO and this is a huge string\n");
-        set_single_persistent_default_layer(_UKISO);
-      }
-      return false;
+        case MACOS:
+            if (record->event.pressed) {
+                print("mode just switched to macOS and this is a huge string\n");
+                set_single_persistent_default_layer(_MACOS);
+            }
+            return false;
 
-    case BS2U:
-      if (record->event.pressed) {
-        print("mode just switched to BS2U and this is a huge string\n");
-        set_single_persistent_default_layer(_BS2U);
-        on_bs2u = true;
-      }
-      return false;
+        case UKISO:
+            if (record->event.pressed) {
+                print("mode just switched to UKISO and this is a huge string\n");
+                set_single_persistent_default_layer(_UKISO);
+            }
+            return false;
 
-    case WKL60:
-      if (record->event.pressed) {
-        print("mode just switched to WKL60 and this is a huge string\n");
-        set_single_persistent_default_layer(_WKL60);
-        on_wkl60 = true;
-      }
-      return false;
+        case BS2U:
+            if (record->event.pressed) {
+                print("mode just switched to BS2U and this is a huge string\n");
+                set_single_persistent_default_layer(_BS2U);
+                on_bs2u = true;
+            }
+            return false;
 
-    case TEN_U:
-      if (record->event.pressed) {
-        print("mode just switched to 10U and this is a huge string\n");
-        set_single_persistent_default_layer(_TEN_U);
-      }
-      return false;
+        case WKL60:
+            if (record->event.pressed) {
+                print("mode just switched to WKL60 and this is a huge string\n");
+                set_single_persistent_default_layer(_WKL60);
+                on_wkl60 = true;
+            }
+            return false;
 
-    case QWERTY:
-      if (record->event.pressed) {
-        print("mode just switched to qwerty and this is a huge string\n");
-        set_single_persistent_default_layer(_QWERTY);
-      }
-      return false;
+        case TEN_U:
+            if (record->event.pressed) {
+                print("mode just switched to 10U and this is a huge string\n");
+                set_single_persistent_default_layer(_TEN_U);
+            }
+            return false;
 
-    case LOWER:
-      if (record->event.pressed) {
-        layer_on(_LOWER);
-        update_tri_layer(_LOWER, _RAISE, _ADJUST);
-      } else {
-        layer_off(_LOWER);
-        update_tri_layer(_LOWER, _RAISE, _ADJUST);
-      }
-      return false;
+        case QWERTY:
+            if (record->event.pressed) {
+                print("mode just switched to qwerty and this is a huge string\n");
+                set_single_persistent_default_layer(_QWERTY);
+            }
+            return false;
 
-    case RAISE:
-      if (record->event.pressed) {
-        layer_on(_RAISE);
-        update_tri_layer(_LOWER, _RAISE, _ADJUST);
-      } else {
-        layer_off(_RAISE);
-        update_tri_layer(_LOWER, _RAISE, _ADJUST);
-      }
-      return false;
-      break;
+        case LOWER:
+            if (record->event.pressed) {
+                layer_on(_LOWER);
+                update_tri_layer(_LOWER, _RAISE, _ADJUST);
+            } else {
+                layer_off(_LOWER);
+                update_tri_layer(_LOWER, _RAISE, _ADJUST);
+            }
+            return false;
 
-    case MOVE:
-      if (record->event.pressed) {
-        layer_on(_MOVE);
-      } else {
-        layer_off(_MOVE);
-      }
-      return false;
-      break;
+        case RAISE:
+            if (record->event.pressed) {
+                layer_on(_RAISE);
+                update_tri_layer(_LOWER, _RAISE, _ADJUST);
+            } else {
+                layer_off(_RAISE);
+                update_tri_layer(_LOWER, _RAISE, _ADJUST);
+            }
+            return false;
+            break;
 
-    case MOUS:
-      if (record->event.pressed) {
-        layer_on(_MOUS);
-      } else {
-        layer_off(_MOUS);
-      }
-      return false;
-      break;
+        case MOVE:
+            if (record->event.pressed) {
+                layer_on(_MOVE);
+            } else {
+                layer_off(_MOVE);
+            }
+            return false;
+            break;
 
-    case SYSTEM:
-      if (record->event.pressed) {
-        layer_on(_SYSTEM);
-      } else {
-        layer_off(_SYSTEM);
-      }
-      return false;
-      break;
+        case MOUS:
+            if (record->event.pressed) {
+                layer_on(_MOUS);
+            } else {
+                layer_off(_MOUS);
+            }
+            return false;
+            break;
 
-    case ADJUST:
-      if (record->event.pressed) {
-        layer_on(_ADJUST);
-      } else {
-        layer_off(_ADJUST);
-      }
+        case SYSTEM:
+            if (record->event.pressed) {
+                layer_on(_SYSTEM);
+            } else {
+                layer_off(_SYSTEM);
+            }
+            return false;
+            break;
 
-      return false;
-      break;
+        case ADJUST:
+            if (record->event.pressed) {
+                layer_on(_ADJUST);
+            } else {
+                layer_off(_ADJUST);
+            }
 
-    case EPRM:
-      if (record->event.pressed) {
-          eeconfig_init();
-      }
-      return false;
-      break;
+            return false;
+            break;
 
-    case VERSION:
-      if (record->event.pressed) {
-          SEND_STRING(QMK_KEYBOARD "/" QMK_KEYMAP);
-      }
-      return false;
+        case EPRM:
+            if (record->event.pressed) {
+                eeconfig_init();
+            }
+            return false;
+            break;
 
-    case M_EXPS:
-      // Escape from VirtualBox / ESXi window :|
-      if (record->event.pressed) {
-          set_mods(MOD_BIT(KC_RCTL) | MOD_BIT(KC_RALT)); clear_mods();
-          set_mods(MOD_BIT(KC_LCTL) | MOD_BIT(KC_LALT)); tap_code(KC_TAB); clear_mods();
-      }
-      return false;
+        case VERSION:
+            if (record->event.pressed) {
+                SEND_STRING(QMK_KEYBOARD "/" QMK_KEYMAP);
+            }
+            return false;
 
-    // https://docs.qmk.fm/#/feature_advanced_keycodes?id=shift-backspace-for-delete
-    case KC_BSPC:
-      // Store the current modifier state in the variable for later reference
-      mod_state = get_mods();
-      return shift_backspace_for_delete(record);
+        case M_EXPS:
+            // Escape from VirtualBox / ESXi window :|
+            if (record->event.pressed) {
+                set_mods(MOD_BIT(KC_RCTL) | MOD_BIT(KC_RALT)); clear_mods();
+                set_mods(MOD_BIT(KC_LCTL) | MOD_BIT(KC_LALT)); tap_code(KC_TAB); clear_mods();
+            }
+            return false;
 
-    default:
-      break;
-  }
-  return true;
+            // https://docs.qmk.fm/#/feature_advanced_keycodes?id=shift-backspace-for-delete
+        case KC_BSPC:
+            // Store the current modifier state in the variable for later reference
+            mod_state = get_mods();
+            return shift_backspace_for_delete(record);
+
+        default:
+            break;
+    }
+
+    return true;
 }
 
 bool shift_backspace_for_delete(keyrecord_t *record) {

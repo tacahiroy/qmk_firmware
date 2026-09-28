@@ -86,7 +86,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [_MOUS] = LAYOUT_60_tsangan_hhkb(
-    QK_BOOT, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_MPRV, KC_MNXT, KC_MPLY, KC_MPLY,
+    QK_BOOT, UG_TOGG, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_MPRV, KC_MNXT, KC_MPLY, KC_MPLY,
     _______, _______, _______, _______, _______, _______, _______, MS_BTN1, _______, MS_BTN2, _______, KC_VOLD, KC_VOLU, _______,
     _______, _______, _______, _______, _______, _______, MS_LEFT, MS_DOWN, MS_UP,   MS_RGHT, TM_SSH,  _______, _______,
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
@@ -101,3 +101,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, _______,                            _______,                            _______, _______, _______ 
   )
 };
+
+void keyboard_post_init_user(void) {
+    // Call the post init code.
+    // rgblight_enable_noeeprom(); // enables Rgb, without saving settings
+    // rgblight_sethsv_noeeprom(180, 255, 255); // sets the color to teal/cyan without saving
+    // rgblight_mode_noeeprom(RGBLIGHT_MODE_BREATHING); // sets mode to Fast breathing without saving
+    set_single_persistent_default_layer(_COLEMAK);
+}

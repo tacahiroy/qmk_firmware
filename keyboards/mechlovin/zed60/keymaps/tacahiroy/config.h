@@ -39,5 +39,9 @@
 
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 
+// RGB
+#define RGBLIGHT_SLEEP  // enable rgblight_suspend() and rgblight_wakeup() in keymap.c
+#define RGBLIGHT_TIMEOUT 300  // ms to wait until rgblight time out, 900K ms is 15min.
+
 // https://docs.qmk.fm/#/squeezing_avr?id=layers
 #define LAYER_STATE_16BIT
