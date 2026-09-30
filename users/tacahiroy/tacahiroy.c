@@ -20,7 +20,6 @@
 uint8_t mod_state;
 
 static bool on_bs2u = false;
-static bool on_wkl60 = false;
 
 void toggle_ime(bool is_on) {
     if (is_on) {
@@ -34,7 +33,6 @@ void toggle_ime(bool is_on) {
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     on_bs2u = false;
-    on_wkl60 = false;
 
 #ifdef CONSOLE_ENABLE
     uprintf("KL: kc: 0x%04X, col: %2u, row: %2u, pressed: %u, time: %5u, int: %u, count: %u\n", keycode, record->event.key.col, record->event.key.row, record->event.pressed, record->event.time, record->tap.interrupted, record->tap.count);
@@ -74,14 +72,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 print("mode just switched to BS2U and this is a huge string\n");
                 set_single_persistent_default_layer(_BS2U);
                 on_bs2u = true;
-            }
-            return false;
-
-        case WKL60:
-            if (record->event.pressed) {
-                print("mode just switched to WKL60 and this is a huge string\n");
-                set_single_persistent_default_layer(_WKL60);
-                on_wkl60 = true;
             }
             return false;
 
