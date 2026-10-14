@@ -1,0 +1,7 @@
+[tasks.qmk-compile]
+usage = '''
+arg "<kb>" help="keyboard" default=""
+'''
+run = "./cqmk.sh ${usage_kb}"
+dir = "users/tacahiroy/scripts"
+alias = ["cqmk"]
