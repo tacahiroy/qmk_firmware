@@ -83,6 +83,7 @@ bool shift_backspace_for_delete(keyrecord_t *record);
 #define AHK_ATB  A(KC_SCRL)    // Activates window switcher on the host side.
 #define AHK_ZOM  S(KC_SCRL)    // Activates the Zoom window on the host side. This is useful when the MobaXTerm RDP window is active.
 #define AHK_MOB  LCA(KC_SCRL)  // LControl + Alt + ScrollLock: Activates the MobaXterm RDP window
+#define AHK_FX   LSA(KC_SCRL)  // Shift + Alt + ScrollLock: Activates the Firefox window
 
 #define MC_TOGG  MEH(KC_HOME)  // Mute/unmute mic with the silence! app
 
