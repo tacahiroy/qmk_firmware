@@ -80,8 +80,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_RAISE] = LAYOUT_60_tsangan_hhkb(
     _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  XX_WIN, XX_WIN,
     AHK_ATB, AHK_MOB, XX_TAB,  FX_PREV, FX_NEXT, KC_LBRC, KC_RBRC, TM_PREV, _______, TM_NEXT, _______, KC_VOLD, KC_VOLU, _______,
+
     ADJUST,  KC_MPLY, KC_EQL,  KC_PLUS, KC_F5,   KC_F3,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, TM_SSH,  _______, _______,
-    _______, AHK_ZOM, TM_COPY, COPY2,   PASTE2,  KC_LCBR, KC_RCBR, KC_HOME, KC_END,  _______, _______, _______, QK_BOOT,
+    _______, AHK_ZOM, AHK_FX,  TM_COPY,   PASTE2,  KC_LCBR, KC_RCBR, KC_HOME, KC_END,  _______, _______, _______, QK_BOOT,
     _______, _______, _______,                   _______,                            _______, _______, _______
   ),
 
@@ -102,10 +103,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   )
 };
 
-void keyboard_post_init_user(void) {
-    // Call the post init code.
-    // rgblight_enable_noeeprom(); // enables Rgb, without saving settings
-    // rgblight_sethsv_noeeprom(180, 255, 255); // sets the color to teal/cyan without saving
-    // rgblight_mode_noeeprom(RGBLIGHT_MODE_BREATHING); // sets mode to Fast breathing without saving
-    set_single_persistent_default_layer(_COLEMAK);
-}
+// void keyboard_post_init_user(void) {
+//     // Call the post init code.
+//     // rgblight_enable_noeeprom(); // enables Rgb, without saving settings
+//     // rgblight_sethsv_noeeprom(180, 255, 255); // sets the color to teal/cyan without saving
+//     // rgblight_mode_noeeprom(RGBLIGHT_MODE_BREATHING); // sets mode to Fast breathing without saving
+//     set_single_persistent_default_layer(_COLEMAK);
+// }
